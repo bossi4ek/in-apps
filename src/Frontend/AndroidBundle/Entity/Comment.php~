@@ -1,0 +1,56 @@
+<?php
+
+namespace Frontend\AndroidBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo; // Подключение Gedmo
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="comment")
+ */
+class Comment {
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column()
+     * @Assert\NotBlank()
+     * @Assert\Length(min = "2")
+     */
+    protected $txt;
+
+    /**
+     * @var datetime $created
+     *
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime")
+     */
+    private $created;
+
+    /**
+     * @var datetime $updated
+     *
+     * @Gedmo\Timestampable(on="update")
+     * @ORM\Column(type="datetime")
+     */
+    private $updated;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Content", inversedBy="comments")
+     * @ORM\JoinColumn(name="id_content", referencedColumnName="id")
+     */
+    private $content;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Frontend\UserBundle\Entity\User", inversedBy="comments")
+     * @ORM\JoinColumn(name="id_user", referencedColumnName="id")
+     */
+    private $user;
+}

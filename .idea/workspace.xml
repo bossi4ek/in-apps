@@ -2,87 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aeea28f-4585-4def-bbf5-0dc0c3b7556b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/img/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/img/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/img/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/img/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/img/not_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="$PROJECT_DIR$/app/cache/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="$PROJECT_DIR$/app/logs/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/apple-touch-icon.png" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/blue-arrow.png" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/blue-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/field-background.gif" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/field-background.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/logo.gif" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/logo.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/search.png" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-configure.gif" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-configure.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-demo.gif" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-demo.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-quick-tour.gif" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/images/welcome-quick-tour.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.htaccess" afterPath="$PROJECT_DIR$/app/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/.htaccess" afterPath="$PROJECT_DIR$/src/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/AcmeDemoBundle.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/AcmeDemoBundle.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppCache.php" afterPath="$PROJECT_DIR$/app/AppCache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Content.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Developer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Form/ContactType.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Form/ContactType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/EventListener/ControllerListener.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/EventListener/ControllerListener.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/DemoController.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/DemoController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Twig/Extension/DemoExtension.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Twig/Extension/DemoExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Command/HelloWorldCommand.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Command/HelloWorldCommand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/SecuredController.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/SecuredController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPGRADE-2.2.md" afterPath="$PROJECT_DIR$/UPGRADE-2.2.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPGRADE-2.3.md" afterPath="$PROJECT_DIR$/UPGRADE-2.3.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPGRADE-2.4.md" afterPath="$PROJECT_DIR$/UPGRADE-2.4.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UPGRADE.md" afterPath="$PROJECT_DIR$/UPGRADE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/WelcomeController.php" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Controller/WelcomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/autoload.php" afterPath="$PROJECT_DIR$/app/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_dev.yml" afterPath="$PROJECT_DIR$/app/config/config_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_prod.yml" afterPath="$PROJECT_DIR$/app/config/config_prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config_test.yml" afterPath="$PROJECT_DIR$/app/config/config_test.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/contact.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/contact.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/css/demo.css" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/public/css/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/hello.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/hello.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/hello.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/helloadmin.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/helloadmin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Demo/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Welcome/index.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Welcome/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/layout.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/login.html.twig" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/views/Secured/login.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/phpunit.xml.dist" afterPath="$PROJECT_DIR$/app/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/services.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="in-apps.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,37 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="52" selection-start="695" selection-end="695" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="-13.583333" vertical-offset="34" max-vertical-offset="705">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="24" selection-start="2213" selection-end="2213" vertical-scroll-proportion="-9.518518" vertical-offset="928" max-vertical-offset="1290">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="40" selection-start="271" selection-end="271" vertical-scroll-proportion="-5.0416665" vertical-offset="29" max-vertical-offset="735">
+            <state line="206" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-21.25" vertical-offset="2580" max-vertical-offset="3210">
               <folding>
                 <element signature="e#46#88#0" expanded="true" />
               </folding>
@@ -143,11 +44,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php">
+      <file leaf-file-name="Comment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="525">
-              <folding />
+            <state line="179" column="5" selection-start="3215" selection-end="3215" vertical-scroll-proportion="-98.833336" vertical-offset="313" max-vertical-offset="2805">
+              <folding>
+                <element signature="e#49#81#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +58,7 @@
       <file leaf-file-name="LoadData.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.6712329" vertical-offset="325" max-vertical-offset="690">
+            <state line="120" column="17" selection-start="4658" selection-end="4658" vertical-scroll-proportion="0.5110357" vertical-offset="1499" max-vertical-offset="2580">
               <folding>
                 <element signature="e#57#107#0" expanded="true" />
               </folding>
@@ -163,37 +66,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="120" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="570">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="126" column="5" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-78.75" vertical-offset="0" max-vertical-offset="2010">
               <folding>
-                <marker date="1394541589089" expanded="true" signature="0:755" placeholder="security:" />
-                <marker date="1394541589089" expanded="true" signature="80:169" placeholder="role_hierarchy:" />
-                <marker date="1394541589089" expanded="true" signature="174:257" placeholder="providers:" />
-                <marker date="1394541589089" expanded="true" signature="193:257" placeholder="fos_userbundle:" />
-                <marker date="1394541589089" expanded="true" signature="262:488" placeholder="firewalls:" />
-                <marker date="1394541589089" expanded="true" signature="281:488" placeholder="main:" />
-                <marker date="1394541589089" expanded="true" signature="323:425" placeholder="form_login:" />
-                <marker date="1394541589089" expanded="true" signature="493:755" placeholder="access_control:" />
+                <element signature="e#49#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tag.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="1" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-20.708334" vertical-offset="928" max-vertical-offset="1530">
+              <folding>
+                <element signature="e#49#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,13 +110,19 @@
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/main.js" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Developer.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Content.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php" />
       </list>
     </option>
@@ -235,7 +130,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="48" />
-    <option name="y" value="-4" />
+    <option name="y" value="-772" />
     <option name="width" value="1319" />
     <option name="height" value="773" />
   </component>
@@ -314,6 +209,36 @@
               <option name="myItemId" value="Frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -334,6 +259,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -367,52 +344,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -427,11 +358,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle" />
       <recent name="$PROJECT_DIR$/src/Frontend/UserBundle" />
       <recent name="$PROJECT_DIR$/bin" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js" />
-      <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -460,11 +391,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-4" width="1319" height="773" extended-state="6" />
-    <editor active="false" />
+    <frame x="48" y="-772" width="1319" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -565,20 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="52" selection-start="695" selection-end="695" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="10" selection-start="1125" selection-end="1125" vertical-scroll-proportion="-13.583333" vertical-offset="34" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/base_script.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="613">
@@ -593,6 +510,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="57" selection-start="914" selection-end="914" vertical-scroll-proportion="0.49137932" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="695" selection-end="695" vertical-scroll-proportion="0.46551725" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="24" selection-start="2213" selection-end="2213" vertical-scroll-proportion="0.8180243" vertical-offset="713" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="25" selection-end="25" vertical-scroll-proportion="0.049833886" vertical-offset="0" max-vertical-offset="602">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="120" selection-start="421" selection-end="421" vertical-scroll-proportion="0.28753993" vertical-offset="0" max-vertical-offset="626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="411">
@@ -602,53 +554,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="25" column="46" selection-start="755" selection-end="755" vertical-scroll-proportion="0.5990415" vertical-offset="0" max-vertical-offset="626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="44" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.9651163" vertical-offset="1213" max-vertical-offset="1815">
           <folding>
-            <marker date="1394541589089" expanded="true" signature="0:755" placeholder="security:" />
-            <marker date="1394541589089" expanded="true" signature="80:169" placeholder="role_hierarchy:" />
-            <marker date="1394541589089" expanded="true" signature="174:257" placeholder="providers:" />
-            <marker date="1394541589089" expanded="true" signature="193:257" placeholder="fos_userbundle:" />
-            <marker date="1394541589089" expanded="true" signature="262:488" placeholder="firewalls:" />
-            <marker date="1394541589089" expanded="true" signature="281:488" placeholder="main:" />
-            <marker date="1394541589089" expanded="true" signature="323:425" placeholder="form_login:" />
-            <marker date="1394541589089" expanded="true" signature="493:755" placeholder="access_control:" />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
+            <marker date="1394547313054" expanded="true" signature="-1:-1" placeholder="SELECT conte..Sf2filmsFilmsBundle..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Developer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="120" selection-start="421" selection-end="421" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="570">
-          <folding />
+        <state line="41" column="67" selection-start="821" selection-end="831" vertical-scroll-proportion="1.0603448" vertical-offset="0" max-vertical-offset="810">
+          <folding>
+            <element signature="e#49#81#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="24" selection-start="2213" selection-end="2213" vertical-scroll-proportion="-9.518518" vertical-offset="928" max-vertical-offset="1290">
-          <folding />
+        <state line="126" column="5" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-78.75" vertical-offset="0" max-vertical-offset="2010">
+          <folding>
+            <element signature="e#49#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="5" selection-start="3215" selection-end="3215" vertical-scroll-proportion="-98.833336" vertical-offset="313" max-vertical-offset="2805">
+          <folding>
+            <element signature="e#49#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="527" column="20" selection-start="10763" selection-end="10763" vertical-scroll-proportion="0.33275864" vertical-offset="7712" max-vertical-offset="9885">
+          <folding>
+            <element signature="e#49#81#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="40" selection-start="271" selection-end="271" vertical-scroll-proportion="-5.0416665" vertical-offset="29" max-vertical-offset="735">
+        <state line="206" column="5" selection-start="4082" selection-end="4082" vertical-scroll-proportion="-21.25" vertical-offset="2580" max-vertical-offset="3210">
           <folding>
             <element signature="e#46#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="25" selection-end="25" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="525">
-          <folding />
+        <state line="95" column="1" selection-start="1734" selection-end="1734" vertical-scroll-proportion="-20.708334" vertical-offset="928" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#49#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.6712329" vertical-offset="325" max-vertical-offset="690">
+        <state line="120" column="17" selection-start="4658" selection-end="4658" vertical-scroll-proportion="0.5110357" vertical-offset="1499" max-vertical-offset="2580">
           <folding>
             <element signature="e#57#107#0" expanded="true" />
           </folding>
