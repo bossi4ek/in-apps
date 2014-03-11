@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/frontendandroid/css/bootstrap.css') }}" rel="stylesheet" />
+    <link href="{{ asset('bundles/frontendandroid/css/main.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('bundles/frontendandroid/js/jquery-1.10.2.js') }}"></script>
+    <script src="{{ asset('bundles/frontendandroid/js/bootstrap.js') }}"></script>
+    <script src="{{ asset('bundles/frontendandroid/js/main.js') }}"></script>
+{% endblock %}
+
+{% block title %}{{ 'menu.site_name'|trans }}{% endblock %}
+
+{% block body %}
+
+    <div id="content_header" class="content_header"></div>
+
+    <div id="content_main">
+        <div>
+            {% block content_main %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div id="content_footer"></div>
+{% endblock %}

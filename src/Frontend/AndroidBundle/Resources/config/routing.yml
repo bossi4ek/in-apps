@@ -1,0 +1,3 @@
+frontend_android_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: FrontendAndroidBundle:Main:index }
