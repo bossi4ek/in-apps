@@ -1,0 +1,24 @@
+{% extends 'BackendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div class="postFormBox">
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div class="postFormFields">
+            <div class="input-group">
+                {{ form_label(form.name, 'Название') }}
+                {{ form_errors(form.name) }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="input-group">
+                <span style="margin-right: 10px;">{{ form_label(form.is_publish, 'Опубликовать') }}</span>
+                {{ form_errors(form.is_publish) }}
+                {{ form_widget(form.is_publish) }}
+            </div>
+        </div>
+        <div class="postFormButtons">
+            <button id="addGenre" type="submit" class="btn btn-primary"/>Сохранить</button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

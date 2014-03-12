@@ -3,11 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/frontendandroid/css/bootstrap.css') }}" rel="stylesheet" />
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('bundles/frontendandroid/js/jquery-1.10.2.js') }}"></script>
+            <script src="{{ asset('bundles/frontendandroid/js/bootstrap.js') }}"></script>
+        {% endblock %}
+
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {#{% block javascripts %}{% endblock %}#}
     </body>
 </html>

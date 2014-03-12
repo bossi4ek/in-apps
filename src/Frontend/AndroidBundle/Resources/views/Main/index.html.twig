@@ -2,14 +2,12 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link href="{{ asset('bundles/frontendandroid/css/bootstrap.css') }}" rel="stylesheet" />
-    <link href="{{ asset('bundles/frontendandroid/css/main.css') }}" rel="stylesheet" />
+    <link href="{{ asset('bundles/frontendandroid/css/frontend.css') }}" rel="stylesheet" />
 {% endblock %}
 
 {% block javascripts %}
-    <script src="{{ asset('bundles/frontendandroid/js/jquery-1.10.2.js') }}"></script>
-    <script src="{{ asset('bundles/frontendandroid/js/bootstrap.js') }}"></script>
-    <script src="{{ asset('bundles/frontendandroid/js/main.js') }}"></script>
+    {{ parent() }}
+    <script src="{{ asset('bundles/frontendandroid/js/frontend.js') }}"></script>
 {% endblock %}
 
 {% block title %}{{ 'menu.site_name'|trans }}{% endblock %}

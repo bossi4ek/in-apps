@@ -1,3 +1,25 @@
-backend_android_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: BackendAndroidBundle:Default:index }
+backend_main:
+    pattern:  /main
+    defaults: { _controller: BackendAndroidBundle:Main:index}
+
+#=======================================================================================================================
+backend_category:
+    pattern:  /category
+    defaults: { _controller: BackendAndroidBundle:Category:showAll}
+
+#backend_category_element:
+#    pattern:  /category/{slug}
+#    defaults: { _controller: BackendAndroidBundle:Category:showCategory}
+
+backend_category_add:
+    pattern:  /category/add
+    defaults: { _controller: BackendAndroidBundle:Category:addElement}
+
+backend_category_edit:
+    pattern:  /category/edit/{id}
+    defaults: { _controller: BackendAndroidBundle:Category:editElement}
+
+backend_category_del:
+    pattern:  /category/del
+    defaults: { _controller: BackendAndroidBundle:Category:delElement }
+    methods:  [POST]

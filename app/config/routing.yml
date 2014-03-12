@@ -4,7 +4,7 @@ frontend_user:
 
 backend_android:
     resource: "@BackendAndroidBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /admin
 
 frontend_android:
     resource: "@FrontendAndroidBundle/Resources/config/routing.yml"

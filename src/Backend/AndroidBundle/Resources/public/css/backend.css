@@ -1,0 +1,114 @@
+body {
+    width: 1024px;
+    margin: 0px auto;
+}
+
+.postBox {
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 40px;
+}
+
+.post_element {
+    overflow: hidden;
+}
+
+.post_poster  {
+    float: left;
+    padding: 5px 10px 5px 5px;
+}
+
+.poster_img {
+    padding: 3px;
+    border: 1px solid #CCCCCC;
+    width: 120px;
+}
+
+.post_data  {
+    float: left;
+    padding-left: 120px;
+}
+
+.post_user_name {
+    font-weight: bold;
+    text-align: left;
+}
+
+.post_user_email {
+    font-size: 12px;
+    text-align: left;
+}
+
+.post_date {
+    font-size: 10px;
+    float: right;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.post_head {
+    padding: 5px;
+}
+
+.post_body {
+    padding: 5px;
+}
+
+.post_delete {
+    /*float: right;*/
+    cursor: pointer;
+}
+
+.postFormBox {
+
+}
+
+.postFormFields {
+    margin: 10px 0px;
+}
+
+.postFormFields .input-group {
+    margin: 10px 0px;
+}
+
+.postFormButtons button{
+    margin-bottom: 10px;
+}
+
+#bottom_alert {
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    padding-right: 25px;
+    margin-top: 0px;
+    display: none;
+    float: right;
+    right: 0px;
+}
+
+.pagination_ajax li{
+    cursor: pointer;
+}
+
+.tags li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.tag_box {
+    width: 200px;
+}
+
+.postFormFields img {
+    padding: 3px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+}
+
+.btn_icon {
+    color: #333333;
+}
+
+.btn_icon:hover {
+    cursor: pointer;
+    color: #3276b1;
+}

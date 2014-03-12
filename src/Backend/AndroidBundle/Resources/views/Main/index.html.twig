@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('bundles/backendandroid/css/backend.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/backendandroid/js/backend.js') }}"></script>
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <div id="content_header" class="content_header">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ path('backend_main')}}">Админка</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li {% if app.request.attributes.get('_route') == "backend_category" %}class="active"{% endif %}><a href="{{ path('backend_category')}}">Категории</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav" style="float: right;">
+                    {% if is_granted('ROLE_FACEBOOK') %}
+                        facebook
+                    {% endif %}
+
+                    {% if app.user.username is defined %}
+                        <li><a href="{{ path('fos_user_profile_show')}}">{{ app.user.username }}</a></li>
+                        <li {% if app.request.attributes.get('_route') == "fos_user_security_logout" %}class="active"{% endif %}><a href="{{ path('fos_user_security_logout')}}">Выйти</a></li>
+                    {% else %}
+                        <li {% if app.request.attributes.get('_route') == "fos_user_security_login" %}class="active"{% endif %}><a href="{{ path('fos_user_security_login')}}">Войти</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content_main">
+        <div>
+            {% block content_main %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+    <div id="content_footer"></div>
+{% endblock %}
