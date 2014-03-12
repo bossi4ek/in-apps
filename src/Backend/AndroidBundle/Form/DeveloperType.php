@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class CategoryType extends AbstractType
+class DeveloperType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -18,12 +18,12 @@ class CategoryType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         return array(
-            'data_class' => 'Frontend\AndroidBundle\Entity\Category',
+            'data_class' => 'Frontend\AndroidBundle\Entity\Developer',
         );
     }
 
     public function getName()
     {
-        return 'category';
+        return 'developer';
     }
 }

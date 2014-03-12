@@ -4,17 +4,17 @@ namespace Backend\AndroidBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Frontend\AndroidBundle\Entity\Category;
-use Backend\AndroidBundle\Form\CategoryType;
+use Frontend\AndroidBundle\Entity\Developer;
+use Backend\AndroidBundle\Form\DeveloperType;
 use Symfony\Component\HttpFoundation\Response;
 
-class CategoryController extends Controller
+class DeveloperController extends Controller
 {
     public function showAllAction()
     {
-        $data = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Category')->findAll();
+        $data = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Developer')->findAll();
 
-        return $this->render('BackendAndroidBundle:Category:category_all.html.twig', array('data' => $data));
+        return $this->render('BackendAndroidBundle:Developer:developer_all.html.twig', array('data' => $data));
     }
 
     public function showElementAction()
@@ -23,15 +23,15 @@ class CategoryController extends Controller
 
     public function showCategoryInMenuAction(Request $request)
     {
-        $category = $this->getDoctrine()->getRepository('BackendAndroidBundle:Category')->findAll();
+        $developer = $this->getDoctrine()->getRepository('BackendAndroidBundle:Developer')->findAll();
 
-        return $this->render('BackendAndroidBundle:Category:category_in_menu.html.twig', array('category' => $category));
+        return $this->render('BackendAndroidBundle:Developer:developer_in_menu.html.twig', array('developer' => $developer));
     }
 
     public function addElementAction(Request $request)
     {
-        $obj = new Category();
-        $form = $this->createForm(new CategoryType(), $obj);
+        $obj = new Developer();
+        $form = $this->createForm(new DeveloperType(), $obj);
 
         $form->handleRequest($request);
 
@@ -42,10 +42,10 @@ class CategoryController extends Controller
             $em->persist($obj);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('backend_category'));
+            return $this->redirect($this->generateUrl('backend_developer'));
         }
 
-        return $this->render('BackendAndroidBundle:Category:category.html.twig', array(
+        return $this->render('BackendAndroidBundle:Developer:developer.html.twig', array(
                 'form' => $form->createView())
         );
     }
@@ -54,9 +54,9 @@ class CategoryController extends Controller
     {
         $id = $request->attributes->get('id');
         $em = $this->getDoctrine()->getManager();
-        $obj = $em->getRepository('FrontendAndroidBundle:Category')->findOneById($id);
+        $obj = $em->getRepository('FrontendAndroidBundle:Developer')->findOneById($id);
 
-        $form = $this->createForm(new CategoryType(), $obj);
+        $form = $this->createForm(new DeveloperType(), $obj);
 
         $form->handleRequest($request);
 
@@ -64,10 +64,10 @@ class CategoryController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->flush();
 
-            return $this->redirect($this->generateUrl('backend_category'));
+            return $this->redirect($this->generateUrl('backend_developer'));
         }
 
-        return $this->render('BackendAndroidBundle:Category:category.html.twig', array(
+        return $this->render('BackendAndroidBundle:Developer:developer.html.twig', array(
                 'form' => $form->createView())
         );
     }
@@ -76,7 +76,7 @@ class CategoryController extends Controller
         //find id_element
         $id_element = $request->request->get('id');
         $em = $this->getDoctrine()->getManager();
-        $element = $em->getRepository('FrontendAndroidBundle:Category')->findOneById($id_element);
+        $element = $em->getRepository('FrontendAndroidBundle:developer')->findOneById($id_element);
 
         $em->remove($element);
         $em->flush();

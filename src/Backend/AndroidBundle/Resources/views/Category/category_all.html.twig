@@ -4,26 +4,26 @@
     {% if is_granted('ROLE_ADMIN') %}
         <div style="text-align: center;">
             <a href="{{ path('backend_category_add') }}">
-                <button id="add_genre" type="submit" class="btn btn-primary"/>Добавить жанр</button>
+                <button id="add_genre" type="submit" class="btn btn-primary"/>Добавить категорию</button>
             </a>
         </div>
     {% endif %}
 
-    <div style="font-size: 16px;"><label>Все жанры</label></div>
+    <div style="font-size: 16px;"><label>Все категории</label></div>
     <div id="allPost" class="postBox">
-        {% for genre_data in data if genre_data.name %}
-            {% if (is_granted('ROLE_ADMIN') or genre_data.isPublish != 0) %}
-            <div class="panel panel-default" id_genre="{{ genre_data.id }}">
+        {% for category_data in data if category_data.name %}
+            {% if (is_granted('ROLE_ADMIN') or category_data.isPublish != 0) %}
+            <div class="panel panel-default" id_genre="{{ category_data.id }}">
                 <div class="panel-body post_body">
                     <div style="float: left;">
-                        {{ genre_data.name }} {% if genre_data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}
+                        {{ category_data.name }} {% if category_data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}
                     </div>
                     {% if is_granted('ROLE_ADMIN') %}
                         <div style="float: right;">
-                            <a href="{{ path('backend_category_edit', {'id': genre_data.id}) }}">
+                            <a href="{{ path('backend_category_edit', {'id': category_data.id}) }}">
                                 <span class="glyphicon glyphicon-edit btn_icon post_edit"></span>
                             </a>
-                            <span class="glyphicon glyphicon-remove btn_icon post_delete" data-id="{{ genre_data.id }}" data-url="{{ path('backend_category_del') }}"></span>
+                            <span class="glyphicon glyphicon-remove btn_icon post_delete" data-id="{{ category_data.id }}" data-url="{{ path('backend_category_del') }}"></span>
                         </div>
                     {% endif %}
                 </div>

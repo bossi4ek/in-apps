@@ -6,24 +6,22 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class CategoryType extends AbstractType
+class TagType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name', 'text')
-                ->add('is_publish', 'checkbox', array(
-                    'required'  => false));
+        $builder->add('name', 'text');
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
-        return array(
-            'data_class' => 'Frontend\AndroidBundle\Entity\Category',
-        );
+        $resolver->setDefaults(array(
+            'data_class' => 'Frontend\AndroidBundle\Entity\Tag',
+        ));
     }
 
     public function getName()
     {
-        return 'category';
+        return 'tag';
     }
 }

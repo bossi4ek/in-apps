@@ -3,6 +3,30 @@ backend_main:
     defaults: { _controller: BackendAndroidBundle:Main:index}
 
 #=======================================================================================================================
+backend_content:
+    pattern:  /content/{page}
+    defaults: { _controller: BackendAndroidBundle:Content:showAll, page: 1}
+    requirements:
+        page:  \d+
+
+#backend_content_element:
+#    pattern:  /content/{slug}
+#    defaults: { _controller: BackendAndroidBundle:Content:showCategory}
+
+backend_content_add:
+    pattern:  /content/add
+    defaults: { _controller: BackendAndroidBundle:Content:addElement}
+
+backend_content_edit:
+    pattern:  /content/edit/{slug}
+    defaults: { _controller: BackendAndroidBundle:Content:editElement}
+
+backend_content_del:
+    pattern:  /content/del
+    defaults: { _controller: BackendAndroidBundle:Content:delElement }
+    methods:  [POST]
+
+#=======================================================================================================================
 backend_category:
     pattern:  /category
     defaults: { _controller: BackendAndroidBundle:Category:showAll}
@@ -22,4 +46,26 @@ backend_category_edit:
 backend_category_del:
     pattern:  /category/del
     defaults: { _controller: BackendAndroidBundle:Category:delElement }
+    methods:  [POST]
+
+#=======================================================================================================================
+backend_developer:
+    pattern:  /developer
+    defaults: { _controller: BackendAndroidBundle:Developer:showAll}
+
+#backend_developer_element:
+#    pattern:  /developer/{slug}
+#    defaults: { _controller: BackendAndroidBundle:Developer:showCategory}
+
+backend_developer_add:
+    pattern:  /developer/add
+    defaults: { _controller: BackendAndroidBundle:Developer:addElement}
+
+backend_developer_edit:
+    pattern:  /developer/edit/{id}
+    defaults: { _controller: BackendAndroidBundle:Developer:editElement}
+
+backend_developer_del:
+    pattern:  /developer/del
+    defaults: { _controller: BackendAndroidBundle:Developer:delElement }
     methods:  [POST]

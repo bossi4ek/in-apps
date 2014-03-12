@@ -7,12 +7,12 @@ use Doctrine\ORM\EntityRepository;
 class ContentRepository extends EntityRepository
 {
 
-    public function findAllFilms()
+    public function findAllContent()
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
+                FROM FrontendAndroidBundle:Content content
                 ORDER BY content.created DESC');
 
         return $query;
@@ -24,12 +24,12 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function findAllFilmsByIsPublish()
+    public function findAllContentByIsPublish()
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
+                FROM FrontendAndroidBundle:Content content
                 WHERE content.is_publish = :is_publish
                 ORDER BY content.created DESC')
             ->setParameter('is_publish', 1);
@@ -43,12 +43,12 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function findAllFilmsForSitemap()
+    public function findAllContentForSitemap()
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
+                FROM FrontendAndroidBundle:Content content
                 ORDER BY content.created DESC');
         try {
             return $query->getResult();
@@ -62,7 +62,7 @@ class ContentRepository extends EntityRepository
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
+                FROM FrontendAndroidBundle:Content content
                 WHERE content.slug = :slug'
             )->setParameter('slug', $slug);
 
@@ -73,16 +73,16 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function findAllByGenre($translit)
+    public function findAllByCategory($slug)
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
-                LEFT JOIN content.genres genre
-                WHERE genre.name_translit = :translit
+                FROM FrontendAndroidBundle:Content content
+                LEFT JOIN content.categories category
+                WHERE category.slug = :slug
                 ORDER BY content.created DESC'
-            )->setParameter('translit', $translit);
+            )->setParameter('slug', $slug);
 
         return $query;
 
@@ -93,16 +93,16 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function findAllByPerson($translit)
+    public function findAllByDeveloper($slug)
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
-                FROM Sf2filmsFilmsBundle:Content content
-                LEFT JOIN content.persons person
-                WHERE person.name_translit = :translit
+                FROM FrontendAndroidBundle:Content content
+                LEFT JOIN content.developers developer
+                WHERE developer.slug = :slug
                 ORDER BY content.created DESC'
-            )->setParameter('translit', $translit);
+            )->setParameter('slug', $slug);
 
         return $query;
 

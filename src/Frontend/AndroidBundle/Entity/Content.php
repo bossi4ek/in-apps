@@ -401,7 +401,7 @@ class Content {
      */
     public function getIsPublish()
     {
-        return $this->is_publish;
+        return $this->is_publish == 1 ? true : false;
     }
 
     /**
@@ -516,7 +516,11 @@ class Content {
      */
     public function getPosterImg()
     {
-        return $this->poster_img;
+        if (null === $this->poster_img) {
+            return;
+        }
+
+        return $this->getWebPath();
     }
 
     /**

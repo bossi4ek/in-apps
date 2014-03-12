@@ -21,7 +21,17 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li {% if app.request.attributes.get('_route') == "backend_category" %}class="active"{% endif %}><a href="{{ path('backend_category')}}">Категории</a></li>
+                    <li {% if app.request.attributes.get('_route') == "backend_content" or
+                              app.request.attributes.get('_route') == "backend_content_add" or
+                              app.request.attributes.get('_route') == "backend_content_edit" %}class="active"{% endif %}><a href="{{ path('backend_content')}}">Приложения</a></li>
+
+                    <li {% if app.request.attributes.get('_route') == "backend_category" or
+                              app.request.attributes.get('_route') == "backend_category_add" or
+                              app.request.attributes.get('_route') == "backend_category_edit" %}class="active"{% endif %}><a href="{{ path('backend_category')}}">Категории</a></li>
+
+                    <li {% if app.request.attributes.get('_route') == "backend_developer" or
+                              app.request.attributes.get('_route') == "backend_developer_add" or
+                              app.request.attributes.get('_route') == "backend_developer_edit" %}class="active"{% endif %}><a href="{{ path('backend_developer')}}">Разработчики</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav" style="float: right;">

@@ -33,7 +33,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $destination = __DIR__.'/../../../../../web/uploads/poster';
 
         for ($i = 1; $i <= 4; $i++) {
-            copy($source."/".$i.".jpg", $destination."/".$i.".jpg");
+            copy($source."/".$i.".png", $destination."/".$i.".png");
         }
         copy($source."/not_img.jpg", $destination."/not_img.jpg");
     }
@@ -92,11 +92,11 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $categoryRepository = $manager->getRepository('FrontendAndroidBundle:Category');
         $developerRepository = $manager->getRepository('FrontendAndroidBundle:Developer');
 
-        $name = 'Капитан Филлипс';
-        $description = 'В начале апреля 2009 года, близ берегов Африки, несколько сомалийских пиратов атакуют и пытаются захватить массивный контейнеровоз MV Maersk Alabama. Команда корабля активно сопротивляется и в конце концов не даёт взять себя в плен. Захватчики вынуждены ретироваться и покинуть судно на небольшом катере, прихватив с собой немолодого капитана Ричарда Филлипса...';
+        $name = 'BADLAND';
+        $description = 'BADLAND - этот великолепный платформер наконец-то добрался с iOS до нашей операционной системы. Игра была отмечена наградами за лучший дизайн и инновационный геймплей. Если вы ищете что-то классное и интересное, то это именно оно, игра затягивает сразу и надолго. На наш взгляд, это одна из лучших игр для Android.';
         $content1 = new Content();
         $content1->setName($name);
-        $content1->setPosterImg("1.jpg");
+        $content1->setPosterImg("1.png");
         $content1->setDescription($description);
         $content1->addCategory($categoryRepository->findOneBy(array('id' => '1')));
         $content1->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
@@ -110,11 +110,11 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $manager->persist($content1);
 
 
-        $name = 'Два ствола';
-        $description = 'Это история двух грабителей, которые на самом деле не те, кем кажутся. Один из них — агент из управления по борьбе с наркотиками, а другой — тайный агент разведки ВМС. Сами того не желая, они занимаются расследованием дел друг друга, а также воруют деньги у мафии. Через некоторое время героям придется украсть 50 миллионов долларов у ЦРУ.';
+        $name = 'Can Knockdown 3';
+        $description = 'Can Knockdown 3 - это потрясающая во всех планах игра, в которой мы будем сбивать с помощью мячиков стоящие банки. Великолепная 3D-графика, качественная физика, большое количество уровней, и все это полностью бесплатно. Одна из лучших игр для Android';
         $content2 = new Content();
         $content2->setName($name);
-        $content2->setPosterImg("2.jpg");
+        $content2->setPosterImg("2.png");
         $content2->setDescription($description);
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '2')));
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '3')));
@@ -127,6 +127,43 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->setIsPublish(1);
 
         $manager->persist($content2);
+
+
+        $name = 'Gravity Maze';
+        $description = 'Gravity Maze - это забавная физическая аркада-головоломка, в которой мы должны помочь отряду инопланетян выбраться из лабиринта. Управляется игра с помощью акселерометра и напоминает старые пластмассовые игрушки-лабиринты с железными шариками.';
+        $content3 = new Content();
+        $content3->setName($name);
+        $content3->setPosterImg("3.png");
+        $content3->setDescription($description);
+        $content3->addCategory($categoryRepository->findOneBy(array('id' => '1')));
+        $content3->addCategory($categoryRepository->findOneBy(array('id' => '3')));
+        $content3->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
+        $content3->setSize(4000);
+        $content3->setVersion("2");
+        $content3->setYear(2014);
+        $content3->setInstallCount(10);
+
+        $content3->setIsPublish(1);
+
+        $manager->persist($content3);
+
+        $name = 'Hungry Shark Evolution';
+        $description = 'Hungry Shark Evolution - это бесплатная игра в жанре экшен, где мы возьмем на себя роль кровожадной акулы, поедающей обитателей океана и живых людей, приехавших на отдых. Игра порадовала нас качественной графикой, обилием крови и простым управлением.';
+        $content4 = new Content();
+        $content4->setName($name);
+        $content4->setPosterImg("4.png");
+        $content4->setDescription($description);
+        $content4->addCategory($categoryRepository->findOneBy(array('id' => '3')));
+        $content4->addDeveloper($developerRepository->findOneBy(array('id' => '2')));
+        $content4->setSize(500);
+        $content4->setVersion("2.3");
+        $content4->setYear(2013);
+        $content4->setInstallCount(10000);
+
+        $content4->setIsPublish(1);
+
+        $manager->persist($content4);
+
 
         $manager->flush();
     }
