@@ -20,7 +20,7 @@ class ContentType extends AbstractType
                 ))
                 ->add('description', 'textarea')
                 ->add('file', 'file')
-                ->add('category', 'entity', array(
+                ->add('categories', 'entity', array(
                       'multiple' => true,
                       'class' => 'FrontendAndroidBundle:Category',
                       'query_builder' => function(EntityRepository $er) {
@@ -31,7 +31,7 @@ class ContentType extends AbstractType
                       },
                       'property' => 'name'
                 ))
-                ->add('developer', 'entity', array(
+                ->add('developers', 'entity', array(
                       'multiple' => true,
                       'class' => 'FrontendAndroidBundle:Developer',
                       'query_builder' => function(EntityRepository $er) {
@@ -42,6 +42,10 @@ class ContentType extends AbstractType
                       },
                       'property' => 'name'
                 ))
+                ->add('year', 'text')
+                ->add('size', 'text')
+                ->add('version', 'text')
+                ->add('install_count', 'text')
                 ->add('is_publish', 'checkbox', array(
                     'required'  => false,
                 ));

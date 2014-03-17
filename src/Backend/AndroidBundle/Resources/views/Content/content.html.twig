@@ -1,0 +1,82 @@
+{% extends 'BackendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div class="postFormBox">
+        <form action="{{ action }}" method="post" {{ form_enctype(form) }} novalidate="">
+        {#{{ form_start(form) }}#}
+        {{ form_errors(form) }}
+        <div class="postFormFields">
+            <div class="input-group">
+                {{ form_label(form.name, 'Название') }}
+                {{ form_errors(form.name) }}
+                {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div>
+                <div>
+                    <ul class="tags" data-prototype="{{ form_widget(form.tags.vars.prototype.name, {'attr': {'class': 'form-control tag_box'}}) | e }}">
+                        {% for tag in form.tags %}
+                            <li>{{ form_row(tag.name, {'attr': {'class': 'form-control'}}) }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div>
+                    {#<a href="#" class="add_tag">Добавить тег</a>#}
+                </div>
+            </div>
+            <div>
+                {{ form_label(form.description, 'Описание') }}
+                {{ form_errors(form.description) }}
+                {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div>
+                {{ form_label(form.file, 'Постер') }}
+                <img src="{% if content.posterImg %} {{ content.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img" style="width: 120px;"/>
+                {{ form_errors(form.file) }}
+                {{ form_widget(form.file, {'attr': {'novalidate': 'novalidate'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form.categories, 'Категории') }}
+                {{ form_errors(form.categories) }}
+                {{ form_widget(form.categories, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form.developers, 'Разработчики') }}
+                {{ form_errors(form.developers) }}
+                {{ form_widget(form.developers, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div style="border-top: 1px solid #ccc; text-align: center;">Дополнительная информация</div>
+            <div class="input-group">
+                {{ form_label(form.year, 'Год') }}<br/>
+                {{ form_errors(form.year) }}
+                {{ form_widget(form.year, {'attr': {'class': 'form-control', 'style': 'width: 250px'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form.size, 'Размер') }}<br/>
+                {{ form_errors(form.size) }}
+                {{ form_widget(form.size, {'attr': {'class': 'form-control', 'style': 'width: 250px'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form.version, 'Версия') }}<br/>
+                {{ form_errors(form.version) }}
+                {{ form_widget(form.version, {'attr': {'class': 'form-control', 'style': 'width: 250px'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form.install_count, 'Количество загрузок') }}<br/>
+                {{ form_errors(form.install_count) }}
+                {{ form_widget(form.install_count, {'attr': {'class': 'form-control', 'style': 'width: 250px'}}) }}
+            </div>
+            <div style="border-top: 1px solid #ccc;"></div>
+            <div class="input-group">
+                <span style="margin-right: 10px;">{{ form_label(form.is_publish, 'Опубликовать') }}</span>
+                    {{ form_errors(form.is_publish) }}
+                    {{ form_widget(form.is_publish) }}
+            </div>
+        </div>
+        <div class="postFormButtons">
+            <button id="addFilms" type="submit" class="btn btn-primary pull-right" style="margin-right: 10px;"/>Сохранить</button>
+        </div>
+            {{ form_rest(form) }}
+        {#{{ form_end(form) }}#}
+        </form>
+    </div>
+{% endblock %}
