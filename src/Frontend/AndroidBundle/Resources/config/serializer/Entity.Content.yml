@@ -1,0 +1,20 @@
+Frontend\AndroidBundle\Entity\Content:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            type: integer
+        name:
+            expose: true
+            type: string
+        description:
+            expose: true
+            type: string
+        created:
+            expose: true
+            type: DateTime<'Y-m-d'>
+        updated:
+            expose: true
+            type: DateTime<'Y-m-d'>
+        is_publish:
+            expose: true

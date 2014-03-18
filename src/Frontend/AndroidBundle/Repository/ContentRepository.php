@@ -24,25 +24,6 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function findAllContentByIsPublish()
-    {
-        $query = $this->getEntityManager()
-            ->createQuery('
-                SELECT content
-                FROM FrontendAndroidBundle:Content content
-                WHERE content.is_publish = :is_publish
-                ORDER BY content.created DESC')
-            ->setParameter('is_publish', 1);
-
-        return $query;
-
-        try {
-            return $query->getResult();
-        } catch (\Doctrine\ORM\NoResultException $e) {
-            return null;
-        }
-    }
-
     public function findAllContentForSitemap()
     {
         $query = $this->getEntityManager()
@@ -106,6 +87,56 @@ class ContentRepository extends EntityRepository
 
         return $query;
 
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
+    public function findAllContentByIsPublish()
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                WHERE content.is_publish = :is_publish
+                ORDER BY content.created DESC')
+            ->setParameter('is_publish', 1);
+
+        return $query;
+
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
+//======================================================================================================================
+//For API
+    public function findApiAllContent()
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                ORDER BY content.created DESC');
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
+    public function findApiContentById($id)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                WHERE content.id = :id'
+            )->setParameter('id', $id);
         try {
             return $query->getResult();
         } catch (\Doctrine\ORM\NoResultException $e) {

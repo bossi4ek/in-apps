@@ -11,5 +11,9 @@
         <service id="content" class="Frontend\AndroidBundle\Content">
             <argument type="service" id="content.repository"/>
         </service>
+
+        <service id="content.api" class="Frontend\AndroidBundle\ContentApi">
+            <argument type="service" id="content.repository"/>
+        </service>
     </services>
 </container>

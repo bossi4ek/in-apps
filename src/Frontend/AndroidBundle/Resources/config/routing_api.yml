@@ -1,0 +1,12 @@
+api_content_all:
+    pattern:  /contents
+    defaults: { _controller: FrontendAndroidBundle:Api:getContents, _format: ~ }
+    requirements:
+        _method: GET
+
+api_content_element:
+    pattern:  /contents/{id}
+    defaults: { _controller: FrontendAndroidBundle:Api:getContent, _format: ~ }
+    requirements:
+        _method: GET
+        id: "\d+"
