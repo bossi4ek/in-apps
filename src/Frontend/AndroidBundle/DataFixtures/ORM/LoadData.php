@@ -100,7 +100,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content1->setDescription($description);
         $content1->addCategory($categoryRepository->findOneBy(array('id' => '1')));
         $content1->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
-        $content1->setSize(1000);
+        $content1->setSize("1000");
         $content1->setVersion("1.0");
         $content1->setYear(2013);
         $content1->setInstallCount(22);
@@ -119,7 +119,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '2')));
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content2->addDeveloper($developerRepository->findOneBy(array('id' => '2')));
-        $content2->setSize(2000);
+        $content2->setSize("2000");
         $content2->setVersion("1.2");
         $content2->setYear(2014);
         $content2->setInstallCount(500);
@@ -138,7 +138,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content3->addCategory($categoryRepository->findOneBy(array('id' => '1')));
         $content3->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content3->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
-        $content3->setSize(4000);
+        $content3->setSize("4000");
         $content3->setVersion("2");
         $content3->setYear(2014);
         $content3->setInstallCount(10);
@@ -155,7 +155,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content4->setDescription($description);
         $content4->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content4->addDeveloper($developerRepository->findOneBy(array('id' => '2')));
-        $content4->setSize(500);
+        $content4->setSize("500");
         $content4->setVersion("2.3");
         $content4->setYear(2013);
         $content4->setInstallCount(10000);

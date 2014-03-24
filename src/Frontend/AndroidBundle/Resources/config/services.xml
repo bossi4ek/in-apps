@@ -5,6 +5,7 @@
 
     <parameters>
         <parameter key="element_per_page">10</parameter>
+        <parameter key="pars_host">http://app4smart.com</parameter>
     </parameters>
 
     <services>

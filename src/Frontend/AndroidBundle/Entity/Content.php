@@ -74,13 +74,7 @@ class Content {
     private $year;
 
     /**
-     * @ORM\Column(type="smallint")
-     * @Assert\NotBlank(groups={"AddContent", "EditContent"})
-     * @Assert\Regex(
-     *     pattern     = "/^[0-9]+$/i",
-     *     message="Размер состоит только с цыфр",
-     *     groups={"AddContent", "EditContent"}
-     * )
+     * @ORM\Column()
      */
     private $size;
 
