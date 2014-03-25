@@ -1,0 +1,6 @@
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Категории <b class="caret"></b></a>
+<ul class="dropdown-menu">
+    {% for value in data if value.name %}
+        <li><a href="{{ path('frontend_content_by_category', {'slug': value.slug}) }}">{{ value.name }}</a></li>
+    {% endfor %}
+</ul>

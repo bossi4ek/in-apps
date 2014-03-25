@@ -39,12 +39,11 @@ class ContentController extends Controller
         $pagerfanta->setCurrentPage($page);
         $data = $pagerfanta->getCurrentPageResults();
 
-        return $this->render('BackendAndroidBundle:Content:content_all.html.twig',
-                            array(
-                                'data' => $data,
-                                'page' => $page,
-                                'pagerfanta' => $pagerfanta
-                            ));
+        return $this->render('BackendAndroidBundle:Content:content_all.html.twig', array(
+                'data' => $data,
+                'page' => $page,
+                'pagerfanta' => $pagerfanta)
+        );
     }
 
     public function showElementAction()
@@ -78,6 +77,41 @@ class ContentController extends Controller
 
     public function editElementAction(Request $request)
     {
+        $slug = $request->attributes->get('slug');
+        $data = $this->getContentService()->findOneBySlug($slug);
+
+        $em = $this->getDoctrine()->getManager();
+
+        $originalTags = array();
+        if ($data->getTags() != null) {
+            // Create an array of the current Tag objects in the database
+            foreach ($data->getTags() as $tag) $originalTags[] = $tag;
+        }
+
+        $form = $this->createForm(new ContentType(), $data, array("validation_groups" => array("EditContent")));
+
+        $form->handleRequest($request);
+
+        if ($form->isValid()) {
+            //remove the relationship
+            foreach ($originalTags as $tag) {
+                if (false === $data->getTags()->contains($tag)) {
+                    //delete the Tag entirely
+                    $em->remove($tag);
+                }
+            }
+
+            $em = $this->getDoctrine()->getManager();
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('backend_content'));
+        }
+
+        return $this->render('BackendAndroidBundle:Content:content.html.twig', array(
+                'action' => $this->generateUrl('backend_content_edit', array('slug' => $slug)),
+                'content' => $data,
+                'form' => $form->createView())
+        );
     }
 
     public function delElementAction(Request $request) {

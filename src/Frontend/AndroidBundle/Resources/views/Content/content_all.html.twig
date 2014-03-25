@@ -1,37 +1,28 @@
-{% extends 'BackendAndroidBundle:Main:index.html.twig' %}
+{% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
 
 {% block content_main %}
-    {% if is_granted('ROLE_ADMIN') %}
-        <div style="text-align: center;">
-            <a href="{{ path('backend_content_add') }}">
-                <button id="add_content" type="submit" class="btn btn-primary"/>Добавить приложение</button>
-            </a>
-        </div>
-    {% endif %}
-    {#Страница с фильмами (старница {{ page }})#}
-    <div style="font-size: 16px;"><label>Все приложения</label></div>
+    <div style="font-size: 16px;"><label>{% if category is defined %}Категория: {{ category.name }}{% else %}Все приложения{% endif %}</label></div>
     <div id="allPost" class="postBox">
         {% for content_data in data if content_data.name %}
             {% if (is_granted('ROLE_ADMIN') or content_data.isPublish != 0) %}
                 <div class="panel panel-default post_element" id_content="{{ content_data.id }}">
                     <div class="post_poster">
-                        <a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">
+                        <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
                             <img src="{% if content_data.posterImg %} {{ content_data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
                         </a>
                     </div>
                     <div class="panel-body post_body">
                         <div style="overflow: hidden">
                             <div style="float: left; font-size: 18px;">
-                                <a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">
+                                <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
                                     {{ content_data.name }} {% if content_data.isPublish == 0 %}<span style="color: red;">неопубликован</span>{% endif %}
                                 </a>
                             </div>
                             {% if is_granted('ROLE_ADMIN') %}
                                 <div style="float: right;">
                                     <a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">
-                                        <span class="glyphicon glyphicon-edit btn_icon post_edit" title="Редактировать"></span>
+                                        <span class="glyphicon glyphicon-edit post_edit" title="Редактировать"></span>
                                     </a>
-                                    <span class="glyphicon glyphicon-remove btn_icon post_delete" data-id="{{ content_data.id }}" data-url="{{ path('backend_content_del') }}" title="Удалить"></span>
                                 </div>
                             {% endif %}
                         </div>
@@ -44,6 +35,6 @@
         {% else %}
             <div class="not_message"><center>Нет записей</center></div>
         {% endfor %}
-        <div class="pagerfanta">{{ pagerfanta(pagerfanta, 'default') }}</div>
+        <div class="pagerfanta">{{ pagerfanta(pagerfanta, 'twitter_bootstrap') }}</div>
     </div>
 {% endblock %}

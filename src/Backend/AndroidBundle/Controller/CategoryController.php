@@ -21,13 +21,6 @@ class CategoryController extends Controller
     {
     }
 
-    public function showCategoryInMenuAction(Request $request)
-    {
-        $category = $this->getDoctrine()->getRepository('BackendAndroidBundle:Category')->findAll();
-
-        return $this->render('BackendAndroidBundle:Category:category_in_menu.html.twig', array('category' => $category));
-    }
-
     public function addElementAction(Request $request)
     {
         $obj = new Category();

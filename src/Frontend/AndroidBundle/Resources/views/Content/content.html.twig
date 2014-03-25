@@ -1,0 +1,127 @@
+{% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div id="allPost" class="postBox">
+        <div class="panel panel-default" id_content="{{ data.id }}">
+            <div class="post_poster">
+                <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
+                    <img src="{% if data.posterImg %} {{ data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
+                </a>
+            </div>
+            <div class="panel-body post_body">
+                <div style="overflow: hidden">
+                    <div style="float: left; font-size: 18px;">
+                        <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
+                            {{ data.name }} {% if data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}
+                        </a>
+                    </div>
+                </div>
+
+                {% if data.tags|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Теги:</span>
+                        {% for tag in data.tags %}
+                            {{ tag.name }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.categories|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Категории:</span>
+                        {% for category in data.categories %}
+                            <a href="{{ path('frontend_content_by_category', {'slug': category.slug}) }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.developers|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Разработчики:</span>
+                        {% for developer in data.developers %}
+                            <a href="{{ path('frontend_content_by_developer', {'slug': developer.slug}) }}">{{ developer.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.year !=  0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Год:</span>
+                        {{ data.year }}
+                    </div>
+                {% endif %}
+
+                {% if data.size !=  0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Размер:</span>
+                        {{ data.size }}
+                    </div>
+                {% endif %}
+
+                {% if data.version !=  "" %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Версия:</span>
+                        {{ data.version }}
+                    </div>
+                {% endif %}
+
+                <div style="padding: 5px;">
+                    <span style="font-weight: bold;">Описание:</span><br/>
+                    {{ data.description }}
+                </div>
+            </div>
+            {#{% if is_granted('ROLE_USER') %}#}
+                {#<div style="text-align: right; padding: 5px;">#}
+                    {#<button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ data.id }}"/>{{ 'films.add_my'|trans }}</button>#}
+                {#</div>#}
+                {#<div style="text-align: right; padding: 5px; display: none;">#}
+                    {#<button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ data.id }}"/>{{ 'films.del_my'|trans }}</button>#}
+                {#</div>#}
+            {#{% endif %}#}
+        </div>
+
+        {#<h4>{{ 'films.comments'|trans }}</h4>#}
+        {#{% if is_granted('ROLE_USER') %}#}
+            {#<div class="postFormBox">#}
+                {#<form action="{{ path('sf2films_comment_add', {'id': data.id}) }}" method="post" {{ form_enctype(comment_form) }} novalidate="">#}
+                    {#{{ form_errors(comment_form) }}#}
+                    {#<div class="postFormFields">#}
+                        {#<div>#}
+                            {#{{ form_label(comment_form.txt) }}#}
+                            {#{{ form_errors(comment_form.txt) }}#}
+                            {#{{ form_widget(comment_form.txt, {'attr': {'class': 'form-control'}}) }}#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div class="postFormButtons" style="overflow: hidden; text-align: center;">#}
+                        {#<button id="addСomment" type="submit" class="btn btn-primary" style="margin-right: 10px;"/>{{ 'films.comments_add'|trans }}</button>#}
+                    {#</div>#}
+                    {#{{ form_rest(comment_form) }}#}
+                {#</form>#}
+            {#</div>#}
+        {#{% endif %}#}
+
+        {#{% if data.comments|length > 0 %}#}
+            {#{% for comment in data.comments %}#}
+                {#<div style="padding: 5px; border-bottom: 1px dashed #cccccc;">#}
+                    {#<div style="overflow: hidden;">#}
+                        {#<div style="float: left;">#}
+                            {#<span style="font-weight: bold;">{{ comment.user }}</span>#}
+                            {#<span style="font-size: 11px;">({{ comment.created|date('Y-m-d H:i:s') }})</span>#}
+                        {#</div>#}
+                        {#<div style="font-weight: bold; float: right">#}
+                            {#{% if is_granted('EDIT', comment) or is_granted('ROLE_ADMIN') %}#}
+                                {#<a href="{{ path('sf2films_comment_edit', {'id': comment.id}) }}">#}
+                                    {#<span class="glyphicon glyphicon-edit edit-comment-js" title="{{ 'films.edit'|trans }}"></span>#}
+                                {#</a>#}
+                            {#{% endif %}#}
+                            {#{% if is_granted('ROLE_ADMIN') %}#}
+                                {#<span style="cursor: pointer;" class="glyphicon glyphicon-remove del-comment-js" data-id="{{ comment.id }}" title="{{ 'films.delete'|trans }}"></span>#}
+                            {#{% endif %}#}
+                        {#</div>#}
+                    {#</div>#}
+                    {#<div>{{ comment.txt }}</div>#}
+                {#</div>#}
+            {#{% endfor %}#}
+        {#{% endif %}#}
+    </div>
+{% endblock %}
