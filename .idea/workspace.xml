@@ -2,68 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aeea28f-4585-4def-bbf5-0dc0c3b7556b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-1220H30c208e1405e7b307d20.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-1220H30c208e1405e7b307d20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-1335H5457ad07b32a70e7ba1a.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-1335H5457ad07b32a70e7ba1a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-1427H7171decd119920eb1380.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-1427H7171decd119920eb1380.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-2042Hf169cd86bd03c3fb748b.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-2042Hf169cd86bd03c3fb748b.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-2508Hf67c8bfd648781fe3b19.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-2508Hf67c8bfd648781fe3b19.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-2808Hc79f69f5b6f32efd6e42.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-2808Hc79f69f5b6f32efd6e42.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-2860Hde0f9d1077e29df1df2d.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-2860Hde0f9d1077e29df1df2d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-2883H61af170acd1feb7160ab.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-2883H61af170acd1feb7160ab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3472He14070bad0552b65afec.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3472He14070bad0552b65afec.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3686H549cd1d478f3d9329850.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3686H549cd1d478f3d9329850.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3764Hd4ad694a11d8e093bb85.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3764Hd4ad694a11d8e093bb85.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3976H0b17ef7d0eee3cd3cf1b.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3976H0b17ef7d0eee3cd3cf1b.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3995H9d897114ee560eeb1334.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3995H9d897114ee560eeb1334.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-4183H5bbd54d085335fff811e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-4183H5bbd54d085335fff811e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-4406H08d5d2650cad869446c6.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-4406H08d5d2650cad869446c6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-4637Hd0d3f510d84cb650f11a.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-4637Hd0d3f510d84cb650f11a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-4782He03035f55ab6843b4c9e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-4782He03035f55ab6843b4c9e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-4995He67896e6cc461e33bdc6.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-4995He67896e6cc461e33bdc6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-5462Ha6597ae63d481607f4d7.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-5462Ha6597ae63d481607f4d7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-5648Hdf60cef32d1794880609.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-5648Hdf60cef32d1794880609.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-5678Hd6c3dbcdd9986e31ed70.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-5678Hd6c3dbcdd9986e31ed70.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-5735H037f9b5f75ab1268c72e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-5735H037f9b5f75ab1268c72e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-5875He7c4cf736ecdc4ec3baf.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-5875He7c4cf736ecdc4ec3baf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6119H794a26b0f411c009e51d.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6119H794a26b0f411c009e51d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6218H8d7d5c9abc0b1e35c888.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6218H8d7d5c9abc0b1e35c888.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6241H252b84385e68c3e7d861.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6241H252b84385e68c3e7d861.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6265H8cfdfa903e0a5807e442.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6265H8cfdfa903e0a5807e442.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6367H2704a3971b29e428ba03.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6367H2704a3971b29e428ba03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6498H43e42f24cbd88750411a.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6498H43e42f24cbd88750411a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6612H402696815bb414ee9448.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6612H402696815bb414ee9448.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6951H0f80e64428e4cfa6367e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6951H0f80e64428e4cfa6367e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-6984Hba0a73e80cec67ba83e9.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-6984Hba0a73e80cec67ba83e9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7052Hae1ab771d90714cffd28.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7052Hae1ab771d90714cffd28.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7243Hc208f149435cd643bb94.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7243Hc208f149435cd643bb94.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7444H9cd3050dd0ded9757a95.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7444H9cd3050dd0ded9757a95.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7647H1a8a3de06f4dd1c725cb.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7647H1a8a3de06f4dd1c725cb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7659H1904bcc8d97f8b108266.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7659H1904bcc8d97f8b108266.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-7747H63327837c2cab1900819.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-7747H63327837c2cab1900819.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8126Hd56ab643290468e517b3.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8126Hd56ab643290468e517b3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8375H076dda6f4f4a11b6e50d.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8375H076dda6f4f4a11b6e50d.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8842H915c6b94f29a57e2bf69.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8842H915c6b94f29a57e2bf69.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8875H3335430eaa822db2ab0e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8875H3335430eaa822db2ab0e.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8895H081a098c76ad00872c12.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8895H081a098c76ad00872c12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-8969H72303246179ed373fdf3.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-8969H72303246179ed373fdf3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9034H461b222fc1e1dc8031c8.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9034H461b222fc1e1dc8031c8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9038H8fb72f797adcf776ba77.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9038H8fb72f797adcf776ba77.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9104Ha58c96719d31d33035d6.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9104Ha58c96719d31d33035d6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9129Hfa5516886774053db6c8.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9129Hfa5516886774053db6c8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9397Ha99d35e512b1bf62d5f1.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9397Ha99d35e512b1bf62d5f1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9510H6c29e3631d3e63af88f6.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9510H6c29e3631d3e63af88f6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9563H37703f0932229f376815.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9563H37703f0932229f376815.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9901H48e8eec8083306117215.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9901H48e8eec8083306117215.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-9905H98672845d681b7b58883.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-9905H98672845d681b7b58883.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/behat.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x60-3769Haa4dfa20d180bf6ae168.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x60-3769Haa4dfa20d180bf6ae168.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -88,13 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ContentController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
+      <file leaf-file-name="content_all.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="25" selection-start="2272" selection-end="2280" vertical-scroll-proportion="-12.875" vertical-offset="741" max-vertical-offset="1335">
-              <folding>
-                <element signature="e#53#110#0" expanded="true" />
-              </folding>
+            <state line="7" column="60" selection-start="460" selection-end="472" vertical-scroll-proportion="-0.0" vertical-offset="105" max-vertical-offset="690">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,89 +48,54 @@
       <file leaf-file-name="ContentRepository.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="22" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-2.235294" vertical-offset="891" max-vertical-offset="2280">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="57" selection-start="1177" selection-end="1185" vertical-scroll-proportion="-2.75" vertical-offset="324" max-vertical-offset="1320">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="content_all.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="80" selection-start="165" selection-end="165" vertical-scroll-proportion="0.10817308" vertical-offset="0" max-vertical-offset="690">
+            <state line="40" column="33" selection-start="1004" selection-end="1017" vertical-scroll-proportion="-15.0" vertical-offset="240" max-vertical-offset="2280">
               <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <marker date="1395183174804" expanded="true" signature="271:390" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="710:829" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="1118:1234" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="1576:1793" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="2154:2373" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="2736:2910" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="3398:3517" placeholder="SELECT conte..FrontendAndroidBundle..." />
+                <marker date="1395183174804" expanded="true" signature="3809:3921" placeholder="SELECT conte..FrontendAndroidBundle..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontend.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
+      <file leaf-file-name="FeatureContext.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="23" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2385">
+            <state line="77" column="51" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-5.8431373" vertical-offset="857" max-vertical-offset="1410">
+              <folding>
+                <element signature="e#59#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature1.feature" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="30" selection-start="806" selection-end="806" vertical-scroll-proportion="0.5960265" vertical-offset="0" max-vertical-offset="604">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php">
+      <file leaf-file-name="ContentController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="53" selection-end="53" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2010">
-              <folding>
-                <element signature="e#49#81#0" expanded="true" />
-              </folding>
+            <state line="28" column="42" selection-start="727" selection-end="746" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1890">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="102" selection-start="1793" selection-end="1793" vertical-scroll-proportion="-2.4705882" vertical-offset="444" max-vertical-offset="1005">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="359" selection-end="448" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
-              <folding>
-                <element signature="e#53#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_in_menu.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/category_in_menu.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="16" selection-start="293" selection-end="293" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="28" selection-start="504" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+            <state line="55" column="26" selection-start="2855" selection-end="2855" vertical-scroll-proportion="-17.5" vertical-offset="405" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -203,9 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/Frontend/UserBundle/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/src/Frontend/UserBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php" />
@@ -221,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/TagType.php" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/CategoryType.php" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/DeveloperType.php" />
-        <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/DeveloperController.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/DependencyInjection/FrontendAndroidExtension.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/model.xml" />
@@ -232,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/public/css/backend.css" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/ContentType.php" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing_api.yml" />
@@ -244,16 +150,21 @@
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content.html.twig" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/category_in_menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/behat.yml" />
+        <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
       </list>
     </option>
   </component>
@@ -290,6 +201,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -318,144 +230,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pagerfanta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -497,228 +271,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,7 +322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
+              <option name="myItemId" value="Features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -796,7 +348,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Context" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -819,6 +375,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -875,70 +465,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroidBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -978,7 +504,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -993,38 +523,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="in-apps.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1038,11 +541,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle" />
-      <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Tests" />
     </key>
   </component>
   <component name="RunManager">
@@ -1075,22 +578,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19754978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5206738" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27294117" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22431372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1113,66 +616,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="1" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.8255814" vertical-offset="928" max-vertical-offset="1530" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="755" selection-end="755" vertical-scroll-proportion="0.62086093" vertical-offset="0" max-vertical-offset="604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="736" selection-end="736" vertical-scroll-proportion="0.51724136" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="248" selection-end="248" vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/public/js/backend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="401" selection-end="401" vertical-scroll-proportion="0.655527" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Category/category_all.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="68" selection-start="445" selection-end="445" vertical-scroll-proportion="0.2801358" vertical-offset="0" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Category/category.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="454" selection-end="719" vertical-scroll-proportion="0.29900333" vertical-offset="0" max-vertical-offset="602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Developer/developer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Developer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="20" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.75689656" vertical-offset="1361" max-vertical-offset="1965" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10" selection-start="10" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Form/CategoryType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="728" selection-end="728" vertical-scroll-proportion="0.67275745" vertical-offset="0" max-vertical-offset="602" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Form/DeveloperType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="731" selection-end="731" vertical-scroll-proportion="0.67275745" vertical-offset="0" max-vertical-offset="602" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Form/TagType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="1" selection-start="634" selection-end="634" vertical-scroll-proportion="0.64784056" vertical-offset="0" max-vertical-offset="602" />
@@ -1181,11 +624,6 @@
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Developer/developer_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="28" selection-start="1366" selection-end="1516" vertical-scroll-proportion="-14.916667" vertical-offset="17" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="934" selection-end="934" vertical-scroll-proportion="-8.125" vertical-offset="180" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/DeveloperController.php">
@@ -1211,11 +649,6 @@
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/public/css/backend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="34" selection-start="307" selection-end="307" vertical-scroll-proportion="0.4781491" vertical-offset="129" max-vertical-offset="1800" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="321" selection-end="321" vertical-scroll-proportion="0.2660754" vertical-offset="45" max-vertical-offset="1005" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Form/ContentType.php">
@@ -1264,23 +697,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1769" selection-end="1892" vertical-scroll-proportion="0.67607975" vertical-offset="463" max-vertical-offset="1065">
-          <folding />
-        </state>
+        <state line="64" column="0" selection-start="1769" selection-end="1892" vertical-scroll-proportion="0.67607975" vertical-offset="463" max-vertical-offset="1065" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/ContentApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="444" selection-end="444" vertical-scroll-proportion="0.5481728" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="22" column="36" selection-start="444" selection-end="444" vertical-scroll-proportion="0.5481728" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="26" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.78434503" vertical-offset="1144" max-vertical-offset="1770">
-          <folding />
-        </state>
+        <state line="109" column="26" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.78434503" vertical-offset="1144" max-vertical-offset="1770" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Content.php">
@@ -1292,157 +719,224 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="189" selection-end="600" vertical-scroll-proportion="0.10638298" vertical-offset="60" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1244" selection-end="1327" vertical-scroll-proportion="0.7758621" vertical-offset="0" max-vertical-offset="1890">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="189" selection-end="600" vertical-scroll-proportion="0.10638298" vertical-offset="60" max-vertical-offset="1215" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/pagerfanta/pagerfanta/src/Pagerfanta/View/Template/TwitterBootstrapTemplate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="329" selection-end="329" vertical-scroll-proportion="-1.2587413" vertical-offset="675" max-vertical-offset="2055">
-          <folding />
-        </state>
+        <state line="16" column="6" selection-start="329" selection-end="329" vertical-scroll-proportion="-1.2587413" vertical-offset="675" max-vertical-offset="2055" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/pagerfanta/pagerfanta/src/Pagerfanta/View/TwitterBootstrapView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="37" selection-start="756" selection-end="756" vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
+        <state line="30" column="37" selection-start="756" selection-end="756" vertical-scroll-proportion="0.73170733" vertical-offset="0" max-vertical-offset="660" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/pagerfanta/pagerfanta/src/Pagerfanta/View/DefaultView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="20" selection-start="967" selection-end="967" vertical-scroll-proportion="0.3503326" vertical-offset="397" max-vertical-offset="4470">
-          <folding />
-        </state>
+        <state line="46" column="20" selection-start="967" selection-end="967" vertical-scroll-proportion="0.3503326" vertical-offset="397" max-vertical-offset="4470" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="103" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.7191781" vertical-offset="135" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="30" column="103" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.7191781" vertical-offset="135" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="3132" selection-end="3316" vertical-scroll-proportion="-4.7058825" vertical-offset="765" max-vertical-offset="1995">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#4;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#5;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#6;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#7;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="67" column="0" selection-start="3132" selection-end="3316" vertical-scroll-proportion="-4.7058825" vertical-offset="765" max-vertical-offset="1995" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="57" selection-start="1177" selection-end="1185" vertical-scroll-proportion="-2.75" vertical-offset="324" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="102" selection-start="1793" selection-end="1793" vertical-scroll-proportion="-2.4705882" vertical-offset="444" max-vertical-offset="1005">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="504" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+        <state line="26" column="57" selection-start="1177" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="1320">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.43123543" vertical-offset="70" max-vertical-offset="1215">
+        <state line="21" column="5" selection-start="648" selection-end="648" vertical-scroll-proportion="0.43123543" vertical-offset="70" max-vertical-offset="1215" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="2010">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/category_in_menu.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="293" selection-end="293" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="22" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-2.235294" vertical-offset="891" max-vertical-offset="2280">
+        <state line="16" column="8" selection-start="359" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="23" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="1705" max-vertical-offset="2385">
+        <state line="121" column="29" selection-start="1751" selection-end="1751" vertical-scroll-proportion="0.0" vertical-offset="1575" max-vertical-offset="2625">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="53" selection-end="53" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="2010">
-          <folding>
-            <element signature="e#49#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="359" selection-end="448" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="405">
-          <folding>
-            <element signature="e#53#110#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="25" selection-start="2272" selection-end="2280" vertical-scroll-proportion="-12.875" vertical-offset="741" max-vertical-offset="1335">
+        <state line="9" column="42" selection-start="274" selection-end="274" vertical-scroll-proportion="54.375" vertical-offset="1440" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/behat/behat/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.081743866" vertical-offset="0" max-vertical-offset="367">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Features/Context/FeatureContext.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="56" selection-end="56" vertical-scroll-proportion="0.10752688" vertical-offset="0" max-vertical-offset="1035">
           <folding>
-            <element signature="e#53#110#0" expanded="true" />
+            <element signature="e#52#101#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/behat.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="57" selection-start="557" selection-end="557" vertical-scroll-proportion="0.4718543" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/behat/behat/behat.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/behat/behat/CHANGES.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="5" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.2155477" vertical-offset="1303" max-vertical-offset="8340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="26" selection-start="2855" selection-end="2855" vertical-scroll-proportion="-17.5" vertical-offset="405" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/behat/gherkin/src/Behat/Gherkin/Node/TableNode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="0" selection-start="5618" selection-end="5618" vertical-scroll-proportion="5.032258" vertical-offset="1137" max-vertical-offset="4035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="222" selection-end="238" vertical-scroll-proportion="0.20689656" vertical-offset="0" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="601" selection-end="601" vertical-scroll-proportion="0.44701988" vertical-offset="0" max-vertical-offset="604">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/category_in_menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="293" selection-end="293" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="67" selection-start="3174" selection-end="3174" vertical-scroll-proportion="0.55026454" vertical-offset="528" max-vertical-offset="1095">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="80" selection-start="165" selection-end="165" vertical-scroll-proportion="0.10817308" vertical-offset="0" max-vertical-offset="690">
+        <state line="7" column="60" selection-start="460" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="690">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="394" selection-end="394" vertical-scroll-proportion="-2.4913793" vertical-offset="1580" max-vertical-offset="2160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="33" selection-start="1004" selection-end="1017" vertical-scroll-proportion="-15.0" vertical-offset="240" max-vertical-offset="2280">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <marker date="1395183174804" expanded="true" signature="271:390" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="710:829" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="1118:1234" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="1576:1793" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="2154:2373" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="2736:2910" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="3398:3517" placeholder="SELECT conte..FrontendAndroidBundle..." />
+            <marker date="1395183174804" expanded="true" signature="3809:3921" placeholder="SELECT conte..FrontendAndroidBundle..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/ContentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="727" selection-end="746" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="51" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-5.8431373" vertical-offset="857" max-vertical-offset="1410">
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="806" selection-end="806" vertical-scroll-proportion="0.5960265" vertical-offset="0" max-vertical-offset="604">
+          <folding />
         </state>
       </provider>
     </entry>

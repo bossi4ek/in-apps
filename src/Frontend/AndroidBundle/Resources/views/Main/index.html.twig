@@ -34,12 +34,12 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="{{ path('frontend_content') }}">Приложения</a></li>
-                            <li class="dropdown">
+                            <li {% if app.request.attributes.get('_route') == "frontend_content" %}class="active"{% endif %}><a href="{{ path('frontend_content') }}">Приложения</a></li>
+                            <li class="dropdown {% if app.request.attributes.get('_route') == "frontend_content_by_category" %}active{% endif %}">
                                 {{ render(controller('FrontendAndroidBundle:Main:showCategoryInMenu')) }}
                             </li>
-                            <li><a href="#">Лидеры</a></li>
-                            <li><a href="#">Новинки</a></li>
+                            <li {% if app.request.attributes.get('_route') == "frontend_content_top" %}class="active"{% endif %}><a href="{{ path('frontend_content_top') }}">Лидеры</a></li>
+                            <li {% if app.request.attributes.get('_route') == "frontend_content_new" %}class="active"{% endif %}><a href="{{ path('frontend_content_new') }}">Новинки</a></li>
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group">
@@ -51,10 +51,16 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </div>
-        <div>
-            {% block content_main %}
-                Android apps (Главная страница)
-            {% endblock %}
+        <div style="overflow: hidden;">
+            <div style="float: left; width: 250px;">
+                <div style="font-size: 16px;"><label>Рекомендуем</label></div>
+                <div class="post_element" style="margin-right: 5px;">xxx</div>
+            </div>
+            <div style="overflow: hidden;">
+                {% block content_main %}
+                    Android apps (Главная страница)
+                {% endblock %}
+            </div>
         </div>
     </div>
 

@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 use Pagerfanta\Pagerfanta;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
-use Pagerfanta\View\TwitterBootstrapView;
 
 class ContentController extends Controller
 {
@@ -78,6 +77,50 @@ class ContentController extends Controller
     public function showAllByDeveloperAction(Request $request)
     {
 
+    }
+
+    public function showNewAction(Request $request)
+    {
+        $data = $this->getContentService()->showAllContent();
+
+        $page = $request->get('page');
+        $adapter = new DoctrineORMAdapter($data);
+        $pagerfanta = new Pagerfanta($adapter);
+
+        if(!$page) {
+            $page = 1;
+        }
+        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
+        $pagerfanta->setCurrentPage($page);
+        $data = $pagerfanta->getCurrentPageResults();
+
+        return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
+                'data' => $data,
+                'page' => $page,
+                'pagerfanta' => $pagerfanta)
+        );
+    }
+
+    public function showTopAction(Request $request)
+    {
+        $data = $this->getContentService()->showAllContent();
+
+        $page = $request->get('page');
+        $adapter = new DoctrineORMAdapter($data);
+        $pagerfanta = new Pagerfanta($adapter);
+
+        if(!$page) {
+            $page = 1;
+        }
+        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
+        $pagerfanta->setCurrentPage($page);
+        $data = $pagerfanta->getCurrentPageResults();
+
+        return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
+                'data' => $data,
+                'page' => $page,
+                'pagerfanta' => $pagerfanta)
+        );
     }
 
 }

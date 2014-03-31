@@ -9,6 +9,18 @@ frontend_content:
     requirements:
         page:  \d+
 
+frontend_content_new:
+    pattern:  /content/new/{page}
+    defaults: { _controller: FrontendAndroidBundle:Content:showNew, page: 1}
+    requirements:
+        page:  \d+
+
+frontend_content_top:
+    pattern:  /content/top/{page}
+    defaults: { _controller: FrontendAndroidBundle:Content:showTop, page: 1}
+    requirements:
+        page:  \d+
+
 frontend_content_element:
     pattern:  /content/{slug}
     defaults: { _controller: FrontendAndroidBundle:Content:showElement}
