@@ -118,6 +118,10 @@ body {
     padding: 0;
 }
 
+.nav > li {
+    border-bottom: 3px solid #F8F8F8;
+}
+
 .nav .active {
     border-bottom: 3px solid #2a6496;
 }

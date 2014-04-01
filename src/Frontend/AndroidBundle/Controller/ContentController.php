@@ -9,6 +9,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Pagerfanta\Pagerfanta;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
 
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Frontend\AndroidBundle\Event\ContentViewEvent;
+
 class ContentController extends Controller
 {
 
@@ -43,6 +46,17 @@ class ContentController extends Controller
     {
         $slug = $request->attributes->get('slug');
         $data = $this->getContentService()->findOneBySlug($slug);
+
+//----------------------------------------------------------------------------------------------------------------------
+//inc view_count
+        $em = $this->getDoctrine()->getManager();
+        $ed = new EventDispatcher();
+        $event = new ContentViewEvent($data, $em);
+        $ed->addListener("inc_content_view", function(ContentViewEvent $event) {
+            $event->incContentView();
+        });
+        $ed->dispatch("inc_content_view", $event);
+//----------------------------------------------------------------------------------------------------------------------
 
         return $this->render('FrontendAndroidBundle:Content:content.html.twig', array('data' => $data));
     }
@@ -101,47 +115,21 @@ class ContentController extends Controller
         );
     }
 
-    public function showNewAction(Request $request)
+    public function showTopAction()
     {
-        $data = $this->getContentService()->showAllContent();
-
-        $page = $request->get('page');
-        $adapter = new DoctrineORMAdapter($data);
-        $pagerfanta = new Pagerfanta($adapter);
-
-        if(!$page) {
-            $page = 1;
-        }
-        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
-        $pagerfanta->setCurrentPage($page);
-        $data = $pagerfanta->getCurrentPageResults();
+        $data = $this->getContentService()->findTopContent();
 
         return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
-                'data' => $data,
-                'page' => $page,
-                'pagerfanta' => $pagerfanta)
+                'data' => $data)
         );
     }
 
-    public function showTopAction(Request $request)
+    public function showNewAction()
     {
-        $data = $this->getContentService()->showAllContent();
-
-        $page = $request->get('page');
-        $adapter = new DoctrineORMAdapter($data);
-        $pagerfanta = new Pagerfanta($adapter);
-
-        if(!$page) {
-            $page = 1;
-        }
-        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
-        $pagerfanta->setCurrentPage($page);
-        $data = $pagerfanta->getCurrentPageResults();
+        $data = $this->getContentService()->findNewContent();
 
         return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
-                'data' => $data,
-                'page' => $page,
-                'pagerfanta' => $pagerfanta)
+                'data' => $data)
         );
     }
 

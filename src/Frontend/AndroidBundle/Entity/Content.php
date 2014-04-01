@@ -95,6 +95,11 @@ class Content {
     private $install_count;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $view_count;
+
+    /**
      * @var string $image
      *
      * @ORM\Column(name="poster_img", type="string", length=255, nullable=true)
@@ -488,6 +493,29 @@ class Content {
     public function getInstallCount()
     {
         return $this->install_count;
+    }
+
+    /**
+     * Set view_count
+     *
+     * @param integer $viewCount
+     * @return Content
+     */
+    public function setViewCount($viewCount)
+    {
+        $this->view_count = $viewCount;
+
+        return $this;
+    }
+
+    /**
+     * Get view_count
+     *
+     * @return integer
+     */
+    public function getViewCount()
+    {
+        return $this->view_count;
     }
 
     /**

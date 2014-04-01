@@ -104,6 +104,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content1->setVersion("1.0");
         $content1->setYear(2013);
         $content1->setInstallCount(22);
+        $content1->setViewCount(0);
 
         $content1->setIsPublish(1);
 
@@ -123,6 +124,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->setVersion("1.2");
         $content2->setYear(2014);
         $content2->setInstallCount(500);
+        $content2->setViewCount(0);
 
         $content2->setIsPublish(1);
 
@@ -142,6 +144,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content3->setVersion("2");
         $content3->setYear(2014);
         $content3->setInstallCount(10);
+        $content3->setViewCount(0);
 
         $content3->setIsPublish(1);
 
@@ -159,6 +162,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content4->setVersion("2.3");
         $content4->setYear(2013);
         $content4->setInstallCount(10000);
+        $content4->setViewCount(0);
 
         $content4->setIsPublish(1);
 

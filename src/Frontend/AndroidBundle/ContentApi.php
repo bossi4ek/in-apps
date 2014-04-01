@@ -33,4 +33,15 @@ class ContentApi {
     public function showApiContentByDeveloper($slug){
         return $this->repo->findAllByDeveloper($slug);
     }
+
+//Get content top
+    public function showApiTopContent(){
+        return $this->repo->findTopContent();
+    }
+
+//Get content new
+    public function showApiNewContent(){
+        return $this->repo->findNewContent();
+    }
+
 }

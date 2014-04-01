@@ -65,6 +65,34 @@ class ContentRepository extends EntityRepository
         }
     }
 
+    public function findTopContent()
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                ORDER BY content.view_count DESC')->setMaxResults(10);
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
+    public function findNewContent()
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                ORDER BY content.created DESC')->setMaxResults(10);
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
     public function findAllByCategory($slug)
     {
         $query = $this->getEntityManager()

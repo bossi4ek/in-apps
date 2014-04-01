@@ -36,5 +36,7 @@
             <div class="not_message"><center>Нет записей</center></div>
         {% endfor %}
     </div>
-    <div class="pagerfanta">{{ pagerfanta(pagerfanta, 'twitter_bootstrap') }}</div>
+    {% if pagerfanta is defined %}
+        <div class="pagerfanta">{{ pagerfanta(pagerfanta, 'twitter_bootstrap') }}</div>
+    {% endif %}
 {% endblock %}

@@ -54,7 +54,7 @@ class ApiController extends FOSRestController
      *  }
      * )
      *
-     * @param $id
+     * @param integer  $id      the content ID
      * @return array
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
@@ -80,7 +80,7 @@ class ApiController extends FOSRestController
      *  }
      * )
      *
-     * @param $slug
+     * @param string  $slug      the category slug
      * @return array
      */
     public function getContentsByCategoryAction($slug)
@@ -105,7 +105,7 @@ class ApiController extends FOSRestController
      *  }
      * )
      *
-     * @param $slug
+     * @param string  $slug      the developer slug
      * @return array
      */
     public function getContentsByDeveloperAction($slug)
@@ -114,5 +114,54 @@ class ApiController extends FOSRestController
 
         return array("contents" => $contents);
     }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content top",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @return array
+     */
+    public function getTopContentAction()
+    {
+        $contents = $this->get("content.api")->showApiTopContent();
+
+        return array("contents" => $contents);
+    }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content new",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @return array
+     */
+    public function getNewContentAction()
+    {
+        $contents = $this->get("content.api")->showApiNewContent();
+
+        return array("contents" => $contents);
+    }
+
 
 }

@@ -80,7 +80,8 @@ class MainController extends Controller
         $content->setSize($crawler->filter(".group-additional span")->eq(3)->text());
         $content->setVersion($crawler->filter(".group-additional span")->eq(2)->text());
         $content->setYear(2013);
-        $content->setInstallCount(22);
+        $content->setInstallCount(0);
+        $content->setViewCount(0);
 
         $content->setIsPublish(1);
 
