@@ -51,18 +51,6 @@ class FeatureContext extends MinkContext implements KernelAwareInterface
         $this->kernel = $kernel;
     }
 
-//
-// Place your definition and hook methods here:
-//
-//    /**
-//     * @Given /^I have done something with "([^"]*)"$/
-//     */
-//    public function iHaveDoneSomethingWith($argument)
-//    {
-//        $container = $this->kernel->getContainer();
-//        $container->get('some_service')->doSomethingWith($argument);
-//    }
-
     /**
      * @Given /the following content exist:/
      */
@@ -84,5 +72,17 @@ class FeatureContext extends MinkContext implements KernelAwareInterface
             }
         }
     }
+
+//
+// Place your definition and hook methods here:
+//
+//    /**
+//     * @Given /^I have done something with "([^"]*)"$/
+//     */
+//    public function iHaveDoneSomethingWith($argument)
+//    {
+//        $container = $this->kernel->getContainer();
+//        $container->get('some_service')->doSomethingWith($argument);
+//    }
 
 }

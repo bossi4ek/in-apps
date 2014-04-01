@@ -62,10 +62,57 @@ class ApiController extends FOSRestController
     {
         $content = $this->get("content.api")->showApiContent($id);
 
-//        if (!$content instanceof Content) {
-//            throw new NotFoundHttpException('Content not found');
-//        }
-
         return array('content' => $content);
     }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content by category",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @param $slug
+     * @return array
+     */
+    public function getContentsByCategoryAction($slug)
+    {
+        $contents = $this->get("content.api")->showApiContentByCategory($slug);
+
+        return array("contents" => $contents);
+    }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content by developer",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @param $slug
+     * @return array
+     */
+    public function getContentsByDeveloperAction($slug)
+    {
+        $contents = $this->get("content.api")->showApiContentByDeveloper($slug);
+
+        return array("contents" => $contents);
+    }
+
 }

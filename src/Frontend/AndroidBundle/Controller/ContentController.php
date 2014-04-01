@@ -76,7 +76,29 @@ class ContentController extends Controller
 
     public function showAllByDeveloperAction(Request $request)
     {
+        $slug = $request->attributes->get('slug');
+        $category = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Developer')->findOneBy(array('slug' => $slug));
+        $data = $this->getContentService()->findAllByDeveloper($slug);
 
+        $page = $request->get('page');
+
+        $adapter = new DoctrineORMAdapter($data);
+
+        $pagerfanta = new Pagerfanta($adapter);
+        if(!$page) {
+            $page = 1;
+        }
+
+        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
+        $pagerfanta->setCurrentPage($page);
+        $data = $pagerfanta->getCurrentPageResults();
+
+        return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
+                'category' => $category,
+                'data' => $data,
+                'page' => $page,
+                'pagerfanta' => $pagerfanta)
+        );
     }
 
     public function showNewAction(Request $request)

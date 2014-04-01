@@ -6,6 +6,17 @@ use Doctrine\ORM\EntityRepository;
 
 class ContentRepository extends EntityRepository
 {
+    private $is_api = false;
+
+    public function setIsApi($is_api)
+    {
+        $this->is_api = $is_api;
+    }
+
+    public function getIsApi()
+    {
+        return $this->is_api;
+    }
 
     public function findAllContent()
     {
@@ -15,7 +26,7 @@ class ContentRepository extends EntityRepository
                 FROM FrontendAndroidBundle:Content content
                 ORDER BY content.created DESC');
 
-        return $query;
+        if (!$this->getIsApi()) return $query;
 
         try {
             return $query->getResult();
@@ -65,7 +76,7 @@ class ContentRepository extends EntityRepository
                 ORDER BY content.created DESC'
             )->setParameter('slug', $slug);
 
-        return $query;
+        if (!$this->getIsApi()) return $query;
 
         try {
             return $query->getResult();
@@ -85,7 +96,7 @@ class ContentRepository extends EntityRepository
                 ORDER BY content.created DESC'
             )->setParameter('slug', $slug);
 
-        return $query;
+        if (!$this->getIsApi()) return $query;
 
         try {
             return $query->getResult();
@@ -104,7 +115,7 @@ class ContentRepository extends EntityRepository
                 ORDER BY content.created DESC')
             ->setParameter('is_publish', 1);
 
-        return $query;
+        if (!$this->getIsApi()) return $query;
 
         try {
             return $query->getResult();
@@ -113,34 +124,4 @@ class ContentRepository extends EntityRepository
         }
     }
 
-//======================================================================================================================
-//For API
-    public function findApiAllContent()
-    {
-        $query = $this->getEntityManager()
-            ->createQuery('
-                SELECT content
-                FROM FrontendAndroidBundle:Content content
-                ORDER BY content.created DESC');
-        try {
-            return $query->getResult();
-        } catch (\Doctrine\ORM\NoResultException $e) {
-            return null;
-        }
-    }
-
-    public function findApiContentById($id)
-    {
-        $query = $this->getEntityManager()
-            ->createQuery('
-                SELECT content
-                FROM FrontendAndroidBundle:Content content
-                WHERE content.id = :id'
-            )->setParameter('id', $id);
-        try {
-            return $query->getResult();
-        } catch (\Doctrine\ORM\NoResultException $e) {
-            return null;
-        }
-    }
 }

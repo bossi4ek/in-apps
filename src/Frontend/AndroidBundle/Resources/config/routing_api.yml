@@ -10,3 +10,15 @@ api_content_element:
     requirements:
         _method: GET
         id: "\d+"
+
+api_content_by_category:
+    pattern:  /contents/category/{slug}
+    defaults: { _controller: FrontendAndroidBundle:Api:getContentsByCategory, _format: ~ }
+    requirements:
+        _method: GET
+
+api_content_by_developer:
+    pattern:  /contents/developer/{slug}
+    defaults: { _controller: FrontendAndroidBundle:Api:getContentsByDeveloper, _format: ~ }
+    requirements:
+        _method: GET
