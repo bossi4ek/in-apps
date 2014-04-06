@@ -2,13 +2,19 @@ frontend_user:
     resource: "@FrontendUserBundle/Resources/config/routing.yml"
     prefix:   /
 
+frontend_android:
+    resource: "@FrontendAndroidBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#=======================================================================================================================
 backend_android:
     resource: "@BackendAndroidBundle/Resources/config/routing.yml"
     prefix:   /admin
 
-frontend_android:
-    resource: "@FrontendAndroidBundle/Resources/config/routing.yml"
-    prefix:   /
+#=======================================================================================================================
+backend_parser:
+    resource: "@BackendParserBundle/Resources/config/routing.yml"
+    prefix:   /admin
 
 #=======================================================================================================================
 fos_user_security:

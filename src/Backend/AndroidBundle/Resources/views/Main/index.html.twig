@@ -32,6 +32,8 @@
                     <li {% if app.request.attributes.get('_route') == "backend_developer" or
                               app.request.attributes.get('_route') == "backend_developer_add" or
                               app.request.attributes.get('_route') == "backend_developer_edit" %}class="active"{% endif %}><a href="{{ path('backend_developer')}}">Разработчики</a></li>
+
+                    <li {% if app.request.attributes.get('_route') == "backend_parsers" %}class="active"{% endif %}><a href="{{ path('backend_parsers')}}">Парсеры</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav" style="float: right;">

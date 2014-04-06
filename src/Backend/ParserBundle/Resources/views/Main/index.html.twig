@@ -1,0 +1,28 @@
+{% extends 'BackendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div><h3>Парсер http://app4smart.com</h3></div>
+    <div>{{ result }}</div>
+    <div class="postFormBox">
+        {{ form_start(form) }}
+        {{ form_errors(form) }}
+        <div class="postFormFields">
+            <div class="input-group">
+                {{ form_label(form.url, 'ссылка вида "/ru/apps/soft/"') }}
+                {{ form_errors(form.url) }}
+                {{ form_widget(form.url, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="input-group">
+                <span style="margin-right: 10px;">{{ form_label(form.with_category, 'Парсить категории') }}</span>
+                {{ form_errors(form.with_category) }}
+                {{ form_widget(form.with_category) }}
+            </div>
+        </div>
+        <div class="postFormButtons">
+            <button id="parseApp4smart" type="submit" class="btn btn-primary"/>Парсить</button>
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+    <div><h3>Парсер https://play.google.com</h3></div>
+{% endblock %}

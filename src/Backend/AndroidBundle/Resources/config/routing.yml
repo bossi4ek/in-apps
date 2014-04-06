@@ -2,10 +2,6 @@ backend_main:
     pattern:  /
     defaults: { _controller: BackendAndroidBundle:Main:index}
 
-backend_pars:
-    pattern:  /pars
-    defaults: { _controller: BackendAndroidBundle:Main:pars}
-
 #=======================================================================================================================
 backend_content:
     pattern:  /content/{page}
