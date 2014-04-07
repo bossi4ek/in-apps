@@ -35,6 +35,10 @@ body {
     height: 120px;
 }
 
+.screen_img {
+    margin: 5px;
+}
+
 .post_data  {
     float: left;
     padding-left: 120px;

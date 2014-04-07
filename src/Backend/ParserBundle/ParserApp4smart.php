@@ -9,6 +9,7 @@ use Guzzle\Http\Client;
 
 use Frontend\AndroidBundle\Entity\Content;
 use Frontend\AndroidBundle\Entity\Category;
+use Frontend\AndroidBundle\Entity\Screen;
 
 class ParserApp4smart {
 
@@ -43,6 +44,7 @@ class ParserApp4smart {
 
         $crawler->filter('#category-box > li')->each(function ($node, $i) {
             $this->processContent($node);
+            exit;
         });
 
         return true;
@@ -85,8 +87,6 @@ class ParserApp4smart {
                     $this->em->flush();
                 }
                 $content->addCategory($categoryRepository->findOneBy(array('name' => $category)));
-
-//                $content->addCategory($categoryRepository->findOneBy(array('name' => $node->filter('span')->text())));
             }
         });
 
@@ -105,6 +105,11 @@ class ParserApp4smart {
 
         $this->em->persist($content);
         $this->em->flush();
+
+        //Screens
+        $crawler->filter(".story-gallery .fancybox-thumb img")->each(function ($node, $i) use ($content, $categoryRepository) {
+            $this->copyScreen($content, $this->host.$node->attr("src"));
+        });
     }
 
     public function copyImage($entity, $src)
@@ -117,6 +122,22 @@ class ParserApp4smart {
         }
         else {
             $entity->setPosterImg(null);
+        }
+
+        return 1;
+    }
+
+    public function copyScreen($entity, $src)
+    {
+        $img_data = explode("/", $src);
+        $destination = __DIR__.'/../../../web/uploads/poster';
+
+        if (copy($src, $destination."/".$img_data[count($img_data) - 1])) {
+            $screen = new Screen();
+            $screen->setImg($img_data[count($img_data) - 1]);
+            $screen->setContent($entity);
+            $this->em->persist($screen);
+            $this->em->flush();
         }
 
         return 1;

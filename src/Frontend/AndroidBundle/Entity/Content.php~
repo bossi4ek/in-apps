@@ -140,6 +140,11 @@ class Content {
      */
     protected $comments;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Screen", mappedBy="content")
+     */
+    protected $screens;
+
 
     public function __construct() {
         $this->categories = new ArrayCollection();
@@ -149,6 +154,7 @@ class Content {
         $this->users = new ArrayCollection();
 
         $this->comments = new ArrayCollection();
+        $this->screens = new ArrayCollection();
     }
 
 //======================================================================================================================
@@ -496,6 +502,29 @@ class Content {
     }
 
     /**
+     * Set view_count
+     *
+     * @param integer $viewCount
+     * @return Content
+     */
+    public function setViewCount($viewCount)
+    {
+        $this->view_count = $viewCount;
+
+        return $this;
+    }
+
+    /**
+     * Get view_count
+     *
+     * @return integer
+     */
+    public function getViewCount()
+    {
+        return $this->view_count;
+    }
+
+    /**
      * Set poster_img
      *
      * @param string $posterImg
@@ -652,5 +681,38 @@ class Content {
     public function getComments()
     {
         return $this->comments;
+    }
+
+    /**
+     * Add screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     * @return Content
+     */
+    public function addScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens[] = $screens;
+
+        return $this;
+    }
+
+    /**
+     * Remove screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     */
+    public function removeScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens->removeElement($screens);
+    }
+
+    /**
+     * Get screens
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getScreens()
+    {
+        return $this->screens;
     }
 }

@@ -69,6 +69,14 @@
                     <span style="font-weight: bold;">Описание:</span><br/>
                     {{ data.description }}
                 </div>
+
+                {% if data.screens|length > 0 %}
+                    <div style="padding: 5px;">
+                        {% for screen in data.screens %}
+                            <img src="{% if screen.img %} /uploads/poster/{{ screen.img }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="screen_img"/>
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
             {#{% if is_granted('ROLE_USER') %}#}
                 {#<div style="text-align: right; padding: 5px;">#}
