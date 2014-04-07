@@ -5,13 +5,20 @@
 
     <parameters>
         <parameter key="app4smart_host">http://app4smart.com</parameter>
+        <parameter key="play_google_host">https://play.google.com</parameter>
     </parameters>
 
     <services>
-        <service id="backend.parser.parse.App4smart"
-                 class="Backend\ParserBundle\ParseApp4smart">
+        <service id="backend.parser.parser.App4smart"
+                 class="Backend\ParserBundle\ParserApp4smart">
             <argument type="service" id="doctrine.orm.entity_manager"/>
             <argument>%app4smart_host%</argument>
+        </service>
+
+        <service id="backend.parser.parser.PlayGoogle"
+                 class="Backend\ParserBundle\ParserPlayGoogle">
+            <argument type="service" id="doctrine.orm.entity_manager"/>
+            <argument>%play_google_host%</argument>
         </service>
     </services>
 </container>

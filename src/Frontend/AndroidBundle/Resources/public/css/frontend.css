@@ -31,6 +31,8 @@ body {
 }
 
 .poster_img {
+    width: 120px;
+    height: 120px;
 }
 
 .post_data  {

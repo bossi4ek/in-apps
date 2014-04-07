@@ -5,13 +5,11 @@ namespace Backend\ParserBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 
-class ParseApp4smartType extends AbstractType
+class ParserApp4smartType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('url', 'text')
-                ->add('with_category', 'checkbox', array(
-                    'required'  => false));
+        $builder->add('url', 'text');
     }
 
     public function getName()

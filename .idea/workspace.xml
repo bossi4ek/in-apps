@@ -2,18 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aeea28f-4585-4def-bbf5-0dc0c3b7556b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/ParseApp4smart.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParseApp4smartType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Event/ContentViewEvent.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Event/ContentViewEvent.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/ParserPlayGoogle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserPlayGoogleType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParseApp4smartType.php" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserApp4smartType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/ParseApp4smart.php" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-1413H6816821d795da7b3779b.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-1413H6816821d795da7b3779b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-1951Hcc7ce6e6b11f79661806.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-1951Hcc7ce6e6b11f79661806.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-2080H8097f4274fd8d1d9cbc9.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-2080H8097f4274fd8d1d9cbc9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-2216H07e9657533e337d43d73.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-2216H07e9657533e337d43d73.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-2315Had1939f3446cdf91eab5.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-2315Had1939f3446cdf91eab5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-3014Heab0220ccdf342a02fc0.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-3014Heab0220ccdf342a02fc0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-3399Hdcaeb77da143e16ce8ca.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-3399Hdcaeb77da143e16ce8ca.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-3845H81bc48492c5c3dac1928.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-3845H81bc48492c5c3dac1928.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-3863H63562c20da8438e64370.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-3863H63562c20da8438e64370.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-4218H1e56c19fb659c3694365.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-4218H1e56c19fb659c3694365.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-4902Hb4b51341809492de7da8.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-4902Hb4b51341809492de7da8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-4966H5509ff3b6d032861ab9d.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-4966H5509ff3b6d032861ab9d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-5581H112a09010a850304c14e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-5581H112a09010a850304c14e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-5812H2824dddcd9d082ee976f.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-5812H2824dddcd9d082ee976f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-5827H81ace3e6d35823acb5ad.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-5827H81ace3e6d35823acb5ad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-5934Hd1ba555f679339ebbca1.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-5934Hd1ba555f679339ebbca1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-5944Hc230ab3fede52ad2c5f7.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-5944Hc230ab3fede52ad2c5f7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-6016H13992d97d9487fad68d9.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-6016H13992d97d9487fad68d9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-6061H4bad9d84359b22ea0a2e.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-6061H4bad9d84359b22ea0a2e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-6717He274a6ab92e60fd24e27.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-6717He274a6ab92e60fd24e27.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-6744H3afb6b4540af44b82963.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-6744H3afb6b4540af44b82963.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7508H19406cb1c5b711d8144b.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7508H19406cb1c5b711d8144b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7536H46c8ff45c0eaa2e23d63.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7536H46c8ff45c0eaa2e23d63.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7542Ha79f8320c564750314df.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7542Ha79f8320c564750314df.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7961H3047aa6569080a32080d.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7961H3047aa6569080a32080d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7967H601155e7ba9095284061.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7967H601155e7ba9095284061.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-7976H5c5fbaab9ca0f603b748.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-7976H5c5fbaab9ca0f603b748.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-8019H78f20f55f884a7e1b86a.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-8019H78f20f55f884a7e1b86a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-8138H93e9c39168c42c875b21.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-8138H93e9c39168c42c875b21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-8245Ha8a80ce877f0a08e42fa.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-8245Ha8a80ce877f0a08e42fa.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-8982Hdcab7f2b1bf50d1beb91.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-8982Hdcab7f2b1bf50d1beb91.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-9106Hbfe19106e6389c169001.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-9106Hbfe19106e6389c169001.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-9629Hb6d6b9530aaa2f19177a.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-9629Hb6d6b9530aaa2f19177a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-9641Ha49d64692f5265ce94e0.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-9641Ha49d64692f5265ce94e0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-9673H14f65ba20ac1a3d23312.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-9673H14f65ba20ac1a3d23312.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/uploads/poster/x120-9692H536721f8775921a0ab86.png" afterPath="$PROJECT_DIR$/web/uploads/poster/x120-9692H536721f8775921a0ab86.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="in-apps.local.iws" />
@@ -37,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParseApp4smart.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParseApp4smart.php">
+      <file leaf-file-name="ParserApp4smart.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2280">
+            <state line="25" column="0" selection-start="480" selection-end="604" vertical-scroll-proportion="-0.18103448" vertical-offset="480" max-vertical-offset="2490">
               <folding>
                 <element signature="e#40#71#0" expanded="true" />
               </folding>
@@ -51,18 +83,36 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="495">
+            <state line="13" column="18" selection-start="610" selection-end="610" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="65" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserPlayGoogle.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserPlayGoogle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="0" selection-start="2482" selection-end="2843" vertical-scroll-proportion="-5.54902" vertical-offset="932" max-vertical-offset="2010">
               <folding>
-                <element signature="e#611#638#0" expanded="true" />
+                <element signature="e#40#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="10" selection-start="831" selection-end="831" vertical-scroll-proportion="0.67241377" vertical-offset="0" max-vertical-offset="580">
+            <state line="26" column="81" selection-start="1034" selection-end="1044" vertical-scroll-proportion="-14.166667" vertical-offset="50" max-vertical-offset="690">
               <folding>
                 <element signature="e#51#108#0" expanded="true" />
               </folding>
@@ -70,19 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="149" selection-start="2011" selection-end="2011" vertical-scroll-proportion="-10.625" vertical-offset="270" max-vertical-offset="1050">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="32" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+            <state line="1" column="22" selection-start="32" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="135">
               <folding />
             </state>
           </provider>
@@ -91,19 +132,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="120" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+            <state line="8" column="120" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParseApp4smartType.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParseApp4smartType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="327" selection-end="340" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="390">
-              <folding>
-                <element signature="e#45#85#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -121,12 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Developer.php" />
-        <option value="$PROJECT_DIR$/src/Acme/DemoBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/TagType.php" />
-        <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/DeveloperType.php" />
-        <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/DeveloperController.php" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/DependencyInjection/FrontendAndroidExtension.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/model.xml" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/public/css/backend.css" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/ContentType.php" />
@@ -145,7 +169,6 @@
         <option value="$PROJECT_DIR$/behat.yml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/services.xml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Entity/Content.php" />
@@ -161,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/DependencyInjection/BackendParserExtension.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
-        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml" />
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParseApp4smartType.php" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Form/CategoryType.php" />
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/routing.yml" />
@@ -170,8 +192,16 @@
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/ParseApp4smart.php" />
-        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParsePlayGoogle.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParsePlayGoogleType.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserPlayGoogleType.php" />
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/ParserPlayGoogle.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserApp4smartType.php" />
+        <option value="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig" />
       </list>
     </option>
   </component>
@@ -208,6 +238,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -455,10 +486,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -487,6 +514,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -632,7 +663,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -646,9 +676,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Backend/ParserBundle" />
       <recent name="$PROJECT_DIR$/src/Backend/ParserBundle/Form" />
       <recent name="$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config" />
-      <recent name="$PROJECT_DIR$/src/Backend/ParserBundle" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category" />
     </key>
@@ -689,7 +719,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24941176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24784313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2517647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -721,21 +751,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/behat/behat/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="13" selection-end="13" vertical-scroll-proportion="0.081743866" vertical-offset="0" max-vertical-offset="367" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Features/Context/FeatureContext.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="56" selection-end="56" vertical-scroll-proportion="0.10752688" vertical-offset="0" max-vertical-offset="1035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/behat.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="57" selection-start="557" selection-end="557" vertical-scroll-proportion="0.4718543" vertical-offset="0" max-vertical-offset="604" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/behat/behat/behat.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
@@ -786,11 +801,6 @@
         <state line="76" column="44" selection-start="1992" selection-end="1992" vertical-scroll-proportion="0.5344828" vertical-offset="695" max-vertical-offset="1275" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="9" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.37251654" vertical-offset="1575" max-vertical-offset="2685" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="42" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
@@ -818,129 +828,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="29" selection-start="769" selection-end="769" vertical-scroll-proportion="0.5927835" vertical-offset="0" max-vertical-offset="582">
-          <folding />
-        </state>
+        <state line="23" column="29" selection-start="769" selection-end="769" vertical-scroll-proportion="0.5927835" vertical-offset="0" max-vertical-offset="582" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing_api.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="59" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7764901" vertical-offset="26" max-vertical-offset="630">
-          <folding />
-        </state>
+        <state line="33" column="59" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7764901" vertical-offset="26" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="36" selection-start="3913" selection-end="3913" vertical-scroll-proportion="0.27586207" vertical-offset="2015" max-vertical-offset="2595">
-          <folding />
-        </state>
+        <state line="145" column="36" selection-start="3913" selection-end="3913" vertical-scroll-proportion="0.27586207" vertical-offset="2015" max-vertical-offset="2595" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="336" selection-end="336" vertical-scroll-proportion="0.15228426" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
+        <state line="6" column="20" selection-start="336" selection-end="336" vertical-scroll-proportion="0.15228426" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/DependencyInjection/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/DependencyInjection/BackendAndroidExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
+        <state line="4" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/DependencyInjection/FrontendAndroidExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="736" selection-end="915" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="580">
-          <folding>
-            <element signature="e#62#121#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="24" column="0" selection-start="736" selection-end="915" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/DependencyInjection/BackendParserExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.6465517" vertical-offset="0" max-vertical-offset="580">
-          <folding>
-            <element signature="e#60#119#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="25" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.6465517" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/BackendParserBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="7" selection-end="38" vertical-scroll-proportion="0.049833886" vertical-offset="0" max-vertical-offset="602">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="7" selection-end="38" vertical-scroll-proportion="0.049833886" vertical-offset="0" max-vertical-offset="602" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/ContentApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="905" selection-end="905" vertical-scroll-proportion="1.0215946" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
+        <state line="41" column="17" selection-start="905" selection-end="905" vertical-scroll-proportion="1.0215946" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="359" selection-end="448" vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
+        <state line="16" column="8" selection-start="359" selection-end="448" vertical-scroll-proportion="0.38793105" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.23275863" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.23275863" vertical-offset="0" max-vertical-offset="825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="490" selection-end="511" vertical-scroll-proportion="0.4074703" vertical-offset="45" max-vertical-offset="2130">
-          <folding>
-            <element signature="e#53#110#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="19" column="36" selection-start="490" selection-end="511" vertical-scroll-proportion="0.4074703" vertical-offset="45" max-vertical-offset="2130" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Repository/ContentRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.060345" vertical-offset="1835" max-vertical-offset="2415">
-          <folding>
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-            <marker date="1396384366960" expanded="true" signature="-1:-1" placeholder="SELECT conte..FrontendAndroidBundle..." />
-          </folding>
-        </state>
+        <state line="4" column="34" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.060345" vertical-offset="1835" max-vertical-offset="2415" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/model.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="76" selection-start="424" selection-end="536" vertical-scroll-proportion="0.17766498" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="58" selection-start="2483" selection-end="2483" vertical-scroll-proportion="1.005291" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
+        <state line="7" column="76" selection-start="424" selection-end="536" vertical-scroll-proportion="0.17766498" vertical-offset="0" max-vertical-offset="591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php">
@@ -952,53 +910,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="55" selection-start="2016" selection-end="2031" vertical-scroll-proportion="0.5784832" vertical-offset="107" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="29" column="55" selection-start="2016" selection-end="2031" vertical-scroll-proportion="0.5784832" vertical-offset="107" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="0.02586207" vertical-offset="0" max-vertical-offset="1320">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="0" selection-end="58" vertical-scroll-proportion="0.02586207" vertical-offset="0" max-vertical-offset="1320" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Category/category.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="0" selection-end="935" vertical-scroll-proportion="0.077586204" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParseApp4smartType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="327" selection-end="340" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="390">
-          <folding>
-            <element signature="e#45#85#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="3" column="0" selection-start="0" selection-end="935" vertical-scroll-proportion="0.077586204" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Form/CategoryType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="387" selection-end="397" vertical-scroll-proportion="0.28448275" vertical-offset="0" max-vertical-offset="580">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="671" selection-end="671" vertical-scroll-proportion="0.35532996" vertical-offset="0" max-vertical-offset="591">
-          <folding />
-        </state>
+        <state line="13" column="23" selection-start="387" selection-end="397" vertical-scroll-proportion="0.28448275" vertical-offset="0" max-vertical-offset="580" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="110" selection-end="155" vertical-scroll-proportion="-0.95689654" vertical-offset="630" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="110" selection-end="155" vertical-scroll-proportion="-0.95689654" vertical-offset="630" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/routing.yml">
@@ -1008,25 +940,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="149" selection-start="2011" selection-end="2011" vertical-scroll-proportion="-10.625" vertical-offset="270" max-vertical-offset="1050">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="109" selection-end="109" vertical-scroll-proportion="0.10752688" vertical-offset="0" max-vertical-offset="558">
-          <folding />
-        </state>
+        <state line="4" column="57" selection-start="109" selection-end="109" vertical-scroll-proportion="0.10752688" vertical-offset="0" max-vertical-offset="558" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="61" selection-start="91" selection-end="91" vertical-scroll-proportion="0.049668875" vertical-offset="0" max-vertical-offset="1155">
-          <folding />
-        </state>
+        <state line="2" column="61" selection-start="91" selection-end="91" vertical-scroll-proportion="0.049668875" vertical-offset="0" max-vertical-offset="1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="149" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.9259259" vertical-offset="0" max-vertical-offset="1050" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
@@ -1036,29 +962,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserPlayGoogleType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="495">
+        <state line="7" column="12" selection-start="148" selection-end="148" vertical-scroll-proportion="0.18103448" vertical-offset="0" max-vertical-offset="580">
           <folding>
-            <element signature="e#611#638#0" expanded="true" />
+            <element signature="e#45#85#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParseApp4smart.php">
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2280">
+        <state line="7" column="65" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="81" selection-start="1034" selection-end="1044" vertical-scroll-proportion="-14.166667" vertical-offset="50" max-vertical-offset="690">
+          <folding>
+            <element signature="e#51#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="708" selection-end="708" vertical-scroll-proportion="0.38487974" vertical-offset="286" max-vertical-offset="2715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/Resources/views/Content/content_all.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="163" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.46031746" vertical-offset="9" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserPlayGoogle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="2482" selection-end="2843" vertical-scroll-proportion="-5.54902" vertical-offset="932" max-vertical-offset="2010">
           <folding>
             <element signature="e#40#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php">
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserApp4smartType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="10" selection-start="831" selection-end="831" vertical-scroll-proportion="0.67241377" vertical-offset="0" max-vertical-offset="580">
+        <state line="11" column="35" selection-start="303" selection-end="303" vertical-scroll-proportion="0.25862068" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/views/Main/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="610" selection-end="610" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="480" selection-end="604" vertical-scroll-proportion="-0.18103448" vertical-offset="480" max-vertical-offset="2490">
           <folding>
-            <element signature="e#51#108#0" expanded="true" />
+            <element signature="e#40#71#0" expanded="true" />
           </folding>
         </state>
       </provider>

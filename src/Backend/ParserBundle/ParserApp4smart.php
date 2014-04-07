@@ -10,7 +10,7 @@ use Guzzle\Http\Client;
 use Frontend\AndroidBundle\Entity\Content;
 use Frontend\AndroidBundle\Entity\Category;
 
-class ParseApp4smart {
+class ParserApp4smart {
 
     protected $em;
     protected $host;
@@ -23,10 +23,10 @@ class ParseApp4smart {
 
     public function parsAction($data)
     {
-        if ($data['with_category']) {
-            //pars all categories
-            $this->parsCategories();
-        }
+//        if ($data['with_category']) {
+//            //pars all categories
+//            $this->parsCategories();
+//        }
 
         // create http client instance
         $client = new Client($this->host);
@@ -68,11 +68,25 @@ class ParseApp4smart {
         $name = $crawler->filter(".si-application h1")->text();
         $description = $crawler->filter("#full-story")->text();
 
+//        echo $name."<br/>";
+//        echo $description."<br/>";
+//        exit;
+
         $content = new Content();
 
         $crawler->filter(".si-category span div")->each(function ($node, $i) use ($content, $categoryRepository) {
             if ($i != 0) {
-                $content->addCategory($categoryRepository->findOneBy(array('name' => $node->filter('span')->text())));
+                $category = $node->filter('span')->text();
+                if (is_null($categoryRepository->findOneBy(array('name' => $category)))) {
+                    $cat = new Category();
+                    $cat->setName($category);
+                    $cat->setIsPublish(1);
+                    $this->em->persist($cat);
+                    $this->em->flush();
+                }
+                $content->addCategory($categoryRepository->findOneBy(array('name' => $category)));
+
+//                $content->addCategory($categoryRepository->findOneBy(array('name' => $node->filter('span')->text())));
             }
         });
 
