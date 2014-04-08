@@ -12,7 +12,7 @@ use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 
 use Behat\Gherkin\Exception\Exception;
-
+use Behat\Behat\Context\Step;
 //
 // Require 3rd-party libraries here:
 //
@@ -71,6 +71,20 @@ class FeatureContext extends MinkContext implements KernelAwareInterface
                 );
             }
         }
+    }
+
+    /**
+     * @Given /^I logged in as "([^"]*)" with "([^"]*)" password$/
+     */
+    public function iLoggedInAsWithPassword($username, $password)
+    {
+        return array(
+            new Step\Given("I am on \"/login\""),
+            new Step\When("I fill in \"username\" with \"$username\""),
+            new Step\When("I fill in \"password\" with \"$password\""),
+            new Step\When("I press \"security.login.submit\""),
+            new Step\Then("I should be on \"/home\""),
+        );
     }
 
 //
