@@ -3,11 +3,14 @@
 {% block stylesheets %}
     {{ parent() }}
     <link href="{{ asset('bundles/frontendandroid/css/frontend.css') }}" rel="stylesheet" />
+    <link href="{{ asset('bundles/frontendandroid/plugins/pirobox/css/style.css') }}" rel="stylesheet" />
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset('bundles/frontendandroid/js/frontend.js') }}"></script>
+    <script src="{{ asset('bundles/frontendandroid/plugins/pirobox/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/frontendandroid/plugins/pirobox/js/pirobox.js') }}"></script>
 {% endblock %}
 
 {% block title %}{{ 'menu.site_name'|trans }}{% endblock %}

@@ -178,3 +178,11 @@ body {
     color: #ccf;
 }
 /*====================================================================================================================*/
+
+.pirobox_gallary img {
+    border: 2px solid #DDDDDD;
+}
+
+.pirobox_gallary img:hover {
+    border: 2px solid #49423F;
+}
