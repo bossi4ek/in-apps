@@ -2,11 +2,45 @@ body {
     width: 1024px;
     margin: 0px auto;
     background-color: #E5E5E5;
+    font-family: 'Open Sans Condensed', arial, serif;
+    font-size: 16px;
+}
+
+body a {
+    color: #428BCA;
+}
+
+body a:hover {
+    color: #2a6496;
+}
+
+.view_type {
+    float: right;
+    margin: 0 5px;
+}
+
+.view_type:hover {
+    cursor: pointer;
+    color: #CCCCCC;
+}
+
+.view_type.active {
+    color: #CCCCCC;
+}
+
+.title_main {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .postBox {
-    border-bottom: 1px dashed #cccccc;
-    margin-bottom: 40px;
+    /*border-bottom: 1px dashed #cccccc;*/
+    /*margin-bottom: 40px;*/
 }
 
 .post_element {
@@ -18,11 +52,20 @@ body {
     -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background: #fff;
-    height: 100%;
     overflow: hidden;
     position: relative;
     text-decoration: none;
     vertical-align: top;
+}
+
+.post_element.line {
+    height: 100%;
+}
+
+.post_element.block {
+    width: 256px;
+    display: inline-block;
+    height: 250px;
 }
 
 .post_poster  {
@@ -31,8 +74,8 @@ body {
 }
 
 .poster_img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .screen_img {
@@ -143,7 +186,13 @@ body {
 }
 
 .pagerfanta li.active a {
-    background-color: #808080;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.pagerfanta .prev a, .pagerfanta .next a {
+    width: 80px;
 }
 
 .pagerfanta a,
@@ -151,13 +200,15 @@ body {
     display: inline-block;
     margin-right: .2em;
     padding: .25em .35em;
-    background-color: #CCCCCC;
-    border-radius: 5px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
     color: #424242;
 }
 
 .pagerfanta a {
-    text-decoration: none;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
 }
 
 .pagerfanta a:hover {
@@ -185,4 +236,54 @@ body {
 
 .pirobox_gallary img:hover {
     border: 2px solid #49423F;
+}
+
+/*====================================================================================================================*/
+/*Recommended*/
+/*====================================================================================================================*/
+.recomm {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    margin-right: 5px;
+    color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    padding: 5px;
+}
+
+.recomm_box {
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.recomm_wrapper {
+    overflow: hidden;
+    margin: 5px;
+}
+
+.recomm_wrapper .recomm_poster {
+    display: inline-block;
+}
+
+.recomm_poster .recomm_img {
+    width: 50px;
+    height: 50px;
+}
+
+.recomm_wrapper .recomm_title {
+    display: inline-block;
+    font-size: 14px;
+    width: 180px;
+    vertical-align: middle;
 }

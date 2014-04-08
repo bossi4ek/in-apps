@@ -18,4 +18,13 @@ class MainController extends Controller
 
         return $this->render('FrontendAndroidBundle:Category:category_in_menu.html.twig', array('data' => $data));
     }
+
+    public function showRecommendedAction()
+    {
+        $data = $this->get('content')->findTopContent();
+
+        return $this->render('FrontendAndroidBundle:Main:recommended.html.twig', array(
+                'data' => $data)
+        );
+    }
 }

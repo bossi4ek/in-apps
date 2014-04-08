@@ -22,6 +22,9 @@ class ContentController extends Controller
 
     public function showAllAction(Request $request)
     {
+//        print_r($request->cookies->get('view_type'));
+//        $view_type = (!isset($request->cookies->get('view_type')) || $request->cookies->get('view_type') == 'line') ? 'line' : 'block';
+
         $data = $this->getContentService()->showAllContent();
 
         $page = $request->get('page');

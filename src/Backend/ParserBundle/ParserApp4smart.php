@@ -44,7 +44,6 @@ class ParserApp4smart {
 
         $crawler->filter('#category-box > li')->each(function ($node, $i) {
             $this->processContent($node);
-            exit;
         });
 
         return true;

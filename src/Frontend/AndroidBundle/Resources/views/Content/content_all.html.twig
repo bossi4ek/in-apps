@@ -1,11 +1,17 @@
 {% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
 
 {% block content_main %}
-    <div style="font-size: 16px;"><label>{% if category is defined %}Категория: {{ category.name }}{% else %}Все приложения{% endif %}</label></div>
+    <div class="title_main">
+        <span>
+            {% if category is defined %}Категория: {{ category.name }}{% else %}Все приложения{% endif %}
+        </span>
+        <span class="glyphicon glyphicon-th view_type {% if not(app.request.cookies.has('view_type')) or app.request.cookies.get('view_type') == "block" %}active{% endif %}" data-view-type="block"></span>
+        <span class="glyphicon glyphicon-align-justify view_type {% if app.request.cookies.get('view_type') == "line" %}active{% endif %}" data-view-type="line"></span>
+    </div>
     <div id="allPost" class="postBox">
         {% for content_data in data if content_data.name %}
             {% if (is_granted('ROLE_ADMIN') or content_data.isPublish != 0) %}
-                <div class="panel panel-default post_element" id_content="{{ content_data.id }}">
+                <div class="panel panel-default post_element {% if not(app.request.cookies.has('view_type')) or app.request.cookies.get('view_type') == "block" %}block{% else %}line{% endif %}" id_content="{{ content_data.id }}">
                     <div class="post_poster">
                         <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
                             <img src="{% if content_data.posterImg %} {{ content_data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>

@@ -4,6 +4,7 @@
     {{ parent() }}
     <link href="{{ asset('bundles/frontendandroid/css/frontend.css') }}" rel="stylesheet" />
     <link href="{{ asset('bundles/frontendandroid/plugins/pirobox/css/style.css') }}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 {% endblock %}
 
 {% block javascripts %}
@@ -46,9 +47,9 @@
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control" placeholder="Введите название">
                             </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <button type="submit" class="btn btn-default">Искать</button>
                         </form>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -56,8 +57,10 @@
         </div>
         <div style="overflow: hidden;">
             <div style="float: left; width: 250px;">
-                <div style="font-size: 16px;"><label>Рекомендуем</label></div>
-                <div class="post_element" style="margin-right: 5px;">xxx</div>
+                <div class="recomm">Рекомендуем</div>
+                <div class="recomm_box" style="margin-right: 5px;">
+                    {{ render(controller('FrontendAndroidBundle:Main:showRecommended')) }}
+                </div>
             </div>
             <div style="overflow: hidden;">
                 {% block content_main %}

@@ -1,0 +1,14 @@
+{% for value in data if value.name %}
+    <div class="recomm_wrapper">
+        <div class="recomm_poster">
+            <a href="{{ path('frontend_content_element', {'slug': value.slug}) }}">
+                <img src="{% if value.posterImg %} {{ value.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="recomm_img"/>
+            </a>
+        </div>
+        <div class="recomm_title">
+            <a href="{{ path('frontend_content_element', {'slug': value.slug}) }}">
+                {{ value.name }}
+            </a>
+        </div>
+    </div>
+{% endfor %}

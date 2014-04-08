@@ -1,3 +1,36 @@
+//======================================================================================================================
+//Запись куки
+function setCookie (name, value, expires, path, domain, secure) {
+    document.cookie = name + "=" + escape(value) +
+        ((expires) ? "; expires=" + expires : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
+}
+
+//======================================================================================================================
+//Получние куки
+function getCookie(name) {
+    var cookie = " " + document.cookie;
+    var search = " " + name + "=";
+    var setStr = null;
+    var offset = 0;
+    var end = 0;
+    if (cookie.length > 0) {
+        offset = cookie.indexOf(search);
+        if (offset != -1) {
+            offset += search.length;
+            end = cookie.indexOf(";", offset);
+            if (end == -1) {
+                end = cookie.length;
+            }
+            setStr = unescape(cookie.substring(offset, end));
+        }
+    }
+    return (setStr);
+}
+
+//======================================================================================================================
 action = function(obj) {
     $.ajax({
         type: "POST",
@@ -21,6 +54,18 @@ action = function(obj) {
     });
 };
 
+//======================================================================================================================
+initChangeViewType = function() {
+    $(".view_type").click(function(){
+        var view_type = $(this).attr("data-view-type");
+        setCookie('view_type', view_type, 0, "/");
+        $(".post_element").removeClass("line").removeClass("block").addClass(view_type);
+        $(".view_type").removeClass("active");
+        $(this).addClass("active");
+    });
+};
+
+//======================================================================================================================
 initGallery = function() {
     $().piroBox({
         my_speed: 400, //animation speed
@@ -31,6 +76,9 @@ initGallery = function() {
     });
 };
 
+//======================================================================================================================
+//======================================================================================================================
 $(document).ready(function() {
     initGallery();
+    initChangeViewType();
 });
