@@ -80,10 +80,11 @@ class FeatureContext extends MinkContext implements KernelAwareInterface
     {
         return array(
             new Step\Given("I am on \"/login\""),
+            new Step\Then("I should see \"security.login.username\""),
             new Step\When("I fill in \"username\" with \"$username\""),
             new Step\When("I fill in \"password\" with \"$password\""),
             new Step\When("I press \"security.login.submit\""),
-            new Step\Then("I should be on \"/home\""),
+            new Step\Then("I should see \"О нас\"")
         );
     }
 

@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aeea28f-4585-4def-bbf5-0dc0c3b7556b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/recommended.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php" afterPath="$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/behat.yml" afterPath="$PROJECT_DIR$/behat.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" afterPath="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,69 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ParserApp4smart.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="41" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-14.166667" vertical-offset="230" max-vertical-offset="2685">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ContentController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="33" selection-start="611" selection-end="667" vertical-scroll-proportion="-8.125" vertical-offset="45" max-vertical-offset="2055">
+            <state line="36" column="65" selection-start="1081" selection-end="1093" vertical-scroll-proportion="-8.0" vertical-offset="228" max-vertical-offset="2055">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="24" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1350">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="214" selection-end="214" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="525">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frontend.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="17" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.222222" vertical-offset="585" max-vertical-offset="4410">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recommended.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/recommended.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="32" selection-start="389" selection-end="401" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="285">
-              <folding>
-                <marker date="1396977913591" expanded="true" signature="0:576" placeholder="{% for value in data if value.name ...%}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +44,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="101" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-13.75" vertical-offset="405" max-vertical-offset="1185">
+            <state line="65" column="40" selection-start="3818" selection-end="3818" vertical-scroll-proportion="-7.2156863" vertical-offset="607" max-vertical-offset="1305">
               <folding>
                 <element signature="e#3399#3424#0" expanded="true" />
                 <element signature="e#3443#3477#0" expanded="true" />
@@ -113,10 +54,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_all.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FeatureContext.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="49" selection-start="2201" selection-end="2201" vertical-scroll-proportion="-11.375" vertical-offset="957" max-vertical-offset="1650">
+              <folding>
+                <element signature="e#59#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="feature1.feature" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="behat.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/behat.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.82615894" vertical-offset="191" max-vertical-offset="795">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="24" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml.dist" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="39" selection-start="1583" selection-end="1583" vertical-scroll-proportion="-14.375" vertical-offset="270" max-vertical-offset="1185">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content_all.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="181" selection-start="995" selection-end="995" vertical-scroll-proportion="0.3764479" vertical-offset="0" max-vertical-offset="810">
+            <state line="3" column="0" selection-start="85" selection-end="635" vertical-scroll-proportion="-0.88235295" vertical-offset="0" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -141,10 +138,6 @@
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/AndroidBundle/Controller/CategoryController.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Category/category_in_menu.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/behat.yml" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/services.xml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Event/ContentViewEvent.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/DataFixtures/ORM/LoadData.php" />
@@ -178,14 +171,18 @@
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content.html.twig" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/recommended.twig" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/recommended.html.twig" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/MainController.php" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php" />
-        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js" />
         <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php" />
+        <option value="$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/behat.yml" />
       </list>
     </option>
   </component>
@@ -600,7 +597,141 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Context" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroidBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-apps.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,26 +837,46 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-4" width="1319" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.5206738" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24941176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25568628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24941176" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25568628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -749,36 +900,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/routing_api.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="59" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7764901" vertical-offset="26" max-vertical-offset="630" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="36" selection-start="3913" selection-end="3913" vertical-scroll-proportion="0.27586207" vertical-offset="2015" max-vertical-offset="2595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="20" selection-start="336" selection-end="336" vertical-scroll-proportion="0.15228426" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/AndroidBundle/DependencyInjection/BackendAndroidExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="65" selection-end="65" vertical-scroll-proportion="0.10344828" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/DependencyInjection/FrontendAndroidExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="736" selection-end="915" vertical-scroll-proportion="0.62068963" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/DependencyInjection/BackendParserExtension.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="837" selection-end="837" vertical-scroll-proportion="0.6465517" vertical-offset="0" max-vertical-offset="580" />
@@ -859,13 +980,6 @@
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Form/ParserPlayGoogleType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="148" selection-end="148" vertical-scroll-proportion="0.18103448" vertical-offset="0" max-vertical-offset="580" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Controller/MainController.php">
@@ -1025,22 +1139,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="32" selection-start="389" selection-end="401" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="285">
           <folding>
-            <marker date="1396977913591" expanded="true" signature="0:576" placeholder="{% for value in data if value.name ...%}" />
+            <marker date="1396977913591" expanded="true" signature="-1:-1" placeholder="{% for value in data if value.name ...%}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="41" selection-start="1191" selection-end="1191" vertical-scroll-proportion="-14.166667" vertical-offset="230" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,23 +1151,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="611" selection-end="667" vertical-scroll-proportion="-8.125" vertical-offset="45" max-vertical-offset="2055">
-          <folding />
+        <state line="57" column="4" selection-start="1974" selection-end="1988" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1350">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/css/frontend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="17" selection-start="1096" selection-end="1096" vertical-scroll-proportion="-12.222222" vertical-offset="585" max-vertical-offset="4410">
+        <state line="67" column="14" selection-start="1181" selection-end="1181" vertical-scroll-proportion="-15.555555" vertical-offset="585" max-vertical-offset="4410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="85" selection-end="635" vertical-scroll-proportion="-0.88235295" vertical-offset="0" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Main/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="101" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-13.75" vertical-offset="405" max-vertical-offset="1185">
+        <state line="65" column="40" selection-start="3818" selection-end="3818" vertical-scroll-proportion="-7.2156863" vertical-offset="607" max-vertical-offset="1305">
           <folding>
             <element signature="e#3399#3424#0" expanded="true" />
             <element signature="e#3443#3477#0" expanded="true" />
@@ -1076,18 +1185,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/public/js/frontend.js">
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/Context/FeatureContext.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="1350">
+        <state line="82" column="49" selection-start="2201" selection-end="2201" vertical-scroll-proportion="-11.375" vertical-offset="957" max-vertical-offset="1650">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#59#108#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/views/Content/content_all.html.twig">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="181" selection-start="995" selection-end="995" vertical-scroll-proportion="0.3764479" vertical-offset="0" max-vertical-offset="810">
+        <state line="41" column="39" selection-start="1583" selection-end="1583" vertical-scroll-proportion="-14.375" vertical-offset="270" max-vertical-offset="1185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/ParserApp4smart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="5" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.4798387" vertical-offset="2162" max-vertical-offset="2685">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Backend/ParserBundle/Resources/config/services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="65" selection-start="447" selection-end="447" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="569">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Features/feature1.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Frontend/AndroidBundle/Controller/ContentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="65" selection-start="1081" selection-end="1093" vertical-scroll-proportion="-8.0" vertical-offset="228" max-vertical-offset="2055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/behat.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.82615894" vertical-offset="191" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
