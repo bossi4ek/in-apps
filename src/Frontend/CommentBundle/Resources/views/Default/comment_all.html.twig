@@ -1,0 +1,38 @@
+{#{% extends 'Sf2filmsFilmsBundle:Default:index.html.twig' %}#}
+
+{#{% block content_main %}#}
+    {#{% if is_granted('ROLE_ADMIN') %}#}
+        {#<div style="text-align: center;">#}
+            {#<a href="{{ path('sf2films_films_genre_add') }}">#}
+                {#<button id="add_genre" type="submit" class="btn btn-primary"/>Добавить жанр</button>#}
+            {#</a>#}
+        {#</div>#}
+    {#{% endif %}#}
+
+    {#<div style="font-size: 16px;"><label>Все жанры</label></div>#}
+    {#<div id="allPost" class="postBox">#}
+        {#{% for genre_data in data if genre_data.name %}#}
+            {#{% if (is_granted('ROLE_ADMIN') or genre_data.isPublish != 0) %}#}
+            {#<div class="panel panel-default" id_genre="{{ genre_data.id }}">#}
+                {#<div class="panel-body post_body">#}
+                    {#<div style="float: left;">#}
+                        {#{{ genre_data.name }} {% if genre_data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}#}
+                    {#</div>#}
+                    {#{% if is_granted('ROLE_ADMIN') %}#}
+                        {#<div style="float: right;">#}
+                            {#<a href="{{ path('sf2films_films_genre_edit', {'id': genre_data.id}) }}">#}
+                                {#<span class="glyphicon glyphicon-edit post_edit"></span>#}
+                            {#</a>#}
+                            {#<a href="{{ path('sf2films_films_genre_del', {'id': genre_data.id}) }}">#}
+                                {#<span class="glyphicon glyphicon-remove post_delete"></span>#}
+                            {#</a>#}
+                        {#</div>#}
+                    {#{% endif %}#}
+                {#</div>#}
+            {#</div>#}
+            {#{% endif %}#}
+        {#{% else %}#}
+            {#<div class="not_message"><center>Нет записей</center></div>#}
+        {#{% endfor %}#}
+    {#</div>#}
+{#{% endblock %}#}

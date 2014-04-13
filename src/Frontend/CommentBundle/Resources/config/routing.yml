@@ -1,0 +1,12 @@
+frontend_comment_add:
+    pattern:  /comment/add/{id}
+    defaults: { _controller: FrontendCommentBundle:Comment:addElement }
+
+frontend_comment_edit:
+    pattern:  /comment/edit/{id}
+    defaults: { _controller: FrontendCommentBundle:Comment:editElement }
+
+frontend_comment_del:
+    pattern:  /comment/del
+    defaults: { _controller: FrontendCommentBundle:Comment:delElement }
+    methods:  [POST]

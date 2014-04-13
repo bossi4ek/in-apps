@@ -1,6 +1,6 @@
 <?php
 
-namespace Frontend\AndroidBundle\Entity;
+namespace Frontend\CommentBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -11,7 +11,6 @@ use Gedmo\Mapping\Annotation as Gedmo; // Подключение Gedmo
  * @ORM\Table(name="comment")
  */
 class Comment {
-
     /**
      * @ORM\Id
      * @ORM\Column(type="integer")
@@ -43,13 +42,13 @@ class Comment {
     private $updated;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Content", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="Frontend\AndroidBundle\Entity\Content", inversedBy="comment")
      * @ORM\JoinColumn(name="id_content", referencedColumnName="id")
      */
     private $content;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Frontend\UserBundle\Entity\User", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="Frontend\UserBundle\Entity\User", inversedBy="comment")
      * @ORM\JoinColumn(name="id_user", referencedColumnName="id")
      */
     private $user;
@@ -73,7 +72,7 @@ class Comment {
     public function setTxt($txt)
     {
         $this->txt = $txt;
-
+    
         return $this;
     }
 
@@ -88,6 +87,52 @@ class Comment {
     }
 
     /**
+     * Set content
+     *
+     * @param \Frontend\AndroidBundle\Entity\Content $content
+     * @return Comment
+     */
+    public function setContent(\Frontend\AndroidBundle\Entity\Content $content = null)
+    {
+        $this->content = $content;
+    
+        return $this;
+    }
+
+    /**
+     * Get content
+     *
+     * @return \Frontend\AndroidBundle\Entity\Content
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \Frontend\UserBundle\Entity\User $user
+     * @return Comment
+     */
+    public function setUser(\Frontend\UserBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \Frontend\UserBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
      * Set created
      *
      * @param \DateTime $created
@@ -96,7 +141,7 @@ class Comment {
     public function setCreated($created)
     {
         $this->created = $created;
-
+    
         return $this;
     }
 
@@ -119,7 +164,7 @@ class Comment {
     public function setUpdated($updated)
     {
         $this->updated = $updated;
-
+    
         return $this;
     }
 
@@ -131,51 +176,5 @@ class Comment {
     public function getUpdated()
     {
         return $this->updated;
-    }
-
-    /**
-     * Set content
-     *
-     * @param \Frontend\AndroidBundle\Entity\Content $content
-     * @return Comment
-     */
-    public function setContent(\Frontend\AndroidBundle\Entity\Content $content = null)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Get content
-     *
-     * @return \Frontend\AndroidBundle\Entity\Content 
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
-
-    /**
-     * Set user
-     *
-     * @param \Frontend\UserBundle\Entity\User $user
-     * @return Comment
-     */
-    public function setUser(\Frontend\UserBundle\Entity\User $user = null)
-    {
-        $this->user = $user;
-
-        return $this;
-    }
-
-    /**
-     * Get user
-     *
-     * @return \Frontend\UserBundle\Entity\User 
-     */
-    public function getUser()
-    {
-        return $this->user;
     }
 }

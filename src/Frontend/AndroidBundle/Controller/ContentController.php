@@ -10,7 +10,9 @@ use Pagerfanta\Pagerfanta;
 use Pagerfanta\Adapter\DoctrineORMAdapter;
 
 use Symfony\Component\EventDispatcher\EventDispatcher;
+
 use Frontend\AndroidBundle\Event\ContentViewEvent;
+use Frontend\CommentBundle\Form\CommentType;
 
 class ContentController extends Controller
 {
@@ -50,6 +52,8 @@ class ContentController extends Controller
         $slug = $request->attributes->get('slug');
         $data = $this->getContentService()->findOneBySlug($slug);
 
+        $comment_form = $this->createForm(new CommentType());
+
 //----------------------------------------------------------------------------------------------------------------------
 //inc view_count
         $em = $this->getDoctrine()->getManager();
@@ -61,7 +65,12 @@ class ContentController extends Controller
         $ed->dispatch("inc_content_view", $event);
 //----------------------------------------------------------------------------------------------------------------------
 
-        return $this->render('FrontendAndroidBundle:Content:content.html.twig', array('data' => $data));
+        return $this->render('FrontendAndroidBundle:Content:content.html.twig',
+                             array(
+                                 'data' => $data,
+                                 'comment_form' => $comment_form->createView()
+                             )
+                            );
     }
 
     public function showAllByCategoryAction(Request $request)

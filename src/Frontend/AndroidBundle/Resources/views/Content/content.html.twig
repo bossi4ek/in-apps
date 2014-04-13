@@ -90,48 +90,48 @@
             {#{% endif %}#}
         </div>
 
-        {#<h4>{{ 'films.comments'|trans }}</h4>#}
-        {#{% if is_granted('ROLE_USER') %}#}
-            {#<div class="postFormBox">#}
-                {#<form action="{{ path('sf2films_comment_add', {'id': data.id}) }}" method="post" {{ form_enctype(comment_form) }} novalidate="">#}
-                    {#{{ form_errors(comment_form) }}#}
-                    {#<div class="postFormFields">#}
-                        {#<div>#}
-                            {#{{ form_label(comment_form.txt) }}#}
-                            {#{{ form_errors(comment_form.txt) }}#}
-                            {#{{ form_widget(comment_form.txt, {'attr': {'class': 'form-control'}}) }}#}
-                        {#</div>#}
-                    {#</div>#}
-                    {#<div class="postFormButtons" style="overflow: hidden; text-align: center;">#}
-                        {#<button id="addСomment" type="submit" class="btn btn-primary" style="margin-right: 10px;"/>{{ 'films.comments_add'|trans }}</button>#}
-                    {#</div>#}
-                    {#{{ form_rest(comment_form) }}#}
-                {#</form>#}
-            {#</div>#}
-        {#{% endif %}#}
+        <h4>Комментарии</h4>
+        {% if is_granted('ROLE_USER') %}
+            <div class="postFormBox">
+                <form action="{{ path('frontend_comment_add', {'id': data.id}) }}" method="post" {{ form_enctype(comment_form) }} novalidate="">
+                    {{ form_errors(comment_form) }}
+                    <div class="postFormFields">
+                        <div>
+                            {{ form_label(comment_form.txt) }}
+                            {{ form_errors(comment_form.txt) }}
+                            {{ form_widget(comment_form.txt, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                    </div>
+                    <div class="postFormButtons" style="overflow: hidden; text-align: center;">
+                        <button id="addСomment" type="submit" class="btn btn-primary" style="margin-right: 10px;"/>Добавить</button>
+                    </div>
+                    {{ form_rest(comment_form) }}
+                </form>
+            </div>
+        {% endif %}
 
-        {#{% if data.comments|length > 0 %}#}
-            {#{% for comment in data.comments %}#}
-                {#<div style="padding: 5px; border-bottom: 1px dashed #cccccc;">#}
-                    {#<div style="overflow: hidden;">#}
-                        {#<div style="float: left;">#}
-                            {#<span style="font-weight: bold;">{{ comment.user }}</span>#}
-                            {#<span style="font-size: 11px;">({{ comment.created|date('Y-m-d H:i:s') }})</span>#}
-                        {#</div>#}
-                        {#<div style="font-weight: bold; float: right">#}
-                            {#{% if is_granted('EDIT', comment) or is_granted('ROLE_ADMIN') %}#}
-                                {#<a href="{{ path('sf2films_comment_edit', {'id': comment.id}) }}">#}
-                                    {#<span class="glyphicon glyphicon-edit edit-comment-js" title="{{ 'films.edit'|trans }}"></span>#}
-                                {#</a>#}
-                            {#{% endif %}#}
-                            {#{% if is_granted('ROLE_ADMIN') %}#}
-                                {#<span style="cursor: pointer;" class="glyphicon glyphicon-remove del-comment-js" data-id="{{ comment.id }}" title="{{ 'films.delete'|trans }}"></span>#}
-                            {#{% endif %}#}
-                        {#</div>#}
-                    {#</div>#}
-                    {#<div>{{ comment.txt }}</div>#}
-                {#</div>#}
-            {#{% endfor %}#}
-        {#{% endif %}#}
+        {% if data.comments|length > 0 %}
+            {% for comment in data.comments %}
+                <div style="padding: 5px; border-bottom: 1px dashed #cccccc;">
+                    <div style="overflow: hidden;">
+                        <div style="float: left;">
+                            <span style="font-weight: bold;">{{ comment.user }}</span>
+                            <span style="font-size: 11px;">({{ comment.created|date('Y-m-d H:i:s') }})</span>
+                        </div>
+                        <div style="font-weight: bold; float: right">
+                            {% if is_granted('EDIT', comment) or is_granted('ROLE_ADMIN') %}
+                                <a href="{{ path('frontend_comment_edit', {'id': comment.id}) }}">
+                                    <span class="glyphicon glyphicon-edit edit-comment-js" title="Редактировать"></span>
+                                </a>
+                            {% endif %}
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <span style="cursor: pointer;" class="glyphicon glyphicon-remove del-comment-js" data-id="{{ comment.id }}" title="Удалить"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div>{{ comment.txt }}</div>
+                </div>
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}

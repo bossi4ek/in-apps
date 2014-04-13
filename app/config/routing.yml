@@ -6,6 +6,10 @@ frontend_android:
     resource: "@FrontendAndroidBundle/Resources/config/routing.yml"
     prefix:   /
 
+frontend_comment:
+    resource: "@FrontendCommentBundle/Resources/config/routing.yml"
+    prefix:   /
+
 ##=======================================================================================================================
 #backend_android:
 #    resource: "@BackendAndroidBundle/Resources/config/routing.yml"

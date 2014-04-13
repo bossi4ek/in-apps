@@ -136,9 +136,10 @@ class Content {
     private $users;
 
     /**
-     * @ORM\OneToMany(targetEntity="Comment", mappedBy="content")
+     * @ORM\OneToMany(targetEntity="Frontend\CommentBundle\Entity\Comment", mappedBy="content")
      */
     protected $comments;
+
 
     /**
      * @ORM\OneToMany(targetEntity="Screen", mappedBy="content")
@@ -630,10 +631,10 @@ class Content {
     /**
      * Add comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      * @return Content
      */
-    public function addComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function addComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments[] = $comments;
 
@@ -643,9 +644,9 @@ class Content {
     /**
      * Remove comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      */
-    public function removeComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function removeComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments->removeElement($comments);
     }

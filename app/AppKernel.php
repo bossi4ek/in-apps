@@ -30,6 +30,7 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle,
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Frontend\ParserBundle\FrontendParserBundle(),
+            new Frontend\CommentBundle\FrontendCommentBundle(),
 
             // Sonata and dependencies
             new Sonata\CoreBundle\SonataCoreBundle(),
