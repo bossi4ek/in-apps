@@ -24,13 +24,13 @@
                                     {{ content_data.name }} {% if content_data.isPublish == 0 %}<span style="color: red;">неопубликован</span>{% endif %}
                                 </a>
                             </div>
-                            {% if is_granted('ROLE_ADMIN') %}
-                                <div style="float: right;">
-                                    <a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">
-                                        <span class="glyphicon glyphicon-edit post_edit" title="Редактировать"></span>
-                                    </a>
-                                </div>
-                            {% endif %}
+                            {#{% if is_granted('ROLE_ADMIN') %}#}
+                                {#<div style="float: right;">#}
+                                    {#<a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">#}
+                                        {#<span class="glyphicon glyphicon-edit post_edit" title="Редактировать"></span>#}
+                                    {#</a>#}
+                                {#</div>#}
+                            {#{% endif %}#}
                         </div>
                         <div style="padding: 5px;">
                             {{ content_data.description[:200] ~ '...' }}

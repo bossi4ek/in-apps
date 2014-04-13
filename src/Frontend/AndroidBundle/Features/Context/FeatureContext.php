@@ -13,12 +13,6 @@ use Behat\Gherkin\Node\PyStringNode,
 
 use Behat\Gherkin\Exception\Exception;
 use Behat\Behat\Context\Step;
-//
-// Require 3rd-party libraries here:
-//
-//   require_once 'PHPUnit/Autoload.php';
-//   require_once 'PHPUnit/Framework/Assert/Functions.php';
-//
 
 /**
  * Feature context.

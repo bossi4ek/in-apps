@@ -30,6 +30,14 @@ class AppKernel extends Kernel
             new JMS\SerializerBundle\JMSSerializerBundle,
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
             new Backend\ParserBundle\BackendParserBundle(),
+
+            // Sonata and dependencies
+            new Sonata\CoreBundle\SonataCoreBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
