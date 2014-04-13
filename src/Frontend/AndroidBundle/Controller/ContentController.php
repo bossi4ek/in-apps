@@ -17,7 +17,7 @@ class ContentController extends Controller
 
     public function getContentService()
     {
-        return $this->get('content');
+        return $this->get('frontend.android.content');
     }
 
     public function showAllAction(Request $request)

@@ -21,7 +21,7 @@ class MainController extends Controller
 
     public function showRecommendedAction()
     {
-        $data = $this->get('content')->findTopContent();
+        $data = $this->get('frontend.android.content')->findTopContent();
 
         return $this->render('FrontendAndroidBundle:Main:recommended.html.twig', array(
                 'data' => $data)

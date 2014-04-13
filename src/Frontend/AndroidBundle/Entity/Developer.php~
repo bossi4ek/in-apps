@@ -34,9 +34,9 @@ class Developer {
     private $slug;
 
     /**
-     * @ORM\Column(type="smallint")
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="developers")
@@ -101,28 +101,5 @@ class Developer {
     public function getSlug()
     {
         return $this->slug;
-    }
-
-    /**
-     * Set is_publish
-     *
-     * @param integer $isPublish
-     * @return Developer
-     */
-    public function setIsPublish($isPublish)
-    {
-        $this->is_publish = $isPublish;
-
-        return $this;
-    }
-
-    /**
-     * Get is_publish
-     *
-     * @return integer 
-     */
-    public function getIsPublish()
-    {
-        return $this->is_publish == 1 ? true : false;
     }
 }

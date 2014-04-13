@@ -11,10 +11,9 @@ frontend_android:
 #    resource: "@BackendAndroidBundle/Resources/config/routing.yml"
 #    prefix:   /admin
 #
-##=======================================================================================================================
-#backend_parser:
-#    resource: "@BackendParserBundle/Resources/config/routing.yml"
-#    prefix:   /admin
+#=======================================================================================================================
+frontend_parser:
+    resource: "@FrontendParserBundle/Resources/config/routing.yml"
 
 #=======================================================================================================================
 #Sonata Admin

@@ -1,0 +1,49 @@
+{% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div><h3>Парсер http://app4smart.com</h3></div>
+    <div>{{ result_app4smart }}</div>
+    <div class="postFormBox">
+        {{ form_start(form_app4smart) }}
+        {{ form_errors(form_app4smart) }}
+        <div class="postFormFields">
+            <div class="input-group">
+                {{ form_label(form_app4smart.url, 'ссылка вида "/ru/apps/soft/"') }}
+                {{ form_errors(form_app4smart.url) }}
+                {{ form_widget(form_app4smart.url, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+        <div class="postFormButtons">
+            <button id="parseApp4smart" type="submit" class="btn btn-primary"/>Парсить</button>
+        </div>
+        {{ form_end(form_app4smart) }}
+    </div>
+
+    <div><h3>Парсер https://play.google.com</h3></div>
+    <div>{{ result_play_google }}</div>
+    <div class="postFormBox">
+        {{ form_start(form_play_google) }}
+        {{ form_errors(form_play_google) }}
+        <div class="postFormFields">
+            <div class="input-group">
+                {{ form_label(form_play_google.url, 'ссылка вида "/ru/apps/soft/"') }}
+                {{ form_errors(form_play_google.url) }}
+                {{ form_widget(form_play_google.url, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="input-group">
+                {{ form_label(form_play_google.count, 'количество приложений') }}
+                {{ form_errors(form_play_google.count) }}
+                {{ form_widget(form_play_google.count, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="input-group">
+                <span style="margin-right: 10px;">{{ form_label(form_play_google.with_category, 'Парсить категории') }}</span>
+                {{ form_errors(form_play_google.with_category) }}
+                {{ form_widget(form_play_google.with_category) }}
+            </div>
+        </div>
+        <div class="postFormButtons">
+            <button id="parseApp4smart" type="submit" class="btn btn-primary"/>Парсить</button>
+        </div>
+        {{ form_end(form_play_google) }}
+    </div>
+{% endblock %}

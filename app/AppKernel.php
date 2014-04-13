@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Frontend\AndroidBundle\FrontendAndroidBundle(),
-            new Backend\AndroidBundle\BackendAndroidBundle(),
+//            new Backend\AndroidBundle\BackendAndroidBundle(),
             new Frontend\UserBundle\FrontendUserBundle(),
 
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
@@ -29,7 +29,7 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle,
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
-            new Backend\ParserBundle\BackendParserBundle(),
+            new Frontend\ParserBundle\FrontendParserBundle(),
 
             // Sonata and dependencies
             new Sonata\CoreBundle\SonataCoreBundle(),

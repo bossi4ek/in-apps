@@ -58,9 +58,9 @@ class Content {
     private $description;
 
     /**
-     * @ORM\Column(type="smallint", options={"default" = 0})
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * @ORM\Column(type="smallint")
@@ -97,7 +97,7 @@ class Content {
     /**
      * @ORM\Column(type="integer")
      */
-    private $view_count;
+    private $view_count = 0;
 
     /**
      * @var string $image
@@ -384,29 +384,6 @@ class Content {
     public function getDescription()
     {
         return $this->description;
-    }
-
-    /**
-     * Set is_publish
-     *
-     * @param integer $isPublish
-     * @return Content
-     */
-    public function setIsPublish($isPublish)
-    {
-        $this->is_publish = $isPublish;
-
-        return $this;
-    }
-
-    /**
-     * Get is_publish
-     *
-     * @return integer 
-     */
-    public function getIsPublish()
-    {
-        return $this->is_publish == 1 ? true : false;
     }
 
     /**
@@ -714,5 +691,28 @@ class Content {
     public function getScreens()
     {
         return $this->screens;
+    }
+
+    /**
+     * Set is_publish
+     *
+     * @param boolean $isPublish
+     * @return Content
+     */
+    public function setIsPublish($isPublish)
+    {
+        $this->is_publish = $isPublish;
+
+        return $this;
+    }
+
+    /**
+     * Get is_publish
+     *
+     * @return boolean 
+     */
+    public function getIsPublish()
+    {
+        return $this->is_publish;
     }
 }

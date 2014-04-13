@@ -34,7 +34,7 @@ class ApiController extends FOSRestController
      */
     public function getContentsAction()
     {
-        $contents = $this->get("content.api")->showApiAllContent();
+        $contents = $this->get("frontend.android.content.api")->showApiAllContent();
 
         return array("contents" => $contents);
     }
