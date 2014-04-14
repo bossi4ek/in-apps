@@ -33,6 +33,11 @@ class Content {
         return $this->repo->findTopContent();
     }
 
+//Get top Content by category (by view_count)
+    public function findTopContentByCategory($slug){
+        return $this->repo->findTopContentByCategory($slug);
+    }
+
 //Get new Content (by created)
     public function findNewContent(){
         return $this->repo->findNewContent();

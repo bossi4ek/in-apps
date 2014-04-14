@@ -66,6 +66,18 @@ initChangeViewType = function() {
 };
 
 //======================================================================================================================
+showHideDescription = function() {
+    $(".short_description").click(function(){
+        if (getSelectionText() === true) return true;
+        $(this).hide().next().show();
+    });
+    $(".full_description").click(function(){
+        if (getSelectionText() === true) return true;
+        $(this).hide().prev().show();
+    });
+};
+
+//======================================================================================================================
 initGallery = function() {
     $().piroBox({
         my_speed: 400, //animation speed
@@ -77,8 +89,34 @@ initGallery = function() {
 };
 
 //======================================================================================================================
+//При выделении текста ничего не делать
+getSelectionText = function() {
+//----------------------------------------------------------------------------------------------------------------------
+//Выделение текста (если что то выделяем мышкой - не открывать или не закрывать)
+    var txt = '';
+    if (window.getSelection)
+    {
+        txt = window.getSelection();
+    }
+    else if (document.getSelection)
+    {
+        txt = document.getSelection();
+    }
+    else if (document.selection)
+    {
+        txt = document.selection.createRange().text;
+    }
+
+    if (txt != "") return true;
+
+    return false;
+//----------------------------------------------------------------------------------------------------------------------
+}
+
+//======================================================================================================================
 //======================================================================================================================
 $(document).ready(function() {
     initGallery();
     initChangeViewType();
+    showHideDescription();
 });

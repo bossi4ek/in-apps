@@ -136,6 +136,19 @@ class ContentController extends Controller
         );
     }
 
+    public function showTopByCategoryAction($slug)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $category = $em->getRepository('FrontendAndroidBundle:Category')->findOneBy(array('slug' => $slug));
+
+        $data = $this->getContentService()->findTopContentByCategory($slug);
+
+        return $this->render('FrontendAndroidBundle:Content:content_top_by_category.html.twig', array(
+                'category' => $category,
+                'data' => $data)
+        );
+    }
+
     public function showNewAction()
     {
         $data = $this->getContentService()->findNewContent();

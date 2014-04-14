@@ -10,9 +10,9 @@
             </div>
             <div class="panel-body post_body">
                 <div style="overflow: hidden">
-                    <div style="float: left; font-size: 18px;">
+                    <div class="content_title">
                         <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
-                            {{ data.name }} {% if data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}
+                            <h1>{{ data.name }} {% if data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}</h1>
                         </a>
                     </div>
                 </div>
@@ -44,30 +44,38 @@
                     </div>
                 {% endif %}
 
-                {% if data.year !=  0 %}
-                    <div style="padding: 5px;">
-                        <span style="font-weight: bold;">Год:</span>
-                        {{ data.year }}
-                    </div>
-                {% endif %}
-
-                {% if data.size !=  0 %}
-                    <div style="padding: 5px;">
-                        <span style="font-weight: bold;">Размер:</span>
-                        {{ data.size }}
-                    </div>
-                {% endif %}
-
-                {% if data.version !=  "" %}
-                    <div style="padding: 5px;">
-                        <span style="font-weight: bold;">Версия:</span>
-                        {{ data.version }}
-                    </div>
-                {% endif %}
-
                 <div style="padding: 5px;">
                     <span style="font-weight: bold;">Описание:</span><br/>
-                    {{ data.description }}
+                    <div class="short_description pointer" title="Показать полное описание">
+                        {{ data.description[:600] ~ '...' }}
+                        <div class="summary-shadow"></div>
+                    </div>
+                    <div class="full_description pointer no-display" title="Скрыть полное описание">
+                        {{ data.description }}
+                    </div>
+                </div>
+
+                <div class="content_add_info">
+                    {% if data.year !=  0 %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Год:</span>
+                            {{ data.year }}
+                        </div>
+                    {% endif %}
+
+                    {% if data.size !=  0 %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Размер:</span>
+                            {{ data.size }}
+                        </div>
+                    {% endif %}
+
+                    {% if data.version !=  "" %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Версия:</span>
+                            {{ data.version }}
+                        </div>
+                    {% endif %}
                 </div>
 
                 {% if data.screens|length > 0 %}
@@ -97,9 +105,9 @@
                     {{ form_errors(comment_form) }}
                     <div class="postFormFields">
                         <div>
-                            {{ form_label(comment_form.txt) }}
+                            {#{{ form_label(comment_form.txt) }}#}
                             {{ form_errors(comment_form.txt) }}
-                            {{ form_widget(comment_form.txt, {'attr': {'class': 'form-control'}}) }}
+                            {{ form_widget(comment_form.txt, {'attr': {'class': 'form-control', 'placeholder': 'Текст комментария'}}) }}
                         </div>
                     </div>
                     <div class="postFormButtons" style="overflow: hidden; text-align: center;">
@@ -108,6 +116,8 @@
                     {{ form_rest(comment_form) }}
                 </form>
             </div>
+        {% else  %}
+            Оставлять комментарии могут только зарегистрированные пользователи.
         {% endif %}
 
         {% if data.comments|length > 0 %}

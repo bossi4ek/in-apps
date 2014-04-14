@@ -287,3 +287,74 @@ body a:hover {
     width: 180px;
     vertical-align: middle;
 }
+
+.summary-shadow {
+    position: absolute;
+    height: 70px;
+    left: 395px;
+    cursor: pointer;
+    background: url("../img/shadow-review.png") repeat-x;
+    margin-top: -65px;
+    z-index: 10;
+    width: 760px;
+}
+
+.content_title {
+    float: left;
+}
+
+.content_title h1 {
+    font-size: 18px;
+}
+
+.content_add_info {
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    /*color: #3a87ad;*/
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.content_top_by_category_box {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content_top_by_category_item {
+    display: inline-block;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+
+    margin: 0 5px;
+}
+
+.content_top_by_category_item .post_poster {
+    padding: 5px;
+}
+
+
+/*====================================================================================================================*/
+.no-display {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inline-block {
+    display: inline-block;
+}

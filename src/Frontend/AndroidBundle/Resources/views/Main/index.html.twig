@@ -46,6 +46,14 @@
                             <li {% if app.request.attributes.get('_route') == "frontend_content_top" %}class="active"{% endif %}><a href="{{ path('frontend_content_top') }}">Лидеры</a></li>
                             <li {% if app.request.attributes.get('_route') == "frontend_content_new" %}class="active"{% endif %}><a href="{{ path('frontend_content_new') }}">Новинки</a></li>
                         </ul>
+                        <ul class="nav navbar-nav" style="float: right;">
+                            {% if app.user.username is defined %}
+                                <li><a href="{{ path('fos_user_profile_show')}}">{{ app.user.username }}</a></li>
+                                <li {% if app.request.attributes.get('_route') == "fos_user_security_logout" %}class="active"{% endif %}><a href="{{ path('fos_user_security_logout')}}">Выйти</a></li>
+                            {% else %}
+                                <li {% if app.request.attributes.get('_route') == "fos_user_security_login" %}class="active"{% endif %}><a href="{{ path('fos_user_security_login')}}">Войти</a></li>
+                            {% endif %}
+                        </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Введите название">
@@ -65,15 +73,15 @@
             </div>
             <div style="overflow: hidden;">
                 {% block content_main %}
-                    <div class="title_main">Лучшие в категории 1</div>
-                    <div></div>
-                    <div class="title_main">Лучшие в категории 2</div>
-                    <div></div>
-                    <div class="title_main">Лучшие в категории 3</div>
-                    <div></div>
-
                     <div class="title_main">О нас</div>
                     <div></div>
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'ighry'})) }}
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'xz'})) }}
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'multimiedia'})) }}
+
                 {% endblock %}
             </div>
         </div>

@@ -79,6 +79,23 @@ class ContentRepository extends EntityRepository
         }
     }
 
+    public function findTopContentByCategory($slug)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                LEFT JOIN content.categories category
+                WHERE category.slug = :slug
+                ORDER BY content.view_count DESC'
+            )->setParameter('slug', $slug)->setMaxResults(5);
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
     public function findNewContent()
     {
         $query = $this->getEntityManager()
