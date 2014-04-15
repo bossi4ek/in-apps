@@ -3,8 +3,45 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "db7b2debe7ed85fe3654d90f67337165",
+    "hash": "0ef02b9aba695aac655ec70489d59de3",
     "packages": [
+        {
+            "name": "beberlei/loggly-bundle",
+            "version": "dev-master",
+            "target-dir": "Whitewashing/Bundle/LogglyBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beberlei/WhitewashingLogglyBundle.git",
+                "reference": "9e5992547cd9fec460421e6516c44dafa92c0b91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beberlei/WhitewashingLogglyBundle/zipball/9e5992547cd9fec460421e6516c44dafa92c0b91",
+                "reference": "9e5992547cd9fec460421e6516c44dafa92c0b91",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/monolog-bundle": "*"
+            },
+            "type": "bundle",
+            "autoload": {
+                "psr-0": {
+                    "Whitewashing\\Bundle\\LogglyBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Bundle for Symfony2 that extends Monolog for Loggly support",
+            "time": "2013-06-30 08:09:50"
+        },
         {
             "name": "behat/behat",
             "version": "v2.5.2",
@@ -1643,12 +1680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle3.git",
-                "reference": "840683b88b637a5310aefceac3722c6fd6b4c043"
+                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/840683b88b637a5310aefceac3722c6fd6b4c043",
-                "reference": "840683b88b637a5310aefceac3722c6fd6b4c043",
+                "url": "https://api.github.com/repos/guzzle/guzzle3/zipball/fa0046309160ea52aeed51b5608adfd263dfa0a2",
+                "reference": "fa0046309160ea52aeed51b5608adfd263dfa0a2",
                 "shasum": ""
             },
             "require": {
@@ -1727,7 +1764,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2014-04-09 22:38:44"
+            "time": "2014-04-14 23:10:44"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -4387,6 +4424,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "beberlei/loggly-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "gedmo/doctrine-extensions": 20,
         "stof/doctrine-extensions-bundle": 20,
