@@ -9,9 +9,9 @@ class MainController extends Controller
 {
     public function indexAction()
     {
-//        $logger = $this->get('logger');
-//        $logger->info('I just got the logger');
-//        $logger->error('An error occurred');
+        $logger = $this->get('logger');
+        $logger->error('Start test error');
+        $logger->error('End test error');
 
         return $this->render('FrontendAndroidBundle:Main:index.html.twig');
     }

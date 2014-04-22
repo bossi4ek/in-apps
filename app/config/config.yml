@@ -120,27 +120,16 @@ sonata_block:
             contexts:   [admin]
         # Your other blocks
 
-#monolog:
-#    handlers:
-#        main:
-#            type:         fingers_crossed
-#            action_level: error
-#            handler:      loggly
-#        loggly:
-#            type: service
-#            id: whitewashing_loggly.monolog_handler
-#
-#whitewashing_loggly:
-#    # Loggly input key
-#    key: 90fe5b63-8f5f-40a7-b992-06dda1aa02fd
-#
-#    # Loggly API host
-#    host: logs.loggly.com
-#
-#    # Loggly API port (443 for HTTPS, 80 for HTTP)
-#    port: 443
-#
-#    # Level to be logged (defaults to DEBUG)
-#    level: DEBUG
-#
-#    bubble: true
+monolog:
+    handlers:
+        main:
+            type:    loggly
+            level:   warning
+            token:   %loggly_token%
+            tags:    prod
+        nested:
+            type:  stream
+            path:  "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+        console:
+            type:  console
