@@ -169,4 +169,21 @@ class ContentRepository extends EntityRepository
         }
     }
 
+    public function checkExistContentInUser($slug, $id_user)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                LEFT JOIN content.users user
+                WHERE user.id = :id_user AND content.slug = :slug
+                ORDER BY content.created DESC'
+            )->setParameter('id_user', $id_user)->setParameter("slug", $slug);
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
 }

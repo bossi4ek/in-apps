@@ -172,4 +172,37 @@ class User extends BaseUser
     {
         return $this->contents;
     }
+
+    /**
+     * Add comments
+     *
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
+     * @return User
+     */
+    public function addComment(\Frontend\CommentBundle\Entity\Comment $comments)
+    {
+        $this->comments[] = $comments;
+
+        return $this;
+    }
+
+    /**
+     * Remove comments
+     *
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
+     */
+    public function removeComment(\Frontend\CommentBundle\Entity\Comment $comments)
+    {
+        $this->comments->removeElement($comments);
+    }
+
+    /**
+     * Get comments
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
 }

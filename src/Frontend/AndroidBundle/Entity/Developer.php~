@@ -102,4 +102,27 @@ class Developer {
     {
         return $this->slug;
     }
+
+    /**
+     * Set is_publish
+     *
+     * @param boolean $isPublish
+     * @return Developer
+     */
+    public function setIsPublish($isPublish)
+    {
+        $this->is_publish = $isPublish;
+
+        return $this;
+    }
+
+    /**
+     * Get is_publish
+     *
+     * @return boolean 
+     */
+    public function getIsPublish()
+    {
+        return $this->is_publish;
+    }
 }

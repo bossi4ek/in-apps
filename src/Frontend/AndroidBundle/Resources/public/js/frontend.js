@@ -31,7 +31,9 @@ function getCookie(name) {
 }
 
 //======================================================================================================================
-action = function(obj) {
+//My content
+//======================================================================================================================
+addMycontent = function(obj) {
     $.ajax({
         type: "POST",
         url: "/mycontent/add",
@@ -49,6 +51,27 @@ action = function(obj) {
             }
             else {
                 alert("Ошибка добавления");
+            }
+        }
+    });
+};
+
+//======================================================================================================================
+delMycontent = function(obj) {
+    $.ajax({
+        type: "POST",
+        url: "/mycontent/del",
+        data: {
+            id : $(obj).data('id')
+        },
+        success: function(response){
+            if (response == 1) {
+//                $(".post_element[id_content='" + $(obj).data('id') + "']").remove();
+                $(obj).parent().hide();
+                $(obj).parent().prev().show();
+            }
+            else {
+                alert("Ошибка удаления");
             }
         }
     });
@@ -119,4 +142,11 @@ $(document).ready(function() {
     initGallery();
     initChangeViewType();
     showHideDescription();
+
+    $(".add-mycontent-js").click(function(){
+        addMycontent(this);
+    });
+    $(".del-mycontent-js").click(function(){
+        delMycontent(this);
+    });
 });

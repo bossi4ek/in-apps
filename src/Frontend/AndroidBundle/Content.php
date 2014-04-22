@@ -52,4 +52,11 @@ class Content {
     public function findAllByDeveloper($slug){
         return $this->repo->findAllByDeveloper($slug);
     }
+
+//Check Exist Content In User
+    public function checkExistContentInUser($slug, $id_user){
+        return $this->repo->checkExistContentInUser($slug, $id_user);
+    }
+
+
 }

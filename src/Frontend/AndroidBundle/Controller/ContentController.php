@@ -65,6 +65,13 @@ class ContentController extends Controller
         $ed->dispatch("inc_content_view", $event);
 //----------------------------------------------------------------------------------------------------------------------
 
+        //find user
+        $id_user = $this->getUser()->getId();
+        $cz = $this->getContentService()->checkExistContentInUser($slug, $id_user);
+
+
+        var_dump($cz);
+
         return $this->render('FrontendAndroidBundle:Content:content.html.twig',
                              array(
                                  'data' => $data,

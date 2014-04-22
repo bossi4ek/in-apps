@@ -3,7 +3,7 @@
 {% block content_main %}
     <div class="title_main">
         <span>
-            {% if category is defined %}Категория: {{ category.name }}{% else %}Все приложения{% endif %}
+            Приложения пользователя {{ app.user.username }}
         </span>
         <span class="glyphicon glyphicon-th view_type {% if not(app.request.cookies.has('view_type')) or app.request.cookies.get('view_type') == "block" %}active{% endif %}" data-view-type="block"></span>
         <span class="glyphicon glyphicon-align-justify view_type {% if app.request.cookies.get('view_type') == "line" %}active{% endif %}" data-view-type="line"></span>
@@ -17,11 +17,11 @@
                             <img src="{% if content_data.posterImg %} {{ content_data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
                         </a>
                         {% if is_granted('ROLE_USER') %}
-                            <div class="mycontent_btn_box">
+                            <div class="mycontent_btn_box no-display">
                                 <button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ content_data.id }}"/>В избранное</button>
                             </div>
-                            <div class="mycontent_btn_box no-display">
-                                <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ content_data.id }}"/>Из избранного</button>
+                            <div class="mycontent_btn_box">
+                                <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ content_data.id }}"/>Из избранных</button>
                             </div>
                         {% endif %}
                     </div>
@@ -32,13 +32,6 @@
                                     {{ content_data.name }} {% if content_data.isPublish == 0 %}<span style="color: red;">неопубликован</span>{% endif %}
                                 </a>
                             </div>
-                            {#{% if is_granted('ROLE_ADMIN') %}#}
-                                {#<div style="float: right;">#}
-                                    {#<a href="{{ path('backend_content_edit', {'slug': content_data.slug}) }}">#}
-                                        {#<span class="glyphicon glyphicon-edit post_edit" title="Редактировать"></span>#}
-                                    {#</a>#}
-                                {#</div>#}
-                            {#{% endif %}#}
                         </div>
                         <div style="padding: 5px;">
                             {{ content_data.description[:200] ~ '...' }}
@@ -47,10 +40,7 @@
                 </div>
             {% endif %}
         {% else %}
-            <div class="not_message"><center>Нет записей</center></div>
+            <div class="not_message"><center>Нет избранных приложений</center></div>
         {% endfor %}
     </div>
-    {% if pagerfanta is defined %}
-        <div class="pagerfanta">{{ pagerfanta(pagerfanta, 'twitter_bootstrap') }}</div>
-    {% endif %}
 {% endblock %}

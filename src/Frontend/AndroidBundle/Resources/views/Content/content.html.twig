@@ -7,6 +7,14 @@
                 <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
                     <img src="{% if data.posterImg %} {{ data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
                 </a>
+                {% if is_granted('ROLE_USER') %}
+                    <div class="mycontent_btn_box">
+                        <button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ data.id }}"/>В избранное</button>
+                    </div>
+                    <div class="mycontent_btn_box no-display">
+                        <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ data.id }}"/>Из избранного</button>
+                    </div>
+                {% endif %}
             </div>
             <div class="panel-body post_body">
                 <div style="overflow: hidden">
@@ -88,14 +96,6 @@
                     </div>
                 {% endif %}
             </div>
-            {#{% if is_granted('ROLE_USER') %}#}
-                {#<div style="text-align: right; padding: 5px;">#}
-                    {#<button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ data.id }}"/>{{ 'films.add_my'|trans }}</button>#}
-                {#</div>#}
-                {#<div style="text-align: right; padding: 5px; display: none;">#}
-                    {#<button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ data.id }}"/>{{ 'films.del_my'|trans }}</button>#}
-                {#</div>#}
-            {#{% endif %}#}
         </div>
 
         <h4>Комментарии</h4>

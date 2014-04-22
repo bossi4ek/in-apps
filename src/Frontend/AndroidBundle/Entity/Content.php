@@ -133,6 +133,8 @@ class Content {
     /**
      * ORM\@ManyToMany(targetEntity="Frontend\UserBundle\Entity\User", mappedBy="contents")
      **/
+
+    //@ORM\JoinTable(name="user_content")
     private $users;
 
     /**
