@@ -345,6 +345,36 @@ body a:hover {
     padding: 5px;
 }
 
+/*====================================================================================================================*/
+/*login*/
+/*====================================================================================================================*/
+.login, .user_profile {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    margin-right: 5px;
+    color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    padding: 5px;
+}
+
+.login_box, .user_profile_box {
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 10px;
+}
+
 
 /*====================================================================================================================*/
 .no-display {

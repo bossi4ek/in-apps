@@ -1,0 +1,14 @@
+{% extends 'FrontendUserBundle::layout.html.twig' %}
+
+{% block fos_user_content %}
+    <div>
+        <div class="user_profile">Профиль пользователя "{{ user.username }}"</div>
+        <div class="fos_user_user_show user_profile_box">
+            <p>Логин: {{ user.username }}</p>
+            <p>Email: {{ user.email }}</p>
+            <p><a class="label label-info" href="/">Избранные</a></p>
+
+            <a href="{{ path('fos_user_security_logout')}}" class="btn btn-primary" style="float: right;">Выйти</a>
+        </div>
+    </div>
+{% endblock fos_user_content %}

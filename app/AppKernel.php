@@ -18,11 +18,12 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Frontend\AndroidBundle\FrontendAndroidBundle(),
 //            new Backend\AndroidBundle\BackendAndroidBundle(),
-            new Frontend\UserBundle\FrontendUserBundle(),
 
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+
+            new Frontend\UserBundle\FrontendUserBundle(),
 
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
 
