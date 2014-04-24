@@ -53,7 +53,7 @@ class Content {
     private $updated;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
@@ -74,12 +74,12 @@ class Content {
     private $year;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $size;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $version;
 
@@ -105,6 +105,12 @@ class Content {
      * @ORM\Column(name="poster_img", type="string", length=255, nullable=true)
      */
     private $poster_img;
+
+    /**
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
+     */
+    private $url;
+
 
     /**
      * @Assert\File(maxSize="6000000")
@@ -133,8 +139,6 @@ class Content {
     /**
      * ORM\@ManyToMany(targetEntity="Frontend\UserBundle\Entity\User", mappedBy="contents")
      **/
-
-    //@ORM\JoinTable(name="user_content")
     private $users;
 
     /**
@@ -734,5 +738,28 @@ class Content {
     public function getIsMy()
     {
         return $this->is_my;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return Content
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

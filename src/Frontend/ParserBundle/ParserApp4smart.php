@@ -68,6 +68,18 @@ class ParserApp4smart {
 
         $name = $crawler->filter(".si-application h1")->text();
         $description = $crawler->filter("#full-story")->text();
+        $url = $crawler->filter(".group-links")->count() > 0 ? $crawler->filter(".group-links")->filter("a")->eq(1)->attr("href") : "";
+
+        if ($url != "") {
+            // create http client instance
+            $client = new Client($this->host);
+            // create a request
+            $request = $client->get($url);
+            // send request / get response
+            $response = $request->send();
+            $url = $response->getInfo('url');
+        }
+
 
 //        echo $name."<br/>";
 //        echo $description."<br/>";
@@ -100,6 +112,7 @@ class ParserApp4smart {
         $content->setYear(2013);
         $content->setInstallCount(0);
         $content->setViewCount(0);
+        $content->setUrl($url);
 
         $content->setIsPublish(true);
 

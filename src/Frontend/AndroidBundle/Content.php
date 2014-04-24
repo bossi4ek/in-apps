@@ -142,9 +142,11 @@ class Content {
         $pagerfanta->setCurrentPage($page);
         $data = $pagerfanta->getCurrentPageResults();
 
-        foreach ($data as $value) {
-            $is_my = $this->checkExistContentInUser($value->getId());
-            $value->setIsMy($is_my);
+        if (count($data) > 0) {
+            foreach ($data as $value) {
+                $is_my = $this->checkExistContentInUser($value->getId());
+                $value->setIsMy($is_my);
+            }
         }
 
         $result = array(

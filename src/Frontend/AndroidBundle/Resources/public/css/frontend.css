@@ -345,6 +345,36 @@ body a:hover {
     padding: 5px;
 }
 
+.file-url {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #1ABC9C;
+    padding: 5px 8px 5px 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    color: #1ABC9C;
+    text-decoration: none;
+    float: right;
+    border-radius: 3px;
+    text-align: right;
+    width: 120px;
+    overflow: hidden;
+}
+
+.file-url .icon {
+    background: url("../img/play_icon.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.file-url .txt {
+    float: left;
+}
+
 /*====================================================================================================================*/
 /*login and profile*/
 /*====================================================================================================================*/
