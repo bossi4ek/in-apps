@@ -69,6 +69,23 @@ class ContentRepository extends EntityRepository
     }
 
 //======================================================================================================================
+    public function findContentByName($name)
+    {
+        $query = $this->getEntityManager()
+            ->createQuery('
+                SELECT content
+                FROM FrontendAndroidBundle:Content content
+                WHERE content.name LIKE :name'
+            )->setParameter('name', '%'.$name.'%');
+
+        try {
+            return $query->getResult();
+        } catch (\Doctrine\ORM\NoResultException $e) {
+            return null;
+        }
+    }
+
+//======================================================================================================================
     public function findTopContent()
     {
         $query = $this->getEntityManager()

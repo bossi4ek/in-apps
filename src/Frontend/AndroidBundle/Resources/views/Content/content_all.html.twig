@@ -7,6 +7,8 @@
                 Категория: {{ category.name }}
             {% elseif developer is defined %}
                 Разработчик: {{ developer.name }}
+            {% elseif search_name is defined %}
+                Поиск по ключу: "{{ search_name }}"
             {% else %}
                 Все приложения
             {% endif %}

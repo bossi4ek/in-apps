@@ -123,4 +123,25 @@ class ContentController extends Controller
         );
     }
 
+//======================================================================================================================
+    public function showSearchUrlAction(Request $request)
+    {
+        $name = $request->request->get('name');
+//        $name = "xxx";
+
+        return $this->redirect($this->generateUrl('frontend_search_by_name', array('name' => $name)));
+    }
+
+//======================================================================================================================
+    public function searchContentByNameAction(Request $request)
+    {
+        $name = $request->attributes->get('name');
+        $data = $this->getContentService()->findContentByName($name);
+
+        return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
+                'search_name' => $name,
+                'data' => $data)
+        );
+    }
+
 }

@@ -17,6 +17,14 @@ frontend_content_top:
     pattern:  /content/top
     defaults: { _controller: FrontendAndroidBundle:Content:showTop}
 
+frontend_search_show:
+    pattern:  /content/search
+    defaults: { _controller: FrontendAndroidBundle:Content:showSearchUrl}
+
+frontend_search_by_name:
+    pattern:  /content/search/{name}
+    defaults: { _controller: FrontendAndroidBundle:Content:searchContentByName}
+
 frontend_content_element:
     pattern:  /content/{slug}
     defaults: { _controller: FrontendAndroidBundle:Content:showElement}

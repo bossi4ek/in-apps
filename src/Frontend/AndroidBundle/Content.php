@@ -46,6 +46,23 @@ class Content {
     }
 
 //======================================================================================================================
+//Get Elements by name
+    public function findContentByName($name)
+    {
+        $data = $this->repo->findContentByName($name);
+
+        if (count($data) > 0) {
+            foreach ($data as $value) {
+                $is_my = $this->checkExistContentInUser($value->getId());
+                $value->setIsMy($is_my);
+            }
+        }
+
+        return $data;
+    }
+
+
+//======================================================================================================================
 //Get top Content (by view_count)
     public function findTopContent()
     {
