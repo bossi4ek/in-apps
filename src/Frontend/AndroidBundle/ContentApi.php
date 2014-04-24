@@ -20,7 +20,7 @@ class ContentApi {
     }
 
 //Get content by ID
-    public function showApiContent($id){
+    public function showApiOneContentById($id){
         return $this->repo->findOneContentById($id);
     }
 

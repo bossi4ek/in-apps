@@ -60,7 +60,7 @@ class ApiController extends FOSRestController
      */
     public function getContentAction($id)
     {
-        $content = $this->get("content.api")->showApiContent($id);
+        $content = $this->get("frontend.android.content.api")->showApiOneContentById($id);
 
         return array('content' => $content);
     }
@@ -85,7 +85,7 @@ class ApiController extends FOSRestController
      */
     public function getContentsByCategoryAction($slug)
     {
-        $contents = $this->get("content.api")->showApiContentByCategory($slug);
+        $contents = $this->get("frontend.android.content.api")->showApiContentByCategory($slug);
 
         return array("contents" => $contents);
     }
@@ -110,7 +110,7 @@ class ApiController extends FOSRestController
      */
     public function getContentsByDeveloperAction($slug)
     {
-        $contents = $this->get("content.api")->showApiContentByDeveloper($slug);
+        $contents = $this->get("frontend.android.content.api")->showApiContentByDeveloper($slug);
 
         return array("contents" => $contents);
     }
@@ -134,7 +134,7 @@ class ApiController extends FOSRestController
      */
     public function getTopContentAction()
     {
-        $contents = $this->get("content.api")->showApiTopContent();
+        $contents = $this->get("frontend.android.content.api")->showApiTopContent();
 
         return array("contents" => $contents);
     }
@@ -158,7 +158,7 @@ class ApiController extends FOSRestController
      */
     public function getNewContentAction()
     {
-        $contents = $this->get("content.api")->showApiNewContent();
+        $contents = $this->get("frontend.android.content.api")->showApiNewContent();
 
         return array("contents" => $contents);
     }
