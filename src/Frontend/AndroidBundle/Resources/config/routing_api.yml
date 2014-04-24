@@ -29,7 +29,7 @@ api_content_top:
     requirements:
         _method: GET
 
-api_content_top:
+api_content_new:
     pattern:  /contents/new
     defaults: { _controller: FrontendAndroidBundle:Api:getNewContent, _format: ~ }
     requirements:

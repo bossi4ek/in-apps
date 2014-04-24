@@ -8,10 +8,10 @@
                     <img src="{% if data.posterImg %} {{ data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
                 </a>
                 {% if is_granted('ROLE_USER') %}
-                    <div class="mycontent_btn_box">
+                    <div class="mycontent_btn_box {% if data.isMy == 1 %}no-display{% endif %}">
                         <button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ data.id }}"/>В избранное</button>
                     </div>
-                    <div class="mycontent_btn_box no-display">
+                    <div class="mycontent_btn_box {% if data.isMy == 0 %}no-display{% endif %}">
                         <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ data.id }}"/>Из избранного</button>
                     </div>
                 {% endif %}

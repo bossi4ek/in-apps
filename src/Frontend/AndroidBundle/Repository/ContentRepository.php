@@ -18,6 +18,7 @@ class ContentRepository extends EntityRepository
         return $this->is_api;
     }
 
+//======================================================================================================================
     public function findAllContent()
     {
         $query = $this->getEntityManager()
@@ -35,6 +36,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findAllContentForSitemap()
     {
         $query = $this->getEntityManager()
@@ -49,6 +51,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findOneBySlug($slug)
     {
         $query = $this->getEntityManager()
@@ -65,6 +68,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findTopContent()
     {
         $query = $this->getEntityManager()
@@ -79,6 +83,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findTopContentByCategory($slug)
     {
         $query = $this->getEntityManager()
@@ -96,6 +101,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findNewContent()
     {
         $query = $this->getEntityManager()
@@ -110,6 +116,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findAllByCategory($slug)
     {
         $query = $this->getEntityManager()
@@ -130,6 +137,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findAllByDeveloper($slug)
     {
         $query = $this->getEntityManager()
@@ -150,6 +158,7 @@ class ContentRepository extends EntityRepository
         }
     }
 
+//======================================================================================================================
     public function findAllContentByIsPublish()
     {
         $query = $this->getEntityManager()
@@ -169,18 +178,36 @@ class ContentRepository extends EntityRepository
         }
     }
 
-    public function checkExistContentInUser($slug, $id_user)
+//======================================================================================================================
+    public function checkExistContentInUser($id_content, $id_user)
+    {
+        $content = $this->getEntityManager()
+            ->getRepository('FrontendUserBundle:User')
+            ->findOneById($id_user);
+
+        $data = $content->getContents();
+
+        foreach ($data as $key => $value) {
+            if ($value->getId() == $id_content) {
+                return 1;
+            }
+        }
+
+        return 0;
+    }
+
+//======================================================================================================================
+    public function findOneContentById($id_content)
     {
         $query = $this->getEntityManager()
             ->createQuery('
                 SELECT content
                 FROM FrontendAndroidBundle:Content content
-                LEFT JOIN content.users user
-                WHERE user.id = :id_user AND content.slug = :slug
-                ORDER BY content.created DESC'
-            )->setParameter('id_user', $id_user)->setParameter("slug", $slug);
+                WHERE content.id = :id'
+            )->setParameter('id', $id_content);
+
         try {
-            return $query->getResult();
+            return $query->getSingleResult();
         } catch (\Doctrine\ORM\NoResultException $e) {
             return null;
         }

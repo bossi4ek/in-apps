@@ -27,23 +27,12 @@ class ContentController extends Controller
 //        print_r($request->cookies->get('view_type'));
 //        $view_type = (!isset($request->cookies->get('view_type')) || $request->cookies->get('view_type') == 'line') ? 'line' : 'block';
 
-        $data = $this->getContentService()->showAllContent();
-
-        $page = $request->get('page');
-        $adapter = new DoctrineORMAdapter($data);
-        $pagerfanta = new Pagerfanta($adapter);
-
-        if(!$page) {
-            $page = 1;
-        }
-        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
-        $pagerfanta->setCurrentPage($page);
-        $data = $pagerfanta->getCurrentPageResults();
+        $data = $this->getContentService()->showAllContent($request->get('page'));
 
         return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
-                'data' => $data,
-                'page' => $page,
-                'pagerfanta' => $pagerfanta)
+                'data' => $data['data'],
+                'page' => $data['page'],
+                'pagerfanta' => $data['pagerfanta'])
         );
     }
 
@@ -65,72 +54,41 @@ class ContentController extends Controller
         $ed->dispatch("inc_content_view", $event);
 //----------------------------------------------------------------------------------------------------------------------
 
-        //find user
-        $id_user = $this->getUser()->getId();
-        $cz = $this->getContentService()->checkExistContentInUser($slug, $id_user);
-
-
-        var_dump($cz);
-
-        return $this->render('FrontendAndroidBundle:Content:content.html.twig',
-                             array(
-                                 'data' => $data,
-                                 'comment_form' => $comment_form->createView()
-                             )
-                            );
+        return $this->render('FrontendAndroidBundle:Content:content.html.twig', array(
+                'data' => $data,
+                'comment_form' => $comment_form->createView())
+        );
     }
 
     public function showAllByCategoryAction(Request $request)
     {
         $slug = $request->attributes->get('slug');
-        $category = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Category')->findOneBy(array('slug' => $slug));
-        $data = $this->getContentService()->findAllByCategory($slug);
-
         $page = $request->get('page');
 
-        $adapter = new DoctrineORMAdapter($data);
-
-        $pagerfanta = new Pagerfanta($adapter);
-        if(!$page) {
-            $page = 1;
-        }
-
-        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
-        $pagerfanta->setCurrentPage($page);
-        $data = $pagerfanta->getCurrentPageResults();
+        $category = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Category')->findOneBy(array('slug' => $slug));
+        $data = $this->getContentService()->findAllByCategory($slug, $page);
 
         return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
                 'category' => $category,
-                'data' => $data,
-                'page' => $page,
-                'pagerfanta' => $pagerfanta)
+                'data' => $data['data'],
+                'page' => $data['page'],
+                'pagerfanta' => $data['pagerfanta'])
         );
     }
 
     public function showAllByDeveloperAction(Request $request)
     {
         $slug = $request->attributes->get('slug');
-        $category = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Developer')->findOneBy(array('slug' => $slug));
-        $data = $this->getContentService()->findAllByDeveloper($slug);
-
         $page = $request->get('page');
 
-        $adapter = new DoctrineORMAdapter($data);
-
-        $pagerfanta = new Pagerfanta($adapter);
-        if(!$page) {
-            $page = 1;
-        }
-
-        $pagerfanta->setMaxPerPage($this->container->getParameter('element_per_page'));
-        $pagerfanta->setCurrentPage($page);
-        $data = $pagerfanta->getCurrentPageResults();
+        $developer = $this->getDoctrine()->getRepository('FrontendAndroidBundle:Developer')->findOneBy(array('slug' => $slug));
+        $data = $this->getContentService()->findAllByDeveloper($slug, $page);
 
         return $this->render('FrontendAndroidBundle:Content:content_all.html.twig', array(
-                'category' => $category,
-                'data' => $data,
-                'page' => $page,
-                'pagerfanta' => $pagerfanta)
+                'developer' => $developer,
+                'data' => $data['data'],
+                'page' => $data['page'],
+                'pagerfanta' => $data['pagerfanta'])
         );
     }
 

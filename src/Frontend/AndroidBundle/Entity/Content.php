@@ -148,6 +148,7 @@ class Content {
      */
     protected $screens;
 
+    protected $is_my = 0;
 
     public function __construct() {
         $this->categories = new ArrayCollection();
@@ -717,5 +718,21 @@ class Content {
     public function getIsPublish()
     {
         return $this->is_publish;
+    }
+
+    /**
+     * @param int $is_my
+     */
+    public function setIsMy($is_my)
+    {
+        $this->is_my = $is_my;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIsMy()
+    {
+        return $this->is_my;
     }
 }

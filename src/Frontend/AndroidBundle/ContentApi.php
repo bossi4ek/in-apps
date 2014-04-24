@@ -21,7 +21,7 @@ class ContentApi {
 
 //Get content by ID
     public function showApiContent($id){
-        return $this->repo->findContentById($id);
+        return $this->repo->findOneContentById($id);
     }
 
 //Get content by category
