@@ -52,12 +52,16 @@
                     </div>
                 {% endif %}
 
-                <div class="file-url">
-                    <a class="file-button" target="_blank" href="{{ data.url }}">
-                        <div class="icon"></div>
-                        <div class="txt">Бесплатно</div>
-                    </a>
-                </div>
+                {% if data.url is not null %}
+                    <div style="padding: 5px; overflow: hidden;">
+                        <div class="file-url">
+                            <a class="file-button" target="_blank" href="{{ data.url }}">
+                                <div class="icon"></div>
+                                <div class="txt">Бесплатно</div>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
 
                 <div style="padding: 5px;">
                     <span style="font-weight: bold;">Описание:</span><br/>
