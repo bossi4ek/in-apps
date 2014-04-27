@@ -28,6 +28,14 @@ body a:hover {
     color: #CCCCCC;
 }
 
+.info_box {
+    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    margin: 5px 0px 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .title_main {
     font-size: 16px;
     font-weight: bold;
@@ -365,10 +373,11 @@ body a:hover {
 }
 
 .file-url .icon {
-    background: url("../img/play_icon.png") no-repeat;
-    width: 40px;
-    height: 40px;
+    /*background: url("../img/play_icon.png") no-repeat;*/
+    width: 20px;
+    height: 20px;
     float: left;
+    margin-right: 10px;
 }
 
 .file-url .txt {

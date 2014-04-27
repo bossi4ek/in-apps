@@ -74,11 +74,18 @@
             <div style="overflow: hidden;">
                 {% block content_main %}
                     <div class="title_main">О нас</div>
-                    <div></div>
+                    <div class="info_box">
+                        Операционная система андроид предоставляет своим пользователям множество возможностей.
+                        На данный момент существует более сотни тысяч приложений для смартфонов и планшетов – различных программ
+                        для увеличения функциональности устройств, общения в интернете, игр и многих других. Возможности любого
+                        коммуникатора всегда можно увеличить за счет использования сторонних программ, будь это
+                        альтернативный браузер или хаб. Разобраться в этом огромном ассортименте уже не так просто.
+                        Этот сайт предоставляет Вам такую возможность!
+                    </div>
 
-                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'ighry'})) }}
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'intierniet'})) }}
 
-                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'xz'})) }}
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'razvliechieniia'})) }}
 
                     {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'multimiedia'})) }}
 

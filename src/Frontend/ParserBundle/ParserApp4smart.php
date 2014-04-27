@@ -4,6 +4,7 @@ namespace Frontend\ParserBundle;
 
 use Doctrine\ORM\EntityManager;
 
+use Frontend\AndroidBundle\Entity\Developer;
 use Symfony\Component\DomCrawler\Crawler;
 use Guzzle\Http\Client;
 
@@ -13,13 +14,18 @@ use Frontend\AndroidBundle\Entity\Screen;
 
 class ParserApp4smart {
 
-    protected $em;
-    protected $host;
+    public $em;
+    public $host;
 
     function __construct(EntityManager $entityManager, $host)
     {
         $this->em = $entityManager;
         $this->host = $host;
+    }
+
+    public function getInstance()
+    {
+        return new ParserApp4smart($this->em, $this->host);
     }
 
     public function parsAction($data)
@@ -42,8 +48,11 @@ class ParserApp4smart {
         $crawler = new Crawler();
         $crawler->addContent($result);
 
-        $crawler->filter('#category-box > li')->each(function ($node, $i) {
-            $this->processContent($node);
+        $parser = $this->getInstance();
+
+        $crawler->filter('#category-box > li')->each(function ($node, $i) use ($parser) {
+//            echo "1";
+            $parser->processContent($node);
         });
 
         return true;
@@ -86,8 +95,9 @@ class ParserApp4smart {
 //        exit;
 
         $content = new Content();
+        $parser = $this->getInstance();
 
-        $crawler->filter(".si-category span div")->each(function ($node, $i) use ($content, $categoryRepository) {
+        $crawler->filter(".si-category span div")->each(function ($node, $i) use ($content, $categoryRepository, $parser) {
             if ($i != 0) {
                 $category = $node->filter('span')->text();
                 if (is_null($categoryRepository->findOneBy(array('name' => $category)))) {
@@ -95,18 +105,30 @@ class ParserApp4smart {
                     $cat->setName($category);
                     $cat->setDescription("");
                     $cat->setIsPublish(true);
-                    $this->em->persist($cat);
-                    $this->em->flush();
+                    $parser->em->persist($cat);
+                    $parser->em->flush();
                 }
                 $content->addCategory($categoryRepository->findOneBy(array('name' => $category)));
             }
+        });
+
+        $crawler->filter(".group-developer-name")->each(function ($node, $i) use ($content, $developerRepository, $parser) {
+                $developer = $node->text();
+                if (is_null($developerRepository->findOneBy(array('name' => $developer)))) {
+                    $dev = new Developer();
+                    $dev->setName($developer);
+                    $dev->setIsPublish(true);
+                    $parser->em->persist($dev);
+                    $parser->em->flush();
+                }
+                $content->addDeveloper($developerRepository->findOneBy(array('name' => $developer)));
         });
 
         $this->copyImage($content, $this->host.$node->filter('img')->attr("src"));
 
         $content->setName($name);
         $content->setDescription($description);
-        $content->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
+//        $content->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
         $content->setSize($crawler->filter("#size")->count() > 0 ? $crawler->filter("#size")->text() : "");
         $content->setVersion($crawler->filter("#version")->count() > 0 ? $crawler->filter("#version")->text() : "");
         $content->setYear(2013);
@@ -120,8 +142,8 @@ class ParserApp4smart {
         $this->em->flush();
 
         //Screens
-        $crawler->filter(".story-gallery .fancybox-thumb img")->each(function ($node, $i) use ($content, $categoryRepository) {
-            $this->copyScreen($content, $this->host.$node->attr("src"));
+        $crawler->filter(".story-gallery .fancybox-thumb img")->each(function ($node, $i) use ($content, $categoryRepository, $parser) {
+            $parser->copyScreen($content, $parser->host.$node->attr("src"));
         });
     }
 
