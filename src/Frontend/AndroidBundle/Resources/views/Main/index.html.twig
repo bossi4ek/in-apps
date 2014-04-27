@@ -3,11 +3,16 @@
 {% block stylesheets %}
     {{ parent() }}
     <link href="{{ asset('bundles/frontendandroid/css/frontend.css') }}" rel="stylesheet" />
+    <link href="{{ asset('bundles/frontendandroid/plugins/pirobox/css/style.css') }}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:light&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset('bundles/frontendandroid/js/frontend.js') }}"></script>
+    {#<script src="{{ asset('bundles/frontendandroid/plugins/pirobox/js/jquery.min.js') }}"></script>#}
+    <script src="{{ asset('bundles/frontendandroid/plugins/pirobox/js/pirobox.js') }}"></script>
+    <script src="{{ asset('bundles/frontendcomment/js/comment.js') }}"></script>
 {% endblock %}
 
 {% block title %}{{ 'menu.site_name'|trans }}{% endblock %}
@@ -18,9 +23,74 @@
 
     <div id="content_main">
         <div>
-            {% block content_main %}
-                Android apps (Главная страница)
-            {% endblock %}
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ path('homepage') }}">IN-APPS.LOCAL</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li {% if app.request.attributes.get('_route') == "frontend_content" %}class="active"{% endif %}><a href="{{ path('frontend_content') }}">Приложения</a></li>
+                            <li class="dropdown {% if app.request.attributes.get('_route') == "frontend_content_by_category" %}active{% endif %}">
+                                {{ render(controller('FrontendAndroidBundle:Main:showCategoryInMenu')) }}
+                            </li>
+                            <li {% if app.request.attributes.get('_route') == "frontend_content_top" %}class="active"{% endif %}><a href="{{ path('frontend_content_top') }}">Лидеры</a></li>
+                            <li {% if app.request.attributes.get('_route') == "frontend_content_new" %}class="active"{% endif %}><a href="{{ path('frontend_content_new') }}">Новинки</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav" style="float: right;">
+                            {% if app.user.username is defined %}
+                                <li><a href="{{ path('fos_user_profile_show')}}">{{ app.user.username }}</a></li>
+                                <li {% if app.request.attributes.get('_route') == "fos_user_security_logout" %}class="active"{% endif %}><a href="{{ path('fos_user_security_logout')}}">Выйти</a></li>
+                            {% else %}
+                                <li {% if app.request.attributes.get('_route') == "fos_user_security_login" %}class="active"{% endif %}><a href="{{ path('fos_user_security_login')}}">Войти</a></li>
+                            {% endif %}
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search" method="post" action="{{ path('frontend_search_show') }}">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Введите название">
+                            </div>
+                            <button type="submit" class="btn btn-default">Искать</button>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div style="overflow: hidden;">
+            <div style="float: left; width: 250px;">
+                <div class="recomm">Рекомендуем</div>
+                <div class="recomm_box" style="margin-right: 5px;">
+                    {{ render(controller('FrontendAndroidBundle:Main:showRecommended')) }}
+                </div>
+            </div>
+            <div style="overflow: hidden;">
+                {% block content_main %}
+                    <div class="title_main">О нас</div>
+                    <div class="info_box">
+                        Операционная система андроид предоставляет своим пользователям множество возможностей.
+                        На данный момент существует более сотни тысяч приложений для смартфонов и планшетов – различных программ
+                        для увеличения функциональности устройств, общения в интернете, игр и многих других. Возможности любого
+                        коммуникатора всегда можно увеличить за счет использования сторонних программ, будь это
+                        альтернативный браузер или хаб. Разобраться в этом огромном ассортименте уже не так просто.
+                        Этот сайт предоставляет Вам такую возможность!
+                    </div>
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'intierniet'})) }}
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'razvliechieniia'})) }}
+
+                    {{ render(controller('FrontendAndroidBundle:Content:showTopByCategory', {'slug': 'multimiedia'})) }}
+
+                {% endblock %}
+            </div>
         </div>
     </div>
 

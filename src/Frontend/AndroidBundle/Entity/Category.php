@@ -27,16 +27,20 @@ class Category {
     private $name;
 
     /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+
+    /**
      * @Gedmo\Slug(fields={"name"}, separator="_")
      * @ORM\Column(name="slug", type="string", length=255, unique=true)
      */
-
     private $slug;
 
     /**
-     * @ORM\Column(type="smallint")
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="categories")
@@ -73,7 +77,7 @@ class Category {
     /**
      * Get name
      *
-     * @return string 
+     * @return string
      */
     public function getName()
     {
@@ -96,7 +100,7 @@ class Category {
     /**
      * Get slug
      *
-     * @return string 
+     * @return string
      */
     public function getSlug()
     {
@@ -104,9 +108,32 @@ class Category {
     }
 
     /**
+     * Set description
+     *
+     * @param string $description
+     * @return Category
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
      * Set is_publish
      *
-     * @param integer $isPublish
+     * @param boolean $isPublish
      * @return Category
      */
     public function setIsPublish($isPublish)
@@ -119,10 +146,10 @@ class Category {
     /**
      * Get is_publish
      *
-     * @return integer 
+     * @return boolean 
      */
     public function getIsPublish()
     {
-        return $this->is_publish == 1 ? true : false;
+        return $this->is_publish;
     }
 }

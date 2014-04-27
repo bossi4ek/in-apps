@@ -3,17 +3,41 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <parameters>
-        <parameter key="element_per_page">10</parameter>
-    </parameters>
-
     <services>
-        <service id="content" class="Frontend\AndroidBundle\Content">
+        <service id="frontend.android.content" class="Frontend\AndroidBundle\Content">
+            <argument type="service" id="content.repository"/>
+            <argument type="service" id="security.context"/>
+            <argument type="service" id="service_container"/>
+        </service>
+
+        <service id="frontend.android.content.api" class="Frontend\AndroidBundle\ContentApi">
             <argument type="service" id="content.repository"/>
         </service>
 
-        <service id="content.api" class="Frontend\AndroidBundle\ContentApi">
-            <argument type="service" id="content.repository"/>
+
+        <service id="frontend.android.admin.content" class="Frontend\AndroidBundle\Admin\ContentAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Frontend" label="Content"/>
+            <argument />
+            <argument>Frontend\AndroidBundle\Entity\Content</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+            <argument />
         </service>
+
+        <service id="frontend.android.admin.category" class="Frontend\AndroidBundle\Admin\CategoryAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Frontend" label="Category"/>
+            <argument />
+            <argument>Frontend\AndroidBundle\Entity\Category</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+            <argument />
+        </service>
+
+        <service id="frontend.android.admin.developer" class="Frontend\AndroidBundle\Admin\DeveloperAdmin">
+            <tag name="sonata.admin" manager_type="orm" group="Frontend" label="Developer"/>
+            <argument />
+            <argument>Frontend\AndroidBundle\Entity\Developer</argument>
+            <argument>SonataAdminBundle:CRUD</argument>
+            <argument />
+        </service>
+
     </services>
 </container>

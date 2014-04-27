@@ -1,3 +1,15 @@
-frontend_user_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: FrontendUserBundle:Default:index }
+frontend_user_mycontent:
+    pattern:  /mycontent/{page}
+    defaults: { _controller: FrontendUserBundle:Default:showMyContent, page: 1 }
+    requirements:
+        page:  \d+
+
+frontend_user_mycontent_add:
+    pattern:  /mycontent/add
+    defaults: { _controller: FrontendUserBundle:Default:addMyContent }
+    methods:  [POST]
+
+frontend_user_mycontent_del:
+    pattern:  /mycontent/del
+    defaults: { _controller: FrontendUserBundle:Default:delMyContent }
+    methods:  [POST]

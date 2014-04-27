@@ -2,13 +2,33 @@ frontend_user:
     resource: "@FrontendUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-backend_android:
-    resource: "@BackendAndroidBundle/Resources/config/routing.yml"
-    prefix:   /admin
-
 frontend_android:
     resource: "@FrontendAndroidBundle/Resources/config/routing.yml"
     prefix:   /
+
+frontend_comment:
+    resource: "@FrontendCommentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+##=======================================================================================================================
+#backend_android:
+#    resource: "@BackendAndroidBundle/Resources/config/routing.yml"
+#    prefix:   /admin
+#
+#=======================================================================================================================
+frontend_parser:
+    resource: "@FrontendParserBundle/Resources/config/routing.yml"
+
+#=======================================================================================================================
+#Sonata Admin
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
 
 #=======================================================================================================================
 fos_user_security:
@@ -39,7 +59,6 @@ api_v1:
 
 #=======================================================================================================================
 #API Documentation
-
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
     prefix:   /api/doc

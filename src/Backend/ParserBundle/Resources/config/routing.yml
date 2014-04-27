@@ -1,0 +1,3 @@
+backend_parsers:
+    pattern:  /parsers
+    defaults: { _controller: BackendParserBundle:Main:app4smart }

@@ -34,9 +34,9 @@ class Developer {
     private $slug;
 
     /**
-     * @ORM\Column(type="smallint")
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="developers")
@@ -106,7 +106,7 @@ class Developer {
     /**
      * Set is_publish
      *
-     * @param integer $isPublish
+     * @param boolean $isPublish
      * @return Developer
      */
     public function setIsPublish($isPublish)
@@ -119,10 +119,10 @@ class Developer {
     /**
      * Get is_publish
      *
-     * @return integer 
+     * @return boolean 
      */
     public function getIsPublish()
     {
-        return $this->is_publish == 1 ? true : false;
+        return $this->is_publish;
     }
 }

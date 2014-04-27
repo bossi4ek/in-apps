@@ -27,16 +27,20 @@ class Category {
     private $name;
 
     /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+
+    /**
      * @Gedmo\Slug(fields={"name"}, separator="_")
      * @ORM\Column(name="slug", type="string", length=255, unique=true)
      */
-
     private $slug;
 
     /**
-     * @ORM\Column(type="smallint")
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="categories")
@@ -45,5 +49,107 @@ class Category {
 
     public function __construct() {
         $this->contents = new ArrayCollection();
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Category
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     * @return Category
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Category
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set is_publish
+     *
+     * @param boolean $isPublish
+     * @return Category
+     */
+    public function setIsPublish($isPublish)
+    {
+        $this->is_publish = $isPublish;
+
+        return $this;
+    }
+
+    /**
+     * Get is_publish
+     *
+     * @return boolean 
+     */
+    public function getIsPublish()
+    {
+        return $this->is_publish;
     }
 }

@@ -1,0 +1,16 @@
+<div class="title_main">Лучшие в категории {% if category is not null %} {{ category.name }} {% endif %}</div>
+<div class="content_top_by_category_box">
+    {% for content_data in data if content_data.name %}
+        {% if (is_granted('ROLE_ADMIN') or content_data.isPublish != 0) %}
+            <div class="content_top_by_category_item" id_content="{{ content_data.id }}">
+                <div class="post_poster">
+                    <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
+                        <img src="{% if content_data.posterImg %} {{ content_data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    {% else %}
+        <div class="not_message"><center>Нет записей</center></div>
+    {% endfor %}
+</div>

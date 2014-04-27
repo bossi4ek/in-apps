@@ -1,0 +1,158 @@
+{% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div id="allPost" class="postBox">
+        <div class="panel panel-default" id_content="{{ data.id }}">
+            <div class="post_poster">
+                <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
+                    <img src="{% if data.posterImg %} {{ data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
+                </a>
+                {% if is_granted('ROLE_USER') %}
+                    <div class="mycontent_btn_box {% if data.isMy == 1 %}no-display{% endif %}">
+                        <button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ data.id }}"/>В избранное</button>
+                    </div>
+                    <div class="mycontent_btn_box {% if data.isMy == 0 %}no-display{% endif %}">
+                        <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ data.id }}"/>Из избранного</button>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="panel-body post_body">
+                <div style="overflow: hidden">
+                    <div class="content_title">
+                        <a href="{{ path('frontend_content_element', {'slug': data.slug}) }}">
+                            <h1>{{ data.name }} {% if data.isPublish == 0 %}<span style="color: red;">(неопубликованный)</span>{% endif %}</h1>
+                        </a>
+                    </div>
+                </div>
+
+                {% if data.tags|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Теги:</span>
+                        {% for tag in data.tags %}
+                            {{ tag.name }}{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.categories|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Категории:</span>
+                        {% for category in data.categories %}
+                            <a href="{{ path('frontend_content_by_category', {'slug': category.slug}) }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.developers|length > 0 %}
+                    <div style="padding: 5px;">
+                        <span style="font-weight: bold;">Разработчики:</span>
+                        {% for developer in data.developers %}
+                            <a href="{{ path('frontend_content_by_developer', {'slug': developer.slug}) }}">{{ developer.name }}</a>{% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if data.url is not null %}
+                    <div style="padding: 5px; overflow: hidden;">
+                        <div class="file-url">
+                            <a class="file-button" target="_blank" href="{{ data.url }}">
+                                <img src="/bundles/frontendandroid/img/play_icon.png" class="icon" alt="Сачать бесплатно"/>
+                                <div class="txt">Бесплатно</div>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <div style="padding: 5px;">
+                    <span style="font-weight: bold;">Описание:</span><br/>
+                    <div class="short_description pointer" title="Показать полное описание">
+                        {{ data.description[:600] ~ '...' }}
+                        <div class="summary-shadow"></div>
+                    </div>
+                    <div class="full_description pointer no-display" title="Скрыть полное описание">
+                        {{ data.description }}
+                    </div>
+                </div>
+
+                <div class="content_add_info">
+                    {% if data.year !=  0 %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Год:</span>
+                            {{ data.year }}
+                        </div>
+                    {% endif %}
+
+                    {% if data.size !=  0 %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Размер:</span>
+                            {{ data.size }}
+                        </div>
+                    {% endif %}
+
+                    {% if data.version !=  "" %}
+                        <div class="inline-block">
+                            <span style="font-weight: bold;">Версия:</span>
+                            {{ data.version }}
+                        </div>
+                    {% endif %}
+                </div>
+
+                {% if data.screens|length > 0 %}
+                    <div style="padding: 5px; text-align: center;" class="pirobox_gallary">
+                        {% for screen in data.screens %}
+                            <a href="{% if screen.img %} /uploads/poster/{{ screen.img }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="pirobox_gall">
+                                <img src="{% if screen.img %} /uploads/poster/{{ screen.img }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="screen_img"/>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <h4>Комментарии</h4>
+        {% if is_granted('ROLE_USER') %}
+            <div class="postFormBox">
+                <form action="{{ path('frontend_comment_add', {'id': data.id}) }}" method="post" {{ form_enctype(comment_form) }} novalidate="">
+                    {{ form_errors(comment_form) }}
+                    <div class="postFormFields">
+                        <div>
+                            {#{{ form_label(comment_form.txt) }}#}
+                            {{ form_errors(comment_form.txt) }}
+                            {{ form_widget(comment_form.txt, {'attr': {'class': 'form-control', 'placeholder': 'Текст комментария'}}) }}
+                        </div>
+                    </div>
+                    <div class="postFormButtons" style="overflow: hidden; text-align: center;">
+                        <button id="addСomment" type="submit" class="btn btn-primary" style="margin-right: 10px;"/>Добавить</button>
+                    </div>
+                    {{ form_rest(comment_form) }}
+                </form>
+            </div>
+        {% else  %}
+            Оставлять комментарии могут только зарегистрированные пользователи.
+        {% endif %}
+
+        {% if data.comments|length > 0 %}
+            {% for comment in data.comments %}
+                <div style="padding: 5px; border-bottom: 1px dashed #cccccc;">
+                    <div style="overflow: hidden;">
+                        <div style="float: left;">
+                            <span style="font-weight: bold;">{{ comment.user }}</span>
+                            <span style="font-size: 11px;">({{ comment.created|date('Y-m-d H:i:s') }})</span>
+                        </div>
+                        <div style="font-weight: bold; float: right">
+                            {% if is_granted('EDIT', comment) or is_granted('ROLE_ADMIN') %}
+                                <a href="{{ path('frontend_comment_edit', {'id': comment.id}) }}">
+                                    <span class="glyphicon glyphicon-edit edit-comment-js" title="Редактировать"></span>
+                                </a>
+                            {% endif %}
+                            {% if is_granted('ROLE_ADMIN') %}
+                                <span style="cursor: pointer;" class="glyphicon glyphicon-remove del-comment-js" data-id="{{ comment.id }}" title="Удалить"></span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div>{{ comment.txt }}</div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

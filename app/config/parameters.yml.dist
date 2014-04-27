@@ -13,3 +13,6 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    element_per_page: 12
+    loggly_token:     e5400788-6c73-4343-be70-75310c770f82

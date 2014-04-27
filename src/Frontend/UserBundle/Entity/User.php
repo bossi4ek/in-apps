@@ -48,7 +48,7 @@ class User extends BaseUser
     private $contents;
 
     /**
-     * @ORM\OneToMany(targetEntity="Frontend\AndroidBundle\Entity\Comment", mappedBy="content")
+     * @ORM\OneToMany(targetEntity="Frontend\CommentBundle\Entity\Comment", mappedBy="content")
      */
     private $comments;
 
@@ -176,10 +176,10 @@ class User extends BaseUser
     /**
      * Add comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      * @return User
      */
-    public function addComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function addComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments[] = $comments;
 
@@ -189,9 +189,9 @@ class User extends BaseUser
     /**
      * Remove comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      */
-    public function removeComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function removeComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments->removeElement($comments);
     }

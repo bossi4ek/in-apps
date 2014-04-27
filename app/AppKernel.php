@@ -17,18 +17,29 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Frontend\AndroidBundle\FrontendAndroidBundle(),
-            new Backend\AndroidBundle\BackendAndroidBundle(),
-            new Frontend\UserBundle\FrontendUserBundle(),
+//            new Backend\AndroidBundle\BackendAndroidBundle(),
 
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new FOS\UserBundle\FOSUserBundle(),
 
+            new Frontend\UserBundle\FrontendUserBundle(),
+
             new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
 
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle,
-            new Nelmio\ApiDocBundle\NelmioApiDocBundle()
+            new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
+            new Frontend\ParserBundle\FrontendParserBundle(),
+            new Frontend\CommentBundle\FrontendCommentBundle(),
+
+            // Sonata and dependencies
+            new Sonata\CoreBundle\SonataCoreBundle(),
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

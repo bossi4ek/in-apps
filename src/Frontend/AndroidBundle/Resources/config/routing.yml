@@ -1,3 +1,38 @@
 homepage:
     pattern:  /
     defaults: { _controller: FrontendAndroidBundle:Main:index }
+
+#=======================================================================================================================
+frontend_content:
+    pattern:  /content/{page}
+    defaults: { _controller: FrontendAndroidBundle:Content:showAll, page: 1}
+    requirements:
+        page:  \d+
+
+frontend_content_new:
+    pattern:  /content/new
+    defaults: { _controller: FrontendAndroidBundle:Content:showNew}
+
+frontend_content_top:
+    pattern:  /content/top
+    defaults: { _controller: FrontendAndroidBundle:Content:showTop}
+
+frontend_search_show:
+    pattern:  /content/search
+    defaults: { _controller: FrontendAndroidBundle:Content:showSearchUrl}
+
+frontend_search_by_name:
+    pattern:  /content/search/{name}
+    defaults: { _controller: FrontendAndroidBundle:Content:searchContentByName}
+
+frontend_content_element:
+    pattern:  /content/{slug}
+    defaults: { _controller: FrontendAndroidBundle:Content:showElement}
+
+frontend_content_by_category:
+    pattern:  /content/category/{slug}
+    defaults: { _controller: FrontendAndroidBundle:Content:showAllByCategory}
+
+frontend_content_by_developer:
+    pattern:  /content/developer/{slug}
+    defaults: { _controller: FrontendAndroidBundle:Content:showAllByDeveloper}

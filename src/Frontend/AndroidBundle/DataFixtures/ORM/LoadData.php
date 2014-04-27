@@ -44,13 +44,13 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $name = 'Тест1';
         $dev1 = new Developer();
         $dev1->setName($name);
-        $dev1->setIsPublish(1);
+        $dev1->setIsPublish(true);
         $manager->persist($dev1);
 
         $name = 'Тест2';
         $dev2 = new Developer();
         $dev2->setName($name);
-        $dev2->setIsPublish(1);
+        $dev2->setIsPublish(true);
         $manager->persist($dev2);
 
         $manager->flush();
@@ -62,25 +62,29 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $name = 'Игры';
         $category1 = new Category();
         $category1->setName($name);
-        $category1->setIsPublish(1);
+        $category1->setDescription("Игры для Android. Здесь много игр.");
+        $category1->setIsPublish(true);
         $manager->persist($category1);
 
         $name = 'Бизнес';
         $category2 = new Category();
         $category2->setName($name);
-        $category2->setIsPublish(1);
+        $category2->setDescription("Бизнес приложения для ОС Android");
+        $category2->setIsPublish(true);
         $manager->persist($category2);
 
         $name = 'Виджеты';
         $category3 = new Category();
         $category3->setName($name);
-        $category3->setIsPublish(1);
+        $category3->setDescription("Виджеты для Android");
+        $category3->setIsPublish(true);
         $manager->persist($category3);
 
         $name = 'Медицина';
         $category4 = new Category();
         $category4->setName($name);
-        $category4->setIsPublish(1);
+        $category4->setDescription("Приложения на тему медыцины для Android");
+        $category4->setIsPublish(true);
         $manager->persist($category4);
 
         $manager->flush();
@@ -100,12 +104,13 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content1->setDescription($description);
         $content1->addCategory($categoryRepository->findOneBy(array('id' => '1')));
         $content1->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
-        $content1->setSize(1000);
+        $content1->setSize("1000");
         $content1->setVersion("1.0");
         $content1->setYear(2013);
         $content1->setInstallCount(22);
+        $content1->setViewCount(0);
 
-        $content1->setIsPublish(1);
+        $content1->setIsPublish(true);
 
         $manager->persist($content1);
 
@@ -119,12 +124,13 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '2')));
         $content2->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content2->addDeveloper($developerRepository->findOneBy(array('id' => '2')));
-        $content2->setSize(2000);
+        $content2->setSize("2000");
         $content2->setVersion("1.2");
         $content2->setYear(2014);
         $content2->setInstallCount(500);
+        $content2->setViewCount(0);
 
-        $content2->setIsPublish(1);
+        $content2->setIsPublish(true);
 
         $manager->persist($content2);
 
@@ -138,12 +144,13 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content3->addCategory($categoryRepository->findOneBy(array('id' => '1')));
         $content3->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content3->addDeveloper($developerRepository->findOneBy(array('id' => '1')));
-        $content3->setSize(4000);
+        $content3->setSize("4000");
         $content3->setVersion("2");
         $content3->setYear(2014);
         $content3->setInstallCount(10);
+        $content3->setViewCount(0);
 
-        $content3->setIsPublish(1);
+        $content3->setIsPublish(true);
 
         $manager->persist($content3);
 
@@ -155,12 +162,13 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content4->setDescription($description);
         $content4->addCategory($categoryRepository->findOneBy(array('id' => '3')));
         $content4->addDeveloper($developerRepository->findOneBy(array('id' => '2')));
-        $content4->setSize(500);
+        $content4->setSize("500");
         $content4->setVersion("2.3");
         $content4->setYear(2013);
         $content4->setInstallCount(10000);
+        $content4->setViewCount(0);
 
-        $content4->setIsPublish(1);
+        $content4->setIsPublish(true);
 
         $manager->persist($content4);
 

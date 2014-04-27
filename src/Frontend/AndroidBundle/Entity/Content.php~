@@ -58,9 +58,9 @@ class Content {
     private $description;
 
     /**
-     * @ORM\Column(type="smallint", options={"default" = 0})
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * @ORM\Column(type="smallint")
@@ -74,13 +74,7 @@ class Content {
     private $year;
 
     /**
-     * @ORM\Column(type="smallint")
-     * @Assert\NotBlank(groups={"AddContent", "EditContent"})
-     * @Assert\Regex(
-     *     pattern     = "/^[0-9]+$/i",
-     *     message="Размер состоит только с цыфр",
-     *     groups={"AddContent", "EditContent"}
-     * )
+     * @ORM\Column()
      */
     private $size;
 
@@ -101,11 +95,22 @@ class Content {
     private $install_count;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $view_count = 0;
+
+    /**
      * @var string $image
      *
      * @ORM\Column(name="poster_img", type="string", length=255, nullable=true)
      */
     private $poster_img;
+
+    /**
+     * @ORM\Column()
+     */
+    private $url;
+
 
     /**
      * @Assert\File(maxSize="6000000")
@@ -137,10 +142,17 @@ class Content {
     private $users;
 
     /**
-     * @ORM\OneToMany(targetEntity="Comment", mappedBy="content")
+     * @ORM\OneToMany(targetEntity="Frontend\CommentBundle\Entity\Comment", mappedBy="content")
      */
     protected $comments;
 
+
+    /**
+     * @ORM\OneToMany(targetEntity="Screen", mappedBy="content")
+     */
+    protected $screens;
+
+    protected $is_my = 0;
 
     public function __construct() {
         $this->categories = new ArrayCollection();
@@ -150,6 +162,7 @@ class Content {
         $this->users = new ArrayCollection();
 
         $this->comments = new ArrayCollection();
+        $this->screens = new ArrayCollection();
     }
 
 //======================================================================================================================
@@ -255,4 +268,475 @@ class Content {
         }
     }
 //======================================================================================================================
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return Content
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     * @return Content
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string 
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * Set created
+     *
+     * @param \DateTime $created
+     * @return Content
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Get created
+     *
+     * @return \DateTime 
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * Set updated
+     *
+     * @param \DateTime $updated
+     * @return Content
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+
+    /**
+     * Get updated
+     *
+     * @return \DateTime 
+     */
+    public function getUpdated()
+    {
+        return $this->updated;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return Content
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set year
+     *
+     * @param integer $year
+     * @return Content
+     */
+    public function setYear($year)
+    {
+        $this->year = $year;
+
+        return $this;
+    }
+
+    /**
+     * Get year
+     *
+     * @return integer 
+     */
+    public function getYear()
+    {
+        return $this->year;
+    }
+
+    /**
+     * Set size
+     *
+     * @param integer $size
+     * @return Content
+     */
+    public function setSize($size)
+    {
+        $this->size = $size;
+
+        return $this;
+    }
+
+    /**
+     * Get size
+     *
+     * @return integer 
+     */
+    public function getSize()
+    {
+        return $this->size;
+    }
+
+    /**
+     * Set version
+     *
+     * @param string $version
+     * @return Content
+     */
+    public function setVersion($version)
+    {
+        $this->version = $version;
+
+        return $this;
+    }
+
+    /**
+     * Get version
+     *
+     * @return string 
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * Set install_count
+     *
+     * @param integer $installCount
+     * @return Content
+     */
+    public function setInstallCount($installCount)
+    {
+        $this->install_count = $installCount;
+
+        return $this;
+    }
+
+    /**
+     * Get install_count
+     *
+     * @return integer 
+     */
+    public function getInstallCount()
+    {
+        return $this->install_count;
+    }
+
+    /**
+     * Set view_count
+     *
+     * @param integer $viewCount
+     * @return Content
+     */
+    public function setViewCount($viewCount)
+    {
+        $this->view_count = $viewCount;
+
+        return $this;
+    }
+
+    /**
+     * Get view_count
+     *
+     * @return integer
+     */
+    public function getViewCount()
+    {
+        return $this->view_count;
+    }
+
+    /**
+     * Set poster_img
+     *
+     * @param string $posterImg
+     * @return Content
+     */
+    public function setPosterImg($posterImg)
+    {
+        $this->poster_img = $posterImg;
+
+        return $this;
+    }
+
+    /**
+     * Get poster_img
+     *
+     * @return string 
+     */
+    public function getPosterImg()
+    {
+        if (null === $this->poster_img) {
+            return;
+        }
+
+        return $this->getWebPath();
+    }
+
+    /**
+     * Add categories
+     *
+     * @param \Frontend\AndroidBundle\Entity\Category $categories
+     * @return Content
+     */
+    public function addCategory(\Frontend\AndroidBundle\Entity\Category $categories)
+    {
+        $this->categories[] = $categories;
+
+        return $this;
+    }
+
+    /**
+     * Remove categories
+     *
+     * @param \Frontend\AndroidBundle\Entity\Category $categories
+     */
+    public function removeCategory(\Frontend\AndroidBundle\Entity\Category $categories)
+    {
+        $this->categories->removeElement($categories);
+    }
+
+    /**
+     * Get categories
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getCategories()
+    {
+        return $this->categories;
+    }
+
+    /**
+     * Add developers
+     *
+     * @param \Frontend\AndroidBundle\Entity\Developer $developers
+     * @return Content
+     */
+    public function addDeveloper(\Frontend\AndroidBundle\Entity\Developer $developers)
+    {
+        $this->developers[] = $developers;
+
+        return $this;
+    }
+
+    /**
+     * Remove developers
+     *
+     * @param \Frontend\AndroidBundle\Entity\Developer $developers
+     */
+    public function removeDeveloper(\Frontend\AndroidBundle\Entity\Developer $developers)
+    {
+        $this->developers->removeElement($developers);
+    }
+
+    /**
+     * Get developers
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getDevelopers()
+    {
+        return $this->developers;
+    }
+
+    /**
+     * Add tags
+     *
+     * @param \Frontend\AndroidBundle\Entity\Tag $tags
+     * @return Content
+     */
+    public function addTag(\Frontend\AndroidBundle\Entity\Tag $tags)
+    {
+        $this->tags[] = $tags;
+
+        return $this;
+    }
+
+    /**
+     * Remove tags
+     *
+     * @param \Frontend\AndroidBundle\Entity\Tag $tags
+     */
+    public function removeTag(\Frontend\AndroidBundle\Entity\Tag $tags)
+    {
+        $this->tags->removeElement($tags);
+    }
+
+    /**
+     * Get tags
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getTags()
+    {
+        return $this->tags;
+    }
+
+    /**
+     * Add comments
+     *
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
+     * @return Content
+     */
+    public function addComment(\Frontend\CommentBundle\Entity\Comment $comments)
+    {
+        $this->comments[] = $comments;
+
+        return $this;
+    }
+
+    /**
+     * Remove comments
+     *
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
+     */
+    public function removeComment(\Frontend\CommentBundle\Entity\Comment $comments)
+    {
+        $this->comments->removeElement($comments);
+    }
+
+    /**
+     * Get comments
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * Add screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     * @return Content
+     */
+    public function addScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens[] = $screens;
+
+        return $this;
+    }
+
+    /**
+     * Remove screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     */
+    public function removeScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens->removeElement($screens);
+    }
+
+    /**
+     * Get screens
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getScreens()
+    {
+        return $this->screens;
+    }
+
+    /**
+     * Set is_publish
+     *
+     * @param boolean $isPublish
+     * @return Content
+     */
+    public function setIsPublish($isPublish)
+    {
+        $this->is_publish = $isPublish;
+
+        return $this;
+    }
+
+    /**
+     * Get is_publish
+     *
+     * @return boolean 
+     */
+    public function getIsPublish()
+    {
+        return $this->is_publish;
+    }
+
+    /**
+     * @param int $is_my
+     */
+    public function setIsMy($is_my)
+    {
+        $this->is_my = $is_my;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIsMy()
+    {
+        return $this->is_my;
+    }
 }

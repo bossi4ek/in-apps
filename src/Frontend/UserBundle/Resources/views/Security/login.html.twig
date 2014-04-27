@@ -1,0 +1,28 @@
+{% extends 'FrontendUserBundle::layout.html.twig' %}
+
+{% block fos_user_content %}
+{% if error %}
+    <div>{{ error|trans }}</div>
+{% endif %}
+    <center>
+        <div style="width: 500px;">
+            <div class="login">Авторизация</div>
+            <div class="login_box" style="margin-right: 5px;">
+                <form action="{{ path("fos_user_security_check") }}" method="post">
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                    <label for="username">Логин</label>
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" class="form-control" style="width: 200px;"/><br/>
+
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="_password" required="required" class="form-control" style="width: 200px;"/><br/>
+
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    <label for="remember_me">Запомнить меня</label><br/>
+
+                    <input type="submit" id="_submit" name="_submit" value="Войти" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    </center>
+{% endblock fos_user_content %}

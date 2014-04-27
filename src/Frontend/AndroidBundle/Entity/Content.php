@@ -53,14 +53,14 @@ class Content {
     private $updated;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
     /**
-     * @ORM\Column(type="smallint", options={"default" = 0})
+     * @ORM\Column(type="boolean")
      */
-    private $is_publish;
+    private $is_publish = false;
 
     /**
      * @ORM\Column(type="smallint")
@@ -74,18 +74,12 @@ class Content {
     private $year;
 
     /**
-     * @ORM\Column(type="smallint")
-     * @Assert\NotBlank(groups={"AddContent", "EditContent"})
-     * @Assert\Regex(
-     *     pattern     = "/^[0-9]+$/i",
-     *     message="Размер состоит только с цыфр",
-     *     groups={"AddContent", "EditContent"}
-     * )
+     * @ORM\Column(nullable=true)
      */
     private $size;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $version;
 
@@ -101,11 +95,22 @@ class Content {
     private $install_count;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $view_count = 0;
+
+    /**
      * @var string $image
      *
      * @ORM\Column(name="poster_img", type="string", length=255, nullable=true)
      */
     private $poster_img;
+
+    /**
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
+     */
+    private $url;
+
 
     /**
      * @Assert\File(maxSize="6000000")
@@ -137,10 +142,17 @@ class Content {
     private $users;
 
     /**
-     * @ORM\OneToMany(targetEntity="Comment", mappedBy="content")
+     * @ORM\OneToMany(targetEntity="Frontend\CommentBundle\Entity\Comment", mappedBy="content")
      */
     protected $comments;
 
+
+    /**
+     * @ORM\OneToMany(targetEntity="Screen", mappedBy="content")
+     */
+    protected $screens;
+
+    protected $is_my = 0;
 
     public function __construct() {
         $this->categories = new ArrayCollection();
@@ -150,6 +162,7 @@ class Content {
         $this->users = new ArrayCollection();
 
         $this->comments = new ArrayCollection();
+        $this->screens = new ArrayCollection();
     }
 
 //======================================================================================================================
@@ -382,29 +395,6 @@ class Content {
     }
 
     /**
-     * Set is_publish
-     *
-     * @param integer $isPublish
-     * @return Content
-     */
-    public function setIsPublish($isPublish)
-    {
-        $this->is_publish = $isPublish;
-
-        return $this;
-    }
-
-    /**
-     * Get is_publish
-     *
-     * @return integer 
-     */
-    public function getIsPublish()
-    {
-        return $this->is_publish == 1 ? true : false;
-    }
-
-    /**
      * Set year
      *
      * @param integer $year
@@ -494,6 +484,29 @@ class Content {
     public function getInstallCount()
     {
         return $this->install_count;
+    }
+
+    /**
+     * Set view_count
+     *
+     * @param integer $viewCount
+     * @return Content
+     */
+    public function setViewCount($viewCount)
+    {
+        $this->view_count = $viewCount;
+
+        return $this;
+    }
+
+    /**
+     * Get view_count
+     *
+     * @return integer
+     */
+    public function getViewCount()
+    {
+        return $this->view_count;
     }
 
     /**
@@ -625,10 +638,10 @@ class Content {
     /**
      * Add comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      * @return Content
      */
-    public function addComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function addComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments[] = $comments;
 
@@ -638,9 +651,9 @@ class Content {
     /**
      * Remove comments
      *
-     * @param \Frontend\AndroidBundle\Entity\Comment $comments
+     * @param \Frontend\CommentBundle\Entity\Comment $comments
      */
-    public function removeComment(\Frontend\AndroidBundle\Entity\Comment $comments)
+    public function removeComment(\Frontend\CommentBundle\Entity\Comment $comments)
     {
         $this->comments->removeElement($comments);
     }
@@ -653,5 +666,100 @@ class Content {
     public function getComments()
     {
         return $this->comments;
+    }
+
+    /**
+     * Add screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     * @return Content
+     */
+    public function addScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens[] = $screens;
+
+        return $this;
+    }
+
+    /**
+     * Remove screens
+     *
+     * @param \Frontend\AndroidBundle\Entity\Screen $screens
+     */
+    public function removeScreen(\Frontend\AndroidBundle\Entity\Screen $screens)
+    {
+        $this->screens->removeElement($screens);
+    }
+
+    /**
+     * Get screens
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getScreens()
+    {
+        return $this->screens;
+    }
+
+    /**
+     * Set is_publish
+     *
+     * @param boolean $isPublish
+     * @return Content
+     */
+    public function setIsPublish($isPublish)
+    {
+        $this->is_publish = $isPublish;
+
+        return $this;
+    }
+
+    /**
+     * Get is_publish
+     *
+     * @return boolean 
+     */
+    public function getIsPublish()
+    {
+        return $this->is_publish;
+    }
+
+    /**
+     * @param int $is_my
+     */
+    public function setIsMy($is_my)
+    {
+        $this->is_my = $is_my;
+    }
+
+    /**
+     * @return int
+     */
+    public function getIsMy()
+    {
+        return $this->is_my;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return Content
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
     }
 }

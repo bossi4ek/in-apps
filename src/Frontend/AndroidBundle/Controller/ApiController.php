@@ -34,7 +34,7 @@ class ApiController extends FOSRestController
      */
     public function getContentsAction()
     {
-        $contents = $this->get("content.api")->showApiAllContent();
+        $contents = $this->get("frontend.android.content.api")->showApiAllContent();
 
         return array("contents" => $contents);
     }
@@ -54,18 +54,114 @@ class ApiController extends FOSRestController
      *  }
      * )
      *
-     * @param $id
+     * @param integer  $id      the content ID
      * @return array
      * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function getContentAction($id)
     {
-        $content = $this->get("content.api")->showApiContent($id);
-
-//        if (!$content instanceof Content) {
-//            throw new NotFoundHttpException('Content not found');
-//        }
+        $content = $this->get("frontend.android.content.api")->showApiOneContentById($id);
 
         return array('content' => $content);
     }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content by category",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @param string  $slug      the category slug
+     * @return array
+     */
+    public function getContentsByCategoryAction($slug)
+    {
+        $contents = $this->get("frontend.android.content.api")->showApiContentByCategory($slug);
+
+        return array("contents" => $contents);
+    }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content by developer",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @param string  $slug      the developer slug
+     * @return array
+     */
+    public function getContentsByDeveloperAction($slug)
+    {
+        $contents = $this->get("frontend.android.content.api")->showApiContentByDeveloper($slug);
+
+        return array("contents" => $contents);
+    }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content top",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @return array
+     */
+    public function getTopContentAction()
+    {
+        $contents = $this->get("frontend.android.content.api")->showApiTopContent();
+
+        return array("contents" => $contents);
+    }
+
+    /**
+     *
+     * @ApiDoc(
+     *  resource=true,
+     *  description="Get content new",
+     *  statusCodes={
+     *      200="Returned when successful",
+     *      403="Returned when the user is not authorized to say hello",
+     *      404={
+     *        "Returned when the user is not found",
+     *        "Returned when something else is not found"
+     *      }
+     *  }
+     * )
+     *
+     * @return array
+     */
+    public function getNewContentAction()
+    {
+        $contents = $this->get("frontend.android.content.api")->showApiNewContent();
+
+        return array("contents" => $contents);
+    }
+
+
 }

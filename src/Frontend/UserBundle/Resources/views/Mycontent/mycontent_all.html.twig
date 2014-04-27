@@ -1,0 +1,46 @@
+{% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
+
+{% block content_main %}
+    <div class="title_main">
+        <span>
+            Приложения пользователя {{ app.user.username }}
+        </span>
+        <span class="glyphicon glyphicon-th view_type {% if not(app.request.cookies.has('view_type')) or app.request.cookies.get('view_type') == "block" %}active{% endif %}" data-view-type="block"></span>
+        <span class="glyphicon glyphicon-align-justify view_type {% if app.request.cookies.get('view_type') == "line" %}active{% endif %}" data-view-type="line"></span>
+    </div>
+    <div id="allPost" class="postBox">
+        {% for content_data in data if content_data.name %}
+            {% if (is_granted('ROLE_ADMIN') or content_data.isPublish != 0) %}
+                <div class="panel panel-default post_element {% if not(app.request.cookies.has('view_type')) or app.request.cookies.get('view_type') == "block" %}block{% else %}line{% endif %}" id_content="{{ content_data.id }}">
+                    <div class="post_poster">
+                        <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
+                            <img src="{% if content_data.posterImg %} {{ content_data.posterImg }} {% else %} /uploads/poster/not_img.jpg {% endif %}" class="poster_img"/>
+                        </a>
+                        {% if is_granted('ROLE_USER') %}
+                            <div class="mycontent_btn_box no-display">
+                                <button type="submit" class="btn btn-primary btn-success btn-xs add-mycontent-js" data-id="{{ content_data.id }}"/>В избранное</button>
+                            </div>
+                            <div class="mycontent_btn_box">
+                                <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ content_data.id }}"/>Из избранных</button>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="panel-body post_body">
+                        <div style="overflow: hidden">
+                            <div style="float: left; font-size: 18px;">
+                                <a href="{{ path('frontend_content_element', {'slug': content_data.slug}) }}">
+                                    {{ content_data.name }} {% if content_data.isPublish == 0 %}<span style="color: red;">неопубликован</span>{% endif %}
+                                </a>
+                            </div>
+                        </div>
+                        <div style="padding: 5px;">
+                            {{ content_data.description[:200] ~ '...' }}
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% else %}
+            <div class="not_message"><center>Нет избранных приложений</center></div>
+        {% endfor %}
+    </div>
+{% endblock %}

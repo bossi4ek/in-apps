@@ -1,4 +1,437 @@
 body {
     width: 1024px;
     margin: 0px auto;
+    background-color: #E5E5E5;
+    font-family: 'Open Sans Condensed', arial, serif;
+    font-size: 16px;
+}
+
+body a {
+    color: #428BCA;
+}
+
+body a:hover {
+    color: #2a6496;
+}
+
+.view_type {
+    float: right;
+    margin: 0 5px;
+}
+
+.view_type:hover {
+    cursor: pointer;
+    color: #CCCCCC;
+}
+
+.view_type.active {
+    color: #CCCCCC;
+}
+
+.info_box {
+    border: 1px solid #cccccc;
+    background: #FFFFFF;
+    margin: 5px 0px 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.title_main {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.postBox {
+    /*border-bottom: 1px dashed #cccccc;*/
+    /*margin-bottom: 40px;*/
+}
+
+.post_element {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.post_element.line {
+    height: 100%;
+}
+
+.post_element.block {
+    width: 256px;
+    display: inline-block;
+    height: 270px;
+}
+
+.post_poster  {
+    float: left;
+    padding: 5px 10px 5px 5px;
+}
+
+.poster_img {
+    width: 100px;
+    height: 100px;
+}
+
+.screen_img {
+    margin: 5px;
+}
+
+.post_data  {
+    float: left;
+    padding-left: 120px;
+}
+
+.post_user_name {
+    font-weight: bold;
+    text-align: left;
+}
+
+.post_user_email {
+    font-size: 12px;
+    text-align: left;
+}
+
+.post_date {
+    font-size: 10px;
+    float: right;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.post_head {
+    padding: 5px;
+}
+
+.post_body {
+    padding: 5px;
+}
+
+.post_delete {
+    /*float: right;*/
+    cursor: pointer;
+}
+
+.postFormBox {
+
+}
+
+.postFormFields {
+    margin: 10px 0px;
+}
+
+.postFormFields .input-group {
+    margin: 10px 0px;
+}
+
+.postFormButtons button{
+    margin-bottom: 10px;
+}
+
+#bottom_alert {
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    padding-right: 25px;
+    margin-top: 0px;
+    display: none;
+    float: right;
+    right: 0px;
+}
+
+.pagination_ajax li{
+    cursor: pointer;
+}
+
+.tags li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+.tag_box {
+    width: 200px;
+}
+
+.postFormFields img {
+    padding: 3px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+}
+
+.navbar-form {
+    padding: 0;
+}
+
+.nav > li {
+    border-bottom: 3px solid #F8F8F8;
+}
+
+.nav .active {
+    border-bottom: 3px solid #2a6496;
+}
+
+/*====================================================================================================================*/
+.pagerfanta {
+    text-align: center;
+}
+
+.pagerfanta li {
+    display: inline;
+    list-style-type: none;
+}
+
+.pagerfanta li.active a {
+    width: 30px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.pagerfanta .prev a, .pagerfanta .next a {
+    width: 80px;
+}
+
+.pagerfanta a,
+.pagerfanta span {
+    display: inline-block;
+    margin-right: .2em;
+    padding: .25em .35em;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    color: #424242;
+}
+
+.pagerfanta a {
+    width: 30px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+
+.pagerfanta a:hover {
+    background: #929292;
+}
+
+.pagerfanta .dots {
+    border-width: 0;
+}
+
+.pagerfanta .current {
+    background: #ccf;
+    font-weight: bold;
+}
+
+.pagerfanta .disabled {
+    border-color: #ccf;
+    color: #ccf;
+}
+/*====================================================================================================================*/
+
+.pirobox_gallary img {
+    border: 2px solid #DDDDDD;
+}
+
+.pirobox_gallary img:hover {
+    border: 2px solid #49423F;
+}
+
+/*====================================================================================================================*/
+/*Recommended*/
+/*====================================================================================================================*/
+.recomm {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    margin-right: 5px;
+    color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    padding: 5px;
+}
+
+.recomm_box {
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.recomm_wrapper {
+    overflow: hidden;
+    margin: 5px;
+}
+
+.recomm_wrapper .recomm_poster {
+    display: inline-block;
+}
+
+.recomm_poster .recomm_img {
+    width: 50px;
+    height: 50px;
+}
+
+.recomm_wrapper .recomm_title {
+    display: inline-block;
+    font-size: 14px;
+    width: 180px;
+    vertical-align: middle;
+}
+
+.summary-shadow {
+    position: absolute;
+    height: 70px;
+    left: 395px;
+    cursor: pointer;
+    background: url("../img/shadow-review.png") repeat-x;
+    margin-top: -65px;
+    z-index: 10;
+    width: 760px;
+}
+
+.content_title {
+    float: left;
+}
+
+.content_title h1 {
+    font-size: 18px;
+}
+
+.content_add_info {
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    /*color: #3a87ad;*/
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.content_top_by_category_box {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.content_top_by_category_item {
+    display: inline-block;
+    text-align: center;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+
+    margin: 0 5px;
+}
+
+.content_top_by_category_item .post_poster {
+    padding: 5px;
+}
+
+.file-url {
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #1ABC9C;
+    padding: 5px 8px 5px 5px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    color: #1ABC9C;
+    text-decoration: none;
+    float: right;
+    border-radius: 3px;
+    text-align: right;
+    width: 120px;
+    overflow: hidden;
+}
+
+.file-url .icon {
+    /*background: url("../img/play_icon.png") no-repeat;*/
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+.file-url .txt {
+    float: left;
+}
+
+/*====================================================================================================================*/
+/*login and profile*/
+/*====================================================================================================================*/
+.login, .user_profile {
+    font-size: 16px;
+    font-weight: bold;
+    background: #2a6496;
+    margin-right: 5px;
+    color: #ffffff;
+    border-radius: 2px 2px 0 0;
+    padding: 5px;
+}
+
+.login_box, .user_profile_box {
+    -moz-border-radius: 0 0 2px 2px;
+    -webkit-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -ms-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 10px;
+}
+
+/*====================================================================================================================*/
+/*My content*/
+/*====================================================================================================================*/
+.mycontent_btn_box {
+    text-align: center;
+    padding: 5px;
+}
+
+
+/*====================================================================================================================*/
+.no-display {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.inline-block {
+    display: inline-block;
 }
