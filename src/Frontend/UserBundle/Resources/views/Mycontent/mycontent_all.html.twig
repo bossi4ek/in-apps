@@ -25,6 +25,16 @@
                             <div class="mycontent_btn_box">
                                 <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ content_data.id }}"/>Из избранных</button>
                             </div>
+
+                            <div class="like_box">
+                                <span class="like_count">
+                                    {{ content_data.likeCount }}
+                                </span>
+                                <span class="add-like" data-id="{{ content_data.id }}">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                                    <span class="like_txt">Нравится</span>
+                                </span>
+                            </div>
                         {% endif %}
                     </div>
                     <div class="panel-body post_body">
