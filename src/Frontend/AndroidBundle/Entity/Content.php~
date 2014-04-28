@@ -53,7 +53,7 @@ class Content {
     private $updated;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     private $description;
 
@@ -74,12 +74,12 @@ class Content {
     private $year;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $size;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(nullable=true)
      */
     private $version;
 
@@ -107,10 +107,27 @@ class Content {
     private $poster_img;
 
     /**
-     * @ORM\Column()
+     * @ORM\Column(name="url", type="string", length=255, nullable=true)
      */
     private $url;
 
+    /**
+     * @ORM\Column(name="meta_title", type="string", length=255, nullable=true)
+     */
+    private $meta_title;
+    /**
+     * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
+     */
+    private $meta_keywords;
+    /**
+     * @ORM\Column(name="meta_description", type="text", nullable=true)
+     */
+    private $meta_description;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $like_count = 0;
 
     /**
      * @Assert\File(maxSize="6000000")
@@ -738,5 +755,97 @@ class Content {
     public function getIsMy()
     {
         return $this->is_my;
+    }
+
+    /**
+     * Set url
+     *
+     * @param string $url
+     * @return Content
+     */
+    public function setUrl($url)
+    {
+        $this->url = $url;
+
+        return $this;
+    }
+
+    /**
+     * Get url
+     *
+     * @return string 
+     */
+    public function getUrl()
+    {
+        return $this->url;
+    }
+
+    /**
+     * Set meta_title
+     *
+     * @param string $metaTitle
+     * @return Content
+     */
+    public function setMetaTitle($metaTitle)
+    {
+        $this->meta_title = $metaTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_title
+     *
+     * @return string 
+     */
+    public function getMetaTitle()
+    {
+        return $this->meta_title;
+    }
+
+    /**
+     * Set meta_keywords
+     *
+     * @param string $metaKeywords
+     * @return Content
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->meta_keywords = $metaKeywords;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_keywords
+     *
+     * @return string 
+     */
+    public function getMetaKeywords()
+    {
+        return $this->meta_keywords;
+    }
+
+    /**
+     * Set meta_description
+     *
+     * @param string $metaDescription
+     * @return Content
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->meta_description = $metaDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_description
+     *
+     * @return string 
+     */
+    public function getMetaDescription()
+    {
+        return $this->meta_description;
     }
 }

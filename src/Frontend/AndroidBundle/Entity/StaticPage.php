@@ -4,14 +4,13 @@ namespace Frontend\AndroidBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use Doctrine\Common\Collections\ArrayCollection;
 use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="developer")
+ * @ORM\Table(name="static_page")
  */
-class Developer {
+class StaticPage {
 
     /**
      * @ORM\Id
@@ -27,10 +26,14 @@ class Developer {
     private $name;
 
     /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+
+    /**
      * @Gedmo\Slug(fields={"name"}, separator="_")
      * @ORM\Column(name="slug", type="string", length=255, unique=true)
      */
-
     private $slug;
 
     /**
@@ -52,15 +55,6 @@ class Developer {
     private $meta_description;
 
     /**
-     * ORM\@ManyToMany(targetEntity="Content", mappedBy="developers")
-     **/
-    private $contents;
-
-    public function __construct() {
-        $this->contents = new ArrayCollection();
-    }
-
-    /**
      * Get id
      *
      * @return integer 
@@ -74,7 +68,7 @@ class Developer {
      * Set name
      *
      * @param string $name
-     * @return Developer
+     * @return StaticPage
      */
     public function setName($name)
     {
@@ -94,10 +88,33 @@ class Developer {
     }
 
     /**
+     * Set description
+     *
+     * @param string $description
+     * @return StaticPage
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
      * Set slug
      *
      * @param string $slug
-     * @return Developer
+     * @return StaticPage
      */
     public function setSlug($slug)
     {
@@ -120,7 +137,7 @@ class Developer {
      * Set is_publish
      *
      * @param boolean $isPublish
-     * @return Developer
+     * @return StaticPage
      */
     public function setIsPublish($isPublish)
     {
@@ -143,7 +160,7 @@ class Developer {
      * Set meta_title
      *
      * @param string $metaTitle
-     * @return Developer
+     * @return StaticPage
      */
     public function setMetaTitle($metaTitle)
     {
@@ -166,7 +183,7 @@ class Developer {
      * Set meta_keywords
      *
      * @param string $metaKeywords
-     * @return Developer
+     * @return StaticPage
      */
     public function setMetaKeywords($metaKeywords)
     {
@@ -189,7 +206,7 @@ class Developer {
      * Set meta_description
      *
      * @param string $metaDescription
-     * @return Developer
+     * @return StaticPage
      */
     public function setMetaDescription($metaDescription)
     {

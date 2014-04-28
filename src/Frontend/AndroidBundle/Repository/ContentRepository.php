@@ -110,7 +110,7 @@ class ContentRepository extends EntityRepository
                 LEFT JOIN content.categories category
                 WHERE category.slug = :slug
                 ORDER BY content.view_count DESC'
-            )->setParameter('slug', $slug)->setMaxResults(5);
+            )->setParameter('slug', $slug)->setMaxResults(6);
         try {
             return $query->getResult();
         } catch (\Doctrine\ORM\NoResultException $e) {

@@ -111,6 +111,23 @@ class Content {
      */
     private $url;
 
+    /**
+     * @ORM\Column(name="meta_title", type="string", length=255, nullable=true)
+     */
+    private $meta_title;
+    /**
+     * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
+     */
+    private $meta_keywords;
+    /**
+     * @ORM\Column(name="meta_description", type="text", nullable=true)
+     */
+    private $meta_description;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $like_count = 0;
 
     /**
      * @Assert\File(maxSize="6000000")
@@ -761,5 +778,97 @@ class Content {
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Set meta_title
+     *
+     * @param string $metaTitle
+     * @return Content
+     */
+    public function setMetaTitle($metaTitle)
+    {
+        $this->meta_title = $metaTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_title
+     *
+     * @return string 
+     */
+    public function getMetaTitle()
+    {
+        return $this->meta_title;
+    }
+
+    /**
+     * Set meta_keywords
+     *
+     * @param string $metaKeywords
+     * @return Content
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->meta_keywords = $metaKeywords;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_keywords
+     *
+     * @return string 
+     */
+    public function getMetaKeywords()
+    {
+        return $this->meta_keywords;
+    }
+
+    /**
+     * Set meta_description
+     *
+     * @param string $metaDescription
+     * @return Content
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->meta_description = $metaDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_description
+     *
+     * @return string 
+     */
+    public function getMetaDescription()
+    {
+        return $this->meta_description;
+    }
+
+    /**
+     * Set like_count
+     *
+     * @param integer $likeCount
+     * @return Content
+     */
+    public function setLikeCount($likeCount)
+    {
+        $this->like_count = $likeCount;
+
+        return $this;
+    }
+
+    /**
+     * Get like_count
+     *
+     * @return integer 
+     */
+    public function getLikeCount()
+    {
+        return $this->like_count;
     }
 }

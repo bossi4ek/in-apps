@@ -1,5 +1,27 @@
 {% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
 
+{% if category is defined %}
+    {% set title = category.metaTitle %}
+    {% set description = category.metaDescription %}
+    {% set keywords = category.metaKeywords %}
+{% elseif developer is defined %}
+    {% set title = developer.metaTitle %}
+    {% set description = developer.metaDescription %}
+    {% set keywords = developer.metaKeywords %}
+{% elseif search_name is defined %}
+    {% set title = "Найти прилодение "~search_name %}
+    {% set description = "Поиск приложений для Андроид" %}
+    {% set keywords = "Найти приложения для Андроид" %}
+{% else %}
+    {% set title = "Все приложения" %}
+    {% set description = "Только лучшие приложения для классной ОС" %}
+    {% set keywords = "" %}
+{% endif %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block description %}{{ description }}{% endblock %}
+{% block keywords %}{{ keywords }}{% endblock %}
+
 {% block content_main %}
     <div class="title_main">
         <span>
@@ -30,6 +52,16 @@
                             </div>
                             <div class="mycontent_btn_box {% if content_data.isMy == 0 %}no-display{% endif %}">
                                 <button type="submit" class="btn btn-primary btn-danger btn-xs del-mycontent-js" data-id="{{ content_data.id }}"/>Из избранного</button>
+                            </div>
+
+                            <div class="like_box">
+                                <span class="like_count">
+                                    {{ content_data.likeCount }}
+                                </span>
+                                <span class="add-like" data-id="{{ content_data.id }}">
+                                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                                    <span class="like_txt">Нравится</span>
+                                </span>
                             </div>
                         {% endif %}
                     </div>

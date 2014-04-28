@@ -414,6 +414,31 @@ body a:hover {
     padding: 10px;
 }
 
+
+.like_box {
+    border-top: 1px dashed #CCCCCC;
+    text-align: center;
+    padding: 5px;
+}
+
+.like_box .like_count {
+    padding: 2px;
+    background: #cccccc;
+    margin: 0 5px 0 0;
+    border-radius: 2px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.add-like {
+    color: #2a6496;
+}
+
+.add-like:hover {
+    color: #0d2f68;
+    cursor: pointer;
+}
+
 /*====================================================================================================================*/
 /*My content*/
 /*====================================================================================================================*/

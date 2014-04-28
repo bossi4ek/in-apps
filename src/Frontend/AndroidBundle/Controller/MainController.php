@@ -3,7 +3,8 @@
 namespace Frontend\AndroidBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Entity\Category;
+//use Entity\Category;
+//use Frontend\AndroidBundle\Entity\StaticPage;
 
 class MainController extends Controller
 {
@@ -14,7 +15,9 @@ class MainController extends Controller
 //        $logger->error('Start test error');
 //        $logger->error('End test error');
 
-        return $this->render('FrontendAndroidBundle:Main:index.html.twig');
+        $data = $this->getDoctrine()->getRepository('FrontendAndroidBundle:StaticPage')->findOneBy(array('id' => 1));
+
+        return $this->render('FrontendAndroidBundle:Main:index.html.twig', array('data' => $data));
     }
 
     public function showCategoryInMenuAction()

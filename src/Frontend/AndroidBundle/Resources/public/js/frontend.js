@@ -78,6 +78,27 @@ delMycontent = function(obj) {
 };
 
 //======================================================================================================================
+//Like
+//======================================================================================================================
+addLike = function(obj) {
+    $.ajax({
+        type: "POST",
+        url: "/like/add",
+        data: {
+            id : $(obj).data('id')
+        },
+        success: function(response){
+            if (response != 0) {
+                $(obj).prev().text(response);
+            }
+            else {
+                alert("Ошибка выполнения скрипта");
+            }
+        }
+    });
+};
+
+//======================================================================================================================
 initChangeViewType = function() {
     $(".view_type").click(function(){
         var view_type = $(this).attr("data-view-type");
@@ -148,5 +169,8 @@ $(document).ready(function() {
     });
     $(".del-mycontent-js").click(function(){
         delMycontent(this);
+    });
+    $(".add-like").click(function(){
+        addLike(this);
     });
 });
