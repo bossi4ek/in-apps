@@ -136,6 +136,7 @@ class ParserApp4smart {
         $content->setYear(2013);
         $content->setInstallCount(0);
         $content->setViewCount(0);
+        $content->setLikeCount(0);
         $content->setUrl($url);
         $content->setMetaTitle($name." - Скачать бесплатно и без регистрации");
 

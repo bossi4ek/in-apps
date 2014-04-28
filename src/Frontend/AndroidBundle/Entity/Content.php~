@@ -125,6 +125,11 @@ class Content {
     private $meta_description;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $like_count = 0;
+
+    /**
      * @Assert\File(maxSize="6000000")
      */
     private $file;

@@ -144,4 +144,33 @@ class ContentController extends Controller
         );
     }
 
+//======================================================================================================================
+    public function addLikeAction(Request $request)
+    {
+        //find content
+        $id_content = $request->request->get('id');
+        $content = $this->getDoctrine()
+            ->getRepository('FrontendAndroidBundle:Content')
+            ->findOneById($id_content);
+
+        $content->setLikeCount($content->getLikeCount() + 1);
+
+        $em = $this->getDoctrine()->getManager();
+        $em->flush();
+
+        return new Response($this->getLikeCountAction($id_content));
+    }
+
+//======================================================================================================================
+    public function getLikeCountAction($id_content)
+    {
+        //find content
+        $content = $this->getDoctrine()
+            ->getRepository('FrontendAndroidBundle:Content')
+            ->findOneById($id_content);
+
+        return $content->getLikeCount();
+    }
+
+
 }

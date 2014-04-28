@@ -147,6 +147,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content1->setYear(2013);
         $content1->setInstallCount(22);
         $content1->setViewCount(0);
+        $content1->setLikeCount(12);
         $content1->setMetaTitle($name);
         $content1->setMetaDescription($description);
         $content1->setMetaKeywords("BADLAND для Android, BADLAND, игра BADLAND");
@@ -170,6 +171,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->setYear(2014);
         $content2->setInstallCount(500);
         $content2->setViewCount(0);
+        $content2->setLikeCount(1);
         $content2->setMetaTitle($name);
         $content2->setMetaDescription($description);
         $content2->setMetaKeywords("Can Knockdown 3 для Android, Can Knockdown 3");
@@ -193,6 +195,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content3->setYear(2014);
         $content3->setInstallCount(10);
         $content3->setViewCount(0);
+        $content3->setLikeCount(0);
         $content3->setMetaTitle($name);
         $content3->setMetaDescription($description);
         $content3->setMetaKeywords("Gravity Maze, Gravity Maze для Android");
@@ -214,6 +217,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content4->setYear(2013);
         $content4->setInstallCount(10000);
         $content4->setViewCount(0);
+        $content4->setLikeCount(0);
         $content4->setMetaTitle($name);
         $content4->setMetaDescription($description);
         $content4->setMetaKeywords("Hungry Shark Evolution, Hungry Shark Evolution для Android");

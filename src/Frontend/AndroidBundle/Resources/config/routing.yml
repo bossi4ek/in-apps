@@ -36,3 +36,7 @@ frontend_content_by_category:
 frontend_content_by_developer:
     pattern:  /content/developer/{slug}
     defaults: { _controller: FrontendAndroidBundle:Content:showAllByDeveloper}
+
+frontend_like_add:
+    pattern:  /like/add
+    defaults: { _controller: FrontendAndroidBundle:Content:addLike}

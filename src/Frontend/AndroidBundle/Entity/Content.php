@@ -125,6 +125,11 @@ class Content {
     private $meta_description;
 
     /**
+     * @ORM\Column(type="integer")
+     */
+    private $like_count = 0;
+
+    /**
      * @Assert\File(maxSize="6000000")
      */
     private $file;
@@ -842,5 +847,28 @@ class Content {
     public function getMetaDescription()
     {
         return $this->meta_description;
+    }
+
+    /**
+     * Set like_count
+     *
+     * @param integer $likeCount
+     * @return Content
+     */
+    public function setLikeCount($likeCount)
+    {
+        $this->like_count = $likeCount;
+
+        return $this;
+    }
+
+    /**
+     * Get like_count
+     *
+     * @return integer 
+     */
+    public function getLikeCount()
+    {
+        return $this->like_count;
     }
 }
