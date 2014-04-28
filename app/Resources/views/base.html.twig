@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="description" content="{% block description %}Android apps{% endblock %}">
+        <meta name="keywords" content="{% block keywords %}Android, приложения для андроид{% endblock %}">
 
         {% block stylesheets %}
             <link href="{{ asset('bundles/frontendandroid/css/bootstrap.css') }}" rel="stylesheet" />

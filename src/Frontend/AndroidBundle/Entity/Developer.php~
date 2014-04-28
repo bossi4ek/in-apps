@@ -39,6 +39,19 @@ class Developer {
     private $is_publish = false;
 
     /**
+     * @ORM\Column(name="meta_title", type="string", length=255, nullable=true)
+     */
+    private $meta_title;
+    /**
+     * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
+     */
+    private $meta_keywords;
+    /**
+     * @ORM\Column(name="meta_description", type="text", nullable=true)
+     */
+    private $meta_description;
+
+    /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="developers")
      **/
     private $contents;

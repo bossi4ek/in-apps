@@ -1,5 +1,9 @@
 {% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
 
+{% block title %}{{ data.metaTitle }}!{% endblock %}
+{% block description %}{{ data.metaDescription }}{% endblock %}
+{% block keywords %}{{ data.metaKeywords }}{% endblock %}
+
 {% block content_main %}
     <div id="allPost" class="postBox">
         <div class="panel panel-default" id_content="{{ data.id }}">

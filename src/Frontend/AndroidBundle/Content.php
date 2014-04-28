@@ -61,7 +61,6 @@ class Content {
         return $data;
     }
 
-
 //======================================================================================================================
 //Get top Content (by view_count)
     public function findTopContent()

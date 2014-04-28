@@ -34,6 +34,12 @@ class ContentAdmin extends Admin {
                 'label' => 'Описание',
                 'required' => true,
             ))
+            ->add('meta_title', 'text', array('label' => 'Meta title'))
+            ->add('meta_keywords', 'text', array('label' => 'Meta keywords'))
+            ->add('meta_description', 'textarea', array(
+                'label' => 'Meta description',
+                'required' => true,
+            ))
             ->add('file', 'file', $fileFieldOptions)
             ->add('categories', 'entity', array(
                 'multiple' => true,

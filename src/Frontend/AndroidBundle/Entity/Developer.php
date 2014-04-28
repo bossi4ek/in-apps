@@ -39,6 +39,19 @@ class Developer {
     private $is_publish = false;
 
     /**
+     * @ORM\Column(name="meta_title", type="string", length=255, nullable=true)
+     */
+    private $meta_title;
+    /**
+     * @ORM\Column(name="meta_keywords", type="string", length=255, nullable=true)
+     */
+    private $meta_keywords;
+    /**
+     * @ORM\Column(name="meta_description", type="text", nullable=true)
+     */
+    private $meta_description;
+
+    /**
      * ORM\@ManyToMany(targetEntity="Content", mappedBy="developers")
      **/
     private $contents;
@@ -124,5 +137,74 @@ class Developer {
     public function getIsPublish()
     {
         return $this->is_publish;
+    }
+
+    /**
+     * Set meta_title
+     *
+     * @param string $metaTitle
+     * @return Developer
+     */
+    public function setMetaTitle($metaTitle)
+    {
+        $this->meta_title = $metaTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_title
+     *
+     * @return string 
+     */
+    public function getMetaTitle()
+    {
+        return $this->meta_title;
+    }
+
+    /**
+     * Set meta_keywords
+     *
+     * @param string $metaKeywords
+     * @return Developer
+     */
+    public function setMetaKeywords($metaKeywords)
+    {
+        $this->meta_keywords = $metaKeywords;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_keywords
+     *
+     * @return string 
+     */
+    public function getMetaKeywords()
+    {
+        return $this->meta_keywords;
+    }
+
+    /**
+     * Set meta_description
+     *
+     * @param string $metaDescription
+     * @return Developer
+     */
+    public function setMetaDescription($metaDescription)
+    {
+        $this->meta_description = $metaDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get meta_description
+     *
+     * @return string 
+     */
+    public function getMetaDescription()
+    {
+        return $this->meta_description;
     }
 }

@@ -45,12 +45,18 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $dev1 = new Developer();
         $dev1->setName($name);
         $dev1->setIsPublish(true);
+        $dev1->setMetaTitle($name);
+        $dev1->setMetaDescription("Разработчик ".$name);
+        $dev1->setMetaKeywords("");
         $manager->persist($dev1);
 
         $name = 'Тест2';
         $dev2 = new Developer();
         $dev2->setName($name);
         $dev2->setIsPublish(true);
+        $dev2->setMetaTitle($name);
+        $dev2->setMetaDescription("Разработчик ".$name);
+        $dev2->setMetaKeywords("");
         $manager->persist($dev2);
 
         $manager->flush();
@@ -62,7 +68,10 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $name = 'Игры';
         $category1 = new Category();
         $category1->setName($name);
-        $category1->setDescription("Игры для Android. Здесь много игр.");
+        $category1->setDescription("Игры для Android. Здесь много игр");
+        $category1->setMetaTitle("Категория ".$name);
+        $category1->setMetaDescription("Игры для Android. Здесь много игр");
+        $category1->setMetaKeywords("Игры для Android, Android, Скачать игры для андроид");
         $category1->setIsPublish(true);
         $manager->persist($category1);
 
@@ -70,6 +79,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $category2 = new Category();
         $category2->setName($name);
         $category2->setDescription("Бизнес приложения для ОС Android");
+        $category2->setMetaTitle("Категория ".$name);
+        $category2->setMetaDescription("Бизнес приложения для ОС Android");
+        $category2->setMetaKeywords("Бизнес приложения для Android, Android, Скачать Бизнес приложения для андроид");
         $category2->setIsPublish(true);
         $manager->persist($category2);
 
@@ -77,6 +89,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $category3 = new Category();
         $category3->setName($name);
         $category3->setDescription("Виджеты для Android");
+        $category3->setMetaTitle("Категория ".$name);
+        $category3->setMetaDescription("Игры для Android. Здесь много игр");
+        $category3->setMetaKeywords("Виджеты для Android. Android виджеты, анроид виджеты");
         $category3->setIsPublish(true);
         $manager->persist($category3);
 
@@ -84,6 +99,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $category4 = new Category();
         $category4->setName($name);
         $category4->setDescription("Приложения на тему медыцины для Android");
+        $category4->setMetaTitle("Категория ".$name);
+        $category4->setMetaDescription("Приложения на тему медыцины для Android");
+        $category4->setMetaKeywords("Медыцинские приложения для Android");
         $category4->setIsPublish(true);
         $manager->persist($category4);
 
@@ -109,6 +127,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content1->setYear(2013);
         $content1->setInstallCount(22);
         $content1->setViewCount(0);
+        $content1->setMetaTitle($name);
+        $content1->setMetaDescription($description);
+        $content1->setMetaKeywords("BADLAND для Android, BADLAND, игра BADLAND");
 
         $content1->setIsPublish(true);
 
@@ -129,6 +150,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content2->setYear(2014);
         $content2->setInstallCount(500);
         $content2->setViewCount(0);
+        $content2->setMetaTitle($name);
+        $content2->setMetaDescription($description);
+        $content2->setMetaKeywords("Can Knockdown 3 для Android, Can Knockdown 3");
 
         $content2->setIsPublish(true);
 
@@ -149,6 +173,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content3->setYear(2014);
         $content3->setInstallCount(10);
         $content3->setViewCount(0);
+        $content3->setMetaTitle($name);
+        $content3->setMetaDescription($description);
+        $content3->setMetaKeywords("Gravity Maze, Gravity Maze для Android");
 
         $content3->setIsPublish(true);
 
@@ -167,6 +194,9 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
         $content4->setYear(2013);
         $content4->setInstallCount(10000);
         $content4->setViewCount(0);
+        $content4->setMetaTitle($name);
+        $content4->setMetaDescription($description);
+        $content4->setMetaKeywords("Hungry Shark Evolution, Hungry Shark Evolution для Android");
 
         $content4->setIsPublish(true);
 

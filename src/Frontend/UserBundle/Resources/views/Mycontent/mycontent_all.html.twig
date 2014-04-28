@@ -1,5 +1,7 @@
 {% extends 'FrontendAndroidBundle:Main:index.html.twig' %}
 
+{% block title %}Приложения пользователя {{ app.user.username }}{% endblock %}
+
 {% block content_main %}
     <div class="title_main">
         <span>

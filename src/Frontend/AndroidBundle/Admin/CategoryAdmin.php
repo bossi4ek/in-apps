@@ -17,6 +17,12 @@ class CategoryAdmin extends Admin {
                 'label' => 'Описание',
                 'required' => false,
             ))
+            ->add('meta_title', 'text', array('label' => 'Meta title'))
+            ->add('meta_keywords', 'text', array('label' => 'Meta keywords'))
+            ->add('meta_description', 'textarea', array(
+                'label' => 'Meta description',
+                'required' => true,
+            ))
             ->add('is_publish', 'checkbox', array(
                 'label' => 'Опубликовать',
                 'required'  => false,
