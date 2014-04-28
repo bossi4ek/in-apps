@@ -104,6 +104,7 @@ class ParserApp4smart {
                     $cat = new Category();
                     $cat->setName($category);
                     $cat->setDescription("");
+                    $cat->setMetaTitle($category." - программы для Android - Скачать бесплатно");
                     $cat->setIsPublish(true);
                     $parser->em->persist($cat);
                     $parser->em->flush();
@@ -117,6 +118,7 @@ class ParserApp4smart {
                 if (is_null($developerRepository->findOneBy(array('name' => $developer)))) {
                     $dev = new Developer();
                     $dev->setName($developer);
+                    $dev->setMetaTitle("Программы для Android, разработчик ".$developer." - Скачать бесплатно");
                     $dev->setIsPublish(true);
                     $parser->em->persist($dev);
                     $parser->em->flush();
@@ -135,6 +137,7 @@ class ParserApp4smart {
         $content->setInstallCount(0);
         $content->setViewCount(0);
         $content->setUrl($url);
+        $content->setMetaTitle($name." - Скачать бесплатно и без регистрации");
 
         $content->setIsPublish(true);
 

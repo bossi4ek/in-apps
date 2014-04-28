@@ -11,6 +11,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Frontend\AndroidBundle\Entity\Developer;
 use Frontend\AndroidBundle\Entity\Category;
 use Frontend\AndroidBundle\Entity\Content;
+use Frontend\AndroidBundle\Entity\StaticPage;
 
 class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
 {
@@ -36,6 +37,25 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
             copy($source."/".$i.".png", $destination."/".$i.".png");
         }
         copy($source."/not_img.jpg", $destination."/not_img.jpg");
+    }
+
+//======================================================================================================================
+    public function loadStaticPage(ObjectManager $manager)
+    {
+        $name = 'Добро пожаловать';
+        $page = new StaticPage();
+        $page->setName($name);
+        $page->setDescription("Операционная система андроид предоставляет своим пользователям множество возможностей.
+                        На данный момент существует более сотни тысяч приложений для смартфонов и планшетов – различных программ
+                        для увеличения функциональности устройств, общения в интернете, игр и многих других. Возможности любого
+                        коммуникатора всегда можно увеличить за счет использования сторонних программ, будь это
+                        альтернативный браузер или хаб. Разобраться в этом огромном ассортименте уже не так просто.
+                        Этот сайт предоставляет Вам такую возможность!");
+        $page->setIsPublish(true);
+        $page->setMetaTitle("Android OS. Игры, программы, приложения для Андроид смартфонов и планшетов.");
+        $page->setMetaDescription("Android, приложения для андроид, бесплатные приложения для андроид");
+        $page->setMetaKeywords("");
+        $manager->persist($page);
     }
 
 //======================================================================================================================
@@ -234,6 +254,7 @@ class LoadFilmsData implements FixtureInterface, OrderedFixtureInterface, Contai
     {
         $this->copyImg();
 
+        $this->loadStaticPage($manager);
         $this->loadDeveloper($manager);
         $this->loadCategory($manager);
         $this->loadContent($manager);
